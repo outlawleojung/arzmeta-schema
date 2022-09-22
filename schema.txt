@@ -1,0 +1,5439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ArrayOfArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<ArrayOfString>
+
+    <string>avatarParts</string>
+
+    <string>아바타 파츠</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>아바타 파츠 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>avatarPartsType</string>
+
+    <string>아바타 파츠 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>chatId</string>
+
+    <string>챗 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>prefabName</string>
+
+    <string>프리팹 이름</string>
+
+    <string>varchar(40)</string>
+
+    <string>Resource_Name</string>
+
+    <string>varchar</string>
+
+    <string>40</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>materialName</string>
+
+    <string>머터리얼 이름</string>
+
+    <string>varchar(40)</string>
+
+    <string>Resource_Name</string>
+
+    <string>varchar</string>
+
+    <string>40</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>thumbnailName</string>
+
+    <string>썸네일 이름</string>
+
+    <string>varchar(40)</string>
+
+    <string>Resource_Name</string>
+
+    <string>varchar</string>
+
+    <string>40</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>effectName</string>
+
+    <string>이펙트 이름</string>
+
+    <string>varchar(40)</string>
+
+    <string>Resource_Name</string>
+
+    <string>varchar</string>
+
+    <string>40</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>aniName</string>
+
+    <string>애니메이션 이름</string>
+
+    <string>varchar(40)</string>
+
+    <string>Resource_Name</string>
+
+    <string>varchar</string>
+
+    <string>40</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>divisionType</string>
+
+    <string>아바타 파츠 구분 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>questText</string>
+
+    <string>퀘스트 텍스트</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>description</string>
+
+    <string>설명</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>nameId</string>
+
+    <string>파츠 이름 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>sizeType</string>
+
+    <string>사이즈 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>colorType</string>
+
+    <string>색상 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>groupType</string>
+
+    <string>그룹 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>avatarPartsColorType</string>
+
+    <string>아바타 파츠 색상 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>색상 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>avatarPartsDivisionType</string>
+
+    <string>아바타 파츠 구분 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>구분 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>avatarPartsGroupType</string>
+
+    <string>아바타 파츠 그룹 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>그룹 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>avatarPartsPrice</string>
+
+    <string>구매 파츠 가격</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>partsId</string>
+
+    <string>아바타 파츠 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>arwPrice</string>
+
+    <string>아로와나 가격</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>krwPrice</string>
+
+    <string>원화 가격</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>avatarPartsSizeDetail</string>
+
+    <string>아바타 파츠 사이즈 상세</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>sizeType</string>
+
+    <string>사이즈 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>data</string>
+
+    <string>데이타</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>avatarPartsSizeType</string>
+
+    <string>아바타 파츠 사이즈 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>사이즈 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>avatarPartsStateType</string>
+
+    <string>아바타 파츠 상태 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>파츠 상태 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>avatarPartsType</string>
+
+    <string>아바타 파츠 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>아바타 파츠 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>commerceZoneMannequin</string>
+
+    <string>커머스존 마네킹</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>modelType</string>
+
+    <string>마네킹 모델 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>partsType</string>
+
+    <string>아바타 파츠 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>partsId</string>
+
+    <string>아바타 파츠 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>countryCode</string>
+
+    <string>국가 코드</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>국가 코드 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>nameId</string>
+
+    <string>이름 아이디</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>code</string>
+
+    <string>국가 코드</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>departmentType</string>
+
+    <string>소속 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>소속 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>faq</string>
+
+    <string>faq</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>question</string>
+
+    <string>질문</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>answer</string>
+
+    <string>응답</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>forbiddenWords</string>
+
+    <string>금칙어</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>text</string>
+
+    <string>텍스트</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>hallOfFame</string>
+
+    <string>명예의 전당</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>hallOfFameType</string>
+
+    <string>명예의 전당 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>countryCodeId</string>
+
+    <string>국가 코드 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>year</string>
+
+    <string>년도</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>rank</string>
+
+    <string>순위</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>teamName</string>
+
+    <string>팀이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>hallOfFameType</string>
+
+    <string>명예의 전당 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>명예의 전당 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>jumpingMatchingGameType</string>
+
+    <string>점핑 매칭 게임 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>jumpingMatchingLevel</string>
+
+    <string>점핑 매칭 레벨</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>레벨 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>tileToHintInt</string>
+
+    <string>타일생성간격</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>hintInt</string>
+
+    <string>힌트간격</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>quizeToDesInt</string>
+
+    <string>퀴즈발판파괴간격</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>DesToFinInt</string>
+
+    <string>파괴후종료까지간격</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>nextRoundInt</string>
+
+    <string>다음라운드까지간격</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>showQuizeSec</string>
+
+    <string>퀴즈노출시간</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>gameType</string>
+
+    <string>게임 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>spawnPaintCount</string>
+
+    <string>그림발판생성갯수</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>paintCount</string>
+
+    <string>그림 종류 갯수</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>hintLevel</string>
+
+    <string>힌트레벨</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>languageType</string>
+
+    <string>언어 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>언어 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>mannequinModelType</string>
+
+    <string>마네킹 모델 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>모델 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>mannequinPurchaseState</string>
+
+    <string>마네킹 구매 파츠 상태</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>modelType</string>
+
+    <string>모델 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>stateType</string>
+
+    <string>파츠 상태 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>member</string>
+
+    <string>회원</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>memberId</string>
+
+    <string>회원 아이디</string>
+
+    <string>varchar(100)</string>
+
+    <string>Identifier_Member_Id</string>
+
+    <string>varchar</string>
+
+    <string>100</string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>providerType</string>
+
+    <string>제공 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>osType</string>
+
+    <string>OS 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>memberType</string>
+
+    <string>타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>providerId</string>
+
+    <string>아이디</string>
+
+    <string>varchar(30)</string>
+
+    <string>Identifier_Provider_Id</string>
+
+    <string>varchar</string>
+
+    <string>30</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>countryCodeId</string>
+
+    <string>국가 코드 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>password</string>
+
+    <string>패스워드</string>
+
+    <string>varchar(100)</string>
+
+    <string>Identifier_Password</string>
+
+    <string>varchar</string>
+
+    <string>100</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>email</string>
+
+    <string>이메일</string>
+
+    <string>varchar(64)</string>
+
+    <string>Identifier_Email</string>
+
+    <string>varchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>normalizeEmail</string>
+
+    <string>노멀라이즈이메일</string>
+
+    <string>varchar(64)</string>
+
+    <string>Identifier_Email</string>
+
+    <string>varchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>nickname</string>
+
+    <string>닉네임</string>
+
+    <string>nvarchar(32)</string>
+
+    <string>Nickname</string>
+
+    <string>nvarchar</string>
+
+    <string>32</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>normalizeNickname</string>
+
+    <string>노멀라이즈닉네임</string>
+
+    <string>nvarchar(32)</string>
+
+    <string>Nickname</string>
+
+    <string>nvarchar</string>
+
+    <string>32</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>seqLoginCnt</string>
+
+    <string>연속접속횟수</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>totalLoginCnt</string>
+
+    <string>총접속횟수</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>isBlock</string>
+
+    <string>차단여부</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>loginedAt</string>
+
+    <string>접속일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>createdAt</string>
+
+    <string>생성일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>updatedAt</string>
+
+    <string>갱신일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>deletedAt</string>
+
+    <string>삭제일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>memberAvatarInfo</string>
+
+    <string>사용자 아바타 정보</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>memberId</string>
+
+    <string>회원 아이디</string>
+
+    <string>varchar(100)</string>
+
+    <string>Identifier_Member_Id</string>
+
+    <string>varchar</string>
+
+    <string>100</string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>avatarPartsType</string>
+
+    <string>아바타 파츠 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>avatarPartsId</string>
+
+    <string>아바타 파츠 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>createdAt</string>
+
+    <string>생성일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>updatedAt</string>
+
+    <string>갱신일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>memberNumForRegister</string>
+
+    <string>사용자 계정 가입 정보</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>num</string>
+
+    <string>번호</string>
+
+    <string>integer</string>
+
+    <string>Identifier_Identity</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>createdAt</string>
+
+    <string>생성일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>memberPurchaseInfo</string>
+
+    <string>사용자 결제 정보</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>orderId</string>
+
+    <string>주문 번호</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>stateType</string>
+
+    <string>결제 상태 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>memberId</string>
+
+    <string>회원 아이디</string>
+
+    <string>varchar(100)</string>
+
+    <string>Identifier_Member_Id</string>
+
+    <string>varchar</string>
+
+    <string>100</string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>createdAt</string>
+
+    <string>생성 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>updatedAt</string>
+
+    <string>갱신 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>purchasedAt</string>
+
+    <string>결제 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>isSuccdeded</string>
+
+    <string>결제 성공 여부</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>memberQuest</string>
+
+    <string>사용자 퀘스트</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>memberId</string>
+
+    <string>회원 아이디</string>
+
+    <string>varchar(100)</string>
+
+    <string>Identifier_Member_Id</string>
+
+    <string>varchar</string>
+
+    <string>100</string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>questId</string>
+
+    <string>퀘스트아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>isCompleted</string>
+
+    <string>완료 여부</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>isReceived</string>
+
+    <string>보상 여부</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>createdAt</string>
+
+    <string>생성 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>updatedAt</string>
+
+    <string>갱신 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>completedAt</string>
+
+    <string>완료 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>memberQuestLog</string>
+
+    <string>사용자 퀘스트 로그</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>memberId</string>
+
+    <string>회원 아이디</string>
+
+    <string>varchar(100)</string>
+
+    <string>Identifier_Member_Id</string>
+
+    <string>varchar</string>
+
+    <string>100</string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>questGroupType</string>
+
+    <string>퀘스트 그룹 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>count</string>
+
+    <string>횟수</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>memberStudentCertInfo</string>
+
+    <string>회원학생인증정보</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>memberId</string>
+
+    <string>회원 아이디</string>
+
+    <string>varchar(100)</string>
+
+    <string>Identifier_Member_Id</string>
+
+    <string>varchar</string>
+
+    <string>100</string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>stateType</string>
+
+    <string>상태 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>createdAt</string>
+
+    <string>생성 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>updatedAt</string>
+
+    <string>갱신 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>memberTicketInfo</string>
+
+    <string>회원 티켓 정보</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>ticketType</string>
+
+    <string>티켓 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>memberId</string>
+
+    <string>회원 아이디</string>
+
+    <string>varchar(100)</string>
+
+    <string>Identifier_Member_Id</string>
+
+    <string>varchar</string>
+
+    <string>100</string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>isUsed</string>
+
+    <string>사용 여부</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>usedAt</string>
+
+    <string>사용 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>createdAt</string>
+
+    <string>생성 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>updatedAt</string>
+
+    <string>갱신 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>memberType</string>
+
+    <string>회원 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>newsType</string>
+
+    <string>뉴스 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>공지 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>npc</string>
+
+    <string>NPC</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>npc아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>seqId</string>
+
+    <string>시퀀스 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>nameId</string>
+
+    <string>이름 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>mapPosType</string>
+
+    <string>위치 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>xPos</string>
+
+    <string>x좌표</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>yPos</string>
+
+    <string>y좌표</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>zPos</string>
+
+    <string>z좌표</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>xRot</string>
+
+    <string>x회전</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>yRot</string>
+
+    <string>y회전</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>zRot</string>
+
+    <string>z회전</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>scale</string>
+
+    <string>스케일</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>prefab</string>
+
+    <string>프리팹</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>npcMapPositionType</string>
+
+    <string>NPC 맵 위치</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>위치 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>npcSeq</string>
+
+    <string>NPC 시퀀스</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>시퀀스 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>textId</string>
+
+    <string>텍스트아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>aniName</string>
+
+    <string>애니메이션</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>npcSeqAct</string>
+
+    <string>NPC 시퀀스 액션</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>seqId</string>
+
+    <string>시퀀스 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>seqIdAct1</string>
+
+    <string>시퀀스 액션 1</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>seqIdText1</string>
+
+    <string>시퀀스 액션 1 텍스트</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>seqIdAct2</string>
+
+    <string>시퀀스 액션 2</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>seqIdText2</string>
+
+    <string>시퀀스 액션 2 텍스트</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>seqIdAct3</string>
+
+    <string>시퀀스 액션 3</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>seqIdText3</string>
+
+    <string>시퀀스 액션 3 텍스트</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>osType</string>
+
+    <string>OS 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>OS 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>storeUrl</string>
+
+    <string>스토어Url</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>paymentStateType</string>
+
+    <string>결제 상태 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>결제 상태 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>popupInfo</string>
+
+    <string>팝업 정보</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>adminId</string>
+
+    <string>관리자 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier_Identity</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>subject</string>
+
+    <string>제목</string>
+
+    <string>nvarchar(256)</string>
+
+    <string>Subject</string>
+
+    <string>nvarchar</string>
+
+    <string>256</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>popupType</string>
+
+    <string>팝업 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>imageName</string>
+
+    <string>이미지 이름</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>linkUrl</string>
+
+    <string>링크URL</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>isAlways</string>
+
+    <string>상시노출여부</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>begAt</string>
+
+    <string>시작 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>endAt</string>
+
+    <string>종료 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>createdAt</string>
+
+    <string>생성 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>updatedAt</string>
+
+    <string>갱신 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>popupType</string>
+
+    <string>팝업 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>providerType</string>
+
+    <string>제공 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>제공 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>quest</string>
+
+    <string>퀘스트</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>퀘스트아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>questGroupType</string>
+
+    <string>퀘스트 그룹 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>questStepType</string>
+
+    <string>퀘스트 단계 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>questNameType</string>
+
+    <string>퀘스트 이름 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>questMissionType</string>
+
+    <string>퀘스트 달성 미션 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>questConditionType</string>
+
+    <string>퀘스트 달성 조건 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>conditionMinValue</string>
+
+    <string>달성 조건 최소값</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>conditionMaxValue</string>
+
+    <string>달성 조건 최대값</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>questOpenType</string>
+
+    <string>퀘스트 오픈조건 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>openValue</string>
+
+    <string>오픈 조건 값</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>questRewardId</string>
+
+    <string>퀘스트 보상 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>questConditionType</string>
+
+    <string>퀘스트 달성 조건 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>퀘스트 달성 조건 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>questGroupType</string>
+
+    <string>퀘스트 그룹 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>퀘스트 그룹 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>questMissionType</string>
+
+    <string>퀘스트 달성 미션 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>퀘스트 달성 미션 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>nameId</string>
+
+    <string>이름</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>questNameType</string>
+
+    <string>퀘스트 이름 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>퀘스트 이름 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>nameId</string>
+
+    <string>이름</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>questOpenType</string>
+
+    <string>퀘스트 오픈조건 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>퀘스트 오픈조건 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>questReward</string>
+
+    <string>퀘스트 보상</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>퀘스트 보상 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>avatarPartsId</string>
+
+    <string>아바타 파츠 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>questRewardType</string>
+
+    <string>퀘스트 보상 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>questRewardType</string>
+
+    <string>퀘스트 보상 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>퀘스트 보상 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>nameId</string>
+
+    <string>이름</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>questStepType</string>
+
+    <string>퀘스트 단계 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>퀘스트 단계 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>nameId</string>
+
+    <string>이름</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>quizAnswerType</string>
+
+    <string>OX퀴즈 정답 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>정답 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>quizLevel</string>
+
+    <string>OX퀴즈 레벨</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>level</string>
+
+    <string>레벨</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>waitTime</string>
+
+    <string>대기시간</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>playTime</string>
+
+    <string>플레이시간</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>quizQuestionAnswer</string>
+
+    <string>OX퀴즈 정답</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>퀴즈 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>questionId</string>
+
+    <string>질문 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>answerType</string>
+
+    <string>정답 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>quizRoundTime</string>
+
+    <string>OX퀴즈 라운드 시간</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>round</string>
+
+    <string>라운드</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>TimeType</string>
+
+    <string>시간 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>quizTimeType</string>
+
+    <string>OX퀴즈 시간 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>시간 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>roleType</string>
+
+    <string>역할 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>역할 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>studentCertStateType</string>
+
+    <string>학생 인증 처리 상태 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>상태 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>ticket</string>
+
+    <string>티켓</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>티켓 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>price</string>
+
+    <string>가격</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>user</string>
+
+    <string>관리자</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>관리자 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier_Identity</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>email</string>
+
+    <string>이메일</string>
+
+    <string>varchar(64)</string>
+
+    <string>Identifier_Email</string>
+
+    <string>varchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>password</string>
+
+    <string>패스워드</string>
+
+    <string>varchar(100)</string>
+
+    <string>Identifier_Password</string>
+
+    <string>varchar</string>
+
+    <string>100</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>departmentType</string>
+
+    <string>소속 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>roleType</string>
+
+    <string>역할 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>createdAt</string>
+
+    <string>생성일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>updatedAt</string>
+
+    <string>갱신일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>loginedAt</string>
+
+    <string>접속일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+
+
+</ArrayOfArrayOfString>
