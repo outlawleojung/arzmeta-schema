@@ -4,6 +4,60 @@
 
 <ArrayOfString>
 
+    <string>areaType</string>
+
+    <string>구역 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>구역 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
     <string>avatarParts</string>
 
     <string>아바타 파츠</string>
@@ -2290,17 +2344,17 @@
 
 <ArrayOfString>
 
-    <string>num</string>
+    <string>memberId</string>
 
-    <string>번호</string>
+    <string>회원 아이디</string>
 
-    <string>integer</string>
+    <string>varchar(100)</string>
 
-    <string>Value</string>
+    <string>Identifier_Member_Id</string>
 
-    <string>integer</string>
+    <string>varchar</string>
 
-    <string></string>
+    <string>100</string>
 
     <string>1</string>
 
@@ -2330,17 +2384,17 @@
 
 <ArrayOfString>
 
-    <string>memberId</string>
+    <string>num</string>
 
-    <string>회원 아이디</string>
+    <string>번호</string>
 
-    <string>varchar(100)</string>
+    <string>integer</string>
 
-    <string>Identifier_Member_Id</string>
+    <string>Value</string>
 
-    <string>varchar</string>
+    <string>integer</string>
 
-    <string>100</string>
+    <string></string>
 
     <string>1</string>
 
@@ -3958,6 +4012,174 @@
 
 <ArrayOfString>
 
+    <string>videoScreenInfo</string>
+
+    <string>비디오 스크린 정보</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>스크린 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>worldType</string>
+
+    <string>월드 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>areaType</string>
+
+    <string>구역 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>스크린 이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>voteAlterResponse</string>
+
+    <string>투표 양일 응답</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>alterResType</string>
+
+    <string>양일 응답 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
     <string>voteAlterResType</string>
 
     <string>투표 양일 응답 타입</string>
@@ -4635,6 +4857,60 @@
     <string>type</string>
 
     <string>타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>worldType</string>
+
+    <string>월드 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>월드 타입</string>
 
     <string>integer</string>
 

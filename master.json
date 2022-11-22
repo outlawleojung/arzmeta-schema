@@ -1,4 +1,18 @@
 {
+  "AreaType": [
+    {
+      "type": 1,
+      "name": "월드 존"
+    },
+    {
+      "type": 2,
+      "name": "컨퍼런스존"
+    },
+    {
+      "type": 3,
+      "name": "커머스존"
+    }
+  ],
   "AvatarParts": [
     {
       "id": 1000,
@@ -50668,7 +50682,62 @@
       "name": "업데이트 필요"
     }
   ],
-
+  "ServerType": [
+    {
+      "type": 1,
+      "name": "DEV",
+      "accountServerUrl": "https://dev-account.arzmeta.net",
+      "agoraServerUrl": "ec2-43-201-98-116.ap-northeast-2.compute.amazonaws.com",
+      "contentServerUrl": "https://dev-content.arzmeta.net",
+      "lobbyServerUrl": "ec2-43-201-98-116.ap-northeast-2.compute.amazonaws.com",
+      "meetingRoomServerUrl": "ec2-43-201-98-116.ap-northeast-2.compute.amazonaws.com",
+      "meetingRoomServerPort": 45457,
+      "matchingServerUrl": "ec2-43-201-98-116.ap-northeast-2.compute.amazonaws.com",
+      "matchingServerPort": 45457,
+      "OXServerUrl": "ec2-43-201-98-116.ap-northeast-2.compute.amazonaws.com",
+      "OXServerPort": 45457,
+      "storageUrl": "https://dev-arzmeta-s3.s3.ap-northeast-2.amazonaws.com/",
+      "gameServerPort": 45457
+    }
+  ],
+  "VideoScreenInfo": [
+    {
+      "id": 1,
+      "worldType": 1,
+      "areaType": 1,
+      "screenName": "아즈월드A"
+    },
+    {
+      "id": 2,
+      "worldType": 1,
+      "areaType": 1,
+      "screenName": "아즈월드B"
+    },
+    {
+      "id": 3,
+      "worldType": 1,
+      "areaType": 1,
+      "screenName": "아즈월드C"
+    },
+    {
+      "id": 4,
+      "worldType": 1,
+      "areaType": 1,
+      "screenName": "아즈월드D"
+    },
+    {
+      "id": 5,
+      "worldType": 1,
+      "areaType": 2,
+      "screenName": "컨퍼런스 존 All"
+    },
+    {
+      "id": 6,
+      "worldType": 1,
+      "areaType": 3,
+      "screenName": "커머스 존 메인"
+    }
+  ],
   "VoteAlterResType": [
     {
       "type": 1,
@@ -50711,6 +50780,12 @@
     {
       "type": 3,
       "name": "득표율/득표수"
+    }
+  ],
+  "WorldType": [
+    {
+      "type": 1,
+      "name": "아즈월드"
     }
   ]
 }
