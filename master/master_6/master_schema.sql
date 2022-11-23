@@ -869,6 +869,16 @@ go
 
 
 
+CREATE TABLE worldAreaInfo
+( 
+	worldType            Identifier ,
+	areaType             Identifier ,
+	CONSTRAINT worldAreaInfo_PK PRIMARY KEY  CLUSTERED (worldType ASC,areaType ASC)
+)
+go
+
+
+
 CREATE TABLE worldType
 ( 
 	type                 Identifier ,
@@ -1204,6 +1214,20 @@ go
 
 ALTER TABLE voteInfoExample
 	ADD CONSTRAINT R_3311 FOREIGN KEY (voteId) REFERENCES voteInfo(id)
+go
+
+
+
+
+ALTER TABLE worldAreaInfo
+	ADD CONSTRAINT R_3322 FOREIGN KEY (worldType) REFERENCES worldType(type)
+go
+
+
+
+
+ALTER TABLE worldAreaInfo
+	ADD CONSTRAINT R_3324 FOREIGN KEY (areaType) REFERENCES areaType(type)
 go
 
 

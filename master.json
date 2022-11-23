@@ -50806,6 +50806,20 @@
       "name": "득표율/득표수"
     }
   ],
+  "WorldAreaInfo": [
+    {
+      "worldType": 1,
+      "areaType": 1
+    },
+    {
+      "worldType": 1,
+      "areaType": 2
+    },
+    {
+      "worldType": 1,
+      "areaType": 3
+    }
+  ],
   "WorldType": [
     {
       "type": 1,

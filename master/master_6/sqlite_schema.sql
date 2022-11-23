@@ -489,6 +489,13 @@ create table if not exists voteStateType
     primary key(type)
 )
 ;
+create table if not exists worldAreaInfo
+(
+    worldType            int(11),
+    areaType             int(11),
+    primary key(worldType,areaType)
+)
+;
 create table if not exists worldType
 (
     type                 int(11),

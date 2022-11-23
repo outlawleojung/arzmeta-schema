@@ -12094,4 +12094,8 @@ insert into videoScreenInfo ( id, worldType, areaType, name ) values ( 1004,  1,
 insert into videoScreenInfo ( id, worldType, areaType, name ) values ( 1005,  1,  2,  '컨퍼런스 존 All' );
 insert into videoScreenInfo ( id, worldType, areaType, name ) values ( 1006,  1,  3,  '커머스 존 메인' );
 
+insert into worldAreaInfo ( worldType, areaType ) values ( 1,  1 );
+insert into worldAreaInfo ( worldType, areaType ) values ( 1,  2 );
+insert into worldAreaInfo ( worldType, areaType ) values ( 1,  3 );
+
 
