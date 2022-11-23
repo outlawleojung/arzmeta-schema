@@ -50664,6 +50664,24 @@
       "name": "월드씬"
     }
   ],
+  "ReportType": [
+    {
+      "type": 1,
+      "name": "욕설 및 비방"
+    },
+    {
+      "type": 2,
+      "name": "광고/음란"
+    },
+    {
+      "type": 3,
+      "name": "사칭"
+    },
+    {
+      "type": 4,
+      "name": "도배"
+    }
+  ],
   "ServerState": [
     {
       "state": 1,
@@ -50736,6 +50754,12 @@
       "worldType": 1,
       "areaType": 3,
       "screenName": "커머스 존 메인"
+    },
+    {
+      "id": 7,
+      "worldType": 2,
+      "areaType": 1,
+      "screenName": "123"
     }
   ],
   "VoteAlterResType": [
@@ -50786,6 +50810,14 @@
     {
       "type": 1,
       "name": "아즈월드"
+    },
+    {
+      "type": 2,
+      "name": "부산월드"
+    },
+    {
+      "type": 3,
+      "name": "프티프티"
     }
   ]
 }
