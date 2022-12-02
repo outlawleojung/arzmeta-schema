@@ -342,6 +342,16 @@ go
 
 
 
+CREATE TABLE categoryType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT categoryType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE commerceZoneMannequin
 ( 
 	id                   Identifier ,
@@ -396,6 +406,81 @@ go
 
 
 
+CREATE TABLE gradeType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT gradeType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE interiorInstallInfo
+( 
+	categoryType         Identifier ,
+	layerType            Identifier ,
+	CONSTRAINT interiorInstallInfo_PK PRIMARY KEY  CLUSTERED (categoryType ASC,layerType ASC)
+)
+go
+
+
+
+CREATE TABLE interiorSize
+( 
+	itemId               Identifier ,
+	xSize                Identifier ,
+	ySize                Identifier ,
+	CONSTRAINT interiorSize_PK PRIMARY KEY  CLUSTERED (itemId ASC)
+)
+go
+
+
+
+CREATE TABLE inventoryCapacity
+( 
+	itemType             Identifier ,
+	capacity             Value ,
+	CONSTRAINT inventoryCapacity_PK PRIMARY KEY  CLUSTERED (itemType ASC)
+)
+go
+
+
+
+CREATE TABLE item
+( 
+	id                   Identifier ,
+	itemType             Identifier ,
+	categoryType         Identifier ,
+	packageType          Identifier ,
+	name                 Nickname ,
+	desc                 Nickname ,
+	prefab               Nickname ,
+	material             Nickname ,
+	thumbnail            Nickname ,
+	capacity             Identifier ,
+	isNesting            Value ,
+	purchaseType         Identifier ,
+	purchasePrice        Value ,
+	saleType             Identifier ,
+	salePrice            Value ,
+	gradeType            Identifier ,
+	CONSTRAINT item_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE itemType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT itemType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE jumpingMatchingGameType
 ( 
 	type                 Identifier ,
@@ -435,6 +520,27 @@ go
 
 
 
+CREATE TABLE layerType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT layerType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE localization
+( 
+	id                   Nickname ,
+	kor                  Content ,
+	eng                  Content ,
+	CONSTRAINT localization_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
 CREATE TABLE mannequinModelType
 ( 
 	type                 Identifier ,
@@ -450,6 +556,22 @@ CREATE TABLE mannequinPurchaseState
 	modelType            Identifier ,
 	stateType            Identifier ,
 	CONSTRAINT mannequinPurchaseState_PK PRIMARY KEY  CLUSTERED (modelType ASC)
+)
+go
+
+
+
+CREATE TABLE meberMyRoomItemInfo
+( 
+	memberId             Identifier_Member_Id  NOT NULL ,
+	id                   Identifier ,
+	gridId               Name ,
+	x                    Identifier ,
+	y                    Identifier ,
+	rotation             Identifier ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT meberMyRoomItemInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,id ASC)
 )
 go
 
@@ -506,6 +628,33 @@ CREATE TABLE memberAvatarInfo
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
 	CONSTRAINT memberAvatarInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,avatarPartsType ASC)
+)
+go
+
+
+
+CREATE TABLE memberFurnitureItemInven
+( 
+	memberId             Identifier_Member_Id  NOT NULL ,
+	id                   Identifier ,
+	count                Value ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT memberFurnitureItemInven_PK PRIMARY KEY  CLUSTERED (memberId ASC,id ASC)
+)
+go
+
+
+
+CREATE TABLE memberItemInven
+( 
+	memberId             Identifier_Member_Id  NOT NULL ,
+	itemId               Identifier ,
+	num                  Value ,
+	count                Value ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT memberItemInven_PK PRIMARY KEY  CLUSTERED (memberId ASC,itemId ASC,num ASC)
 )
 go
 
@@ -631,6 +780,16 @@ go
 
 
 
+CREATE TABLE packageType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT packageType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE popupInfo
 ( 
 	id                   Identifier ,
@@ -665,6 +824,16 @@ CREATE TABLE providerType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT providerType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE purchaseType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT purchaseType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -737,6 +906,26 @@ CREATE TABLE roleType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT roleType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE saleType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT saleType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE Type
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT Type_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -981,6 +1170,90 @@ go
 
 
 
+ALTER TABLE interiorInstallInfo
+	ADD CONSTRAINT R_3331 FOREIGN KEY (categoryType) REFERENCES categoryType(type)
+go
+
+
+
+
+ALTER TABLE interiorInstallInfo
+	ADD CONSTRAINT R_3333 FOREIGN KEY (layerType) REFERENCES layerType(type)
+go
+
+
+
+
+ALTER TABLE interiorSize
+	ADD CONSTRAINT R_3334 FOREIGN KEY (itemId) REFERENCES item(id)
+go
+
+
+
+
+ALTER TABLE inventoryCapacity
+	ADD CONSTRAINT R_3337 FOREIGN KEY (itemType) REFERENCES itemType(type)
+go
+
+
+
+
+ALTER TABLE item
+	ADD CONSTRAINT R_3325 FOREIGN KEY (itemType) REFERENCES itemType(type)
+go
+
+
+
+
+ALTER TABLE item
+	ADD CONSTRAINT R_3326 FOREIGN KEY (categoryType) REFERENCES categoryType(type)
+go
+
+
+
+
+ALTER TABLE item
+	ADD CONSTRAINT R_3327 FOREIGN KEY (packageType) REFERENCES packageType(type)
+go
+
+
+
+
+ALTER TABLE item
+	ADD CONSTRAINT R_3328 FOREIGN KEY (purchaseType) REFERENCES purchaseType(type)
+go
+
+
+
+
+ALTER TABLE item
+	ADD CONSTRAINT R_3329 FOREIGN KEY (saleType) REFERENCES saleType(type)
+go
+
+
+
+
+ALTER TABLE item
+	ADD CONSTRAINT R_3330 FOREIGN KEY (gradeType) REFERENCES gradeType(type)
+go
+
+
+
+
+ALTER TABLE item
+	ADD CONSTRAINT R_3340 FOREIGN KEY (name) REFERENCES localization(id)
+go
+
+
+
+
+ALTER TABLE item
+	ADD CONSTRAINT R_3341 FOREIGN KEY (desc) REFERENCES localization(id)
+go
+
+
+
+
 ALTER TABLE jumpingMatchingLevel
 	ADD CONSTRAINT R_3266 FOREIGN KEY (gameType) REFERENCES jumpingMatchingGameType(type)
 go
@@ -997,6 +1270,13 @@ go
 
 ALTER TABLE mannequinPurchaseState
 	ADD CONSTRAINT R_3300 FOREIGN KEY (stateType) REFERENCES avatarPartsStateType(type)
+go
+
+
+
+
+ALTER TABLE meberMyRoomItemInfo
+	ADD CONSTRAINT R_3346 FOREIGN KEY (memberId,id) REFERENCES memberFurnitureItemInven(memberId,id)
 go
 
 
@@ -1039,6 +1319,34 @@ go
 
 ALTER TABLE memberAvatarInfo
 	ADD CONSTRAINT R_3255 FOREIGN KEY (avatarPartsId) REFERENCES avatarParts(id)
+go
+
+
+
+
+ALTER TABLE memberFurnitureItemInven
+	ADD CONSTRAINT R_3344 FOREIGN KEY (memberId) REFERENCES member(memberId)
+go
+
+
+
+
+ALTER TABLE memberFurnitureItemInven
+	ADD CONSTRAINT R_3345 FOREIGN KEY (id) REFERENCES item(id)
+go
+
+
+
+
+ALTER TABLE memberItemInven
+	ADD CONSTRAINT R_3335 FOREIGN KEY (memberId) REFERENCES member(memberId)
+go
+
+
+
+
+ALTER TABLE memberItemInven
+	ADD CONSTRAINT R_3336 FOREIGN KEY (itemId) REFERENCES item(id)
 go
 
 

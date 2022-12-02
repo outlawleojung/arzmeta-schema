@@ -103,6 +103,13 @@ create table if not exists avatarPresetType
     primary key(type)
 )
 ;
+create table if not exists categoryType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
 create table if not exists commerceZoneMannequin
 (
     id                   int(11),
@@ -142,6 +149,63 @@ create table if not exists forbiddenWords
     primary key(id)
 )
 ;
+create table if not exists gradeType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
+create table if not exists interiorInstallInfo
+(
+    categoryType         int(11),
+    layerType            int(11),
+    primary key(categoryType,layerType)
+)
+;
+create table if not exists interiorSize
+(
+    itemId               int(11),
+    xSize                int(11),
+    ySize                int(11),
+    primary key(itemId)
+)
+;
+create table if not exists inventoryCapacity
+(
+    itemType             int(11),
+    capacity            int(11),
+    primary key(itemType)
+)
+;
+create table if not exists item
+(
+    id                   int(11),
+    itemType             int(11),
+    categoryType         int(11),
+    packageType          int(11),
+    name                varchar(64),
+    desc                varchar(64),
+    prefab              varchar(64),
+    material            varchar(64),
+    thumbnail           varchar(64),
+    capacity             int(11),
+    isNesting           int(11),
+    purchaseType         int(11),
+    purchasePrice       int(11),
+    saleType             int(11),
+    salePrice           int(11),
+    gradeType            int(11),
+    primary key(id)
+)
+;
+create table if not exists itemType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
 create table if not exists jumpingMatchingGameType
 (
     type                 int(11),
@@ -172,6 +236,21 @@ create table if not exists languageType
     primary key(type)
 )
 ;
+create table if not exists layerType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
+create table if not exists localization
+(
+    id                  varchar(64),
+    kor                  varchar(2048) ,
+    eng                  varchar(2048) ,
+    primary key(id)
+)
+;
 create table if not exists mannequinModelType
 (
     type                 int(11),
@@ -184,6 +263,19 @@ create table if not exists mannequinPurchaseState
     modelType            int(11),
     stateType            int(11),
     primary key(modelType)
+)
+;
+create table if not exists meberMyRoomItemInfo
+(
+    memberId             varchar(100)    ,
+    id                   int(11),
+    gridId              varchar(64),
+    x                    int(11),
+    y                    int(11),
+    rotation             int(11),
+    createdAt            datetime ,
+    updatedAt            datetime ,
+    primary key(memberId,id)
 )
 ;
 create table if not exists member
@@ -216,6 +308,27 @@ create table if not exists memberAvatarInfo
     createdAt            datetime ,
     updatedAt            datetime ,
     primary key(memberId,avatarPartsType)
+)
+;
+create table if not exists memberFurnitureItemInven
+(
+    memberId             varchar(100)    ,
+    id                   int(11),
+    count               int(11),
+    createdAt            datetime ,
+    updatedAt            datetime ,
+    primary key(memberId,id)
+)
+;
+create table if not exists memberItemInven
+(
+    memberId             varchar(100)    ,
+    itemId               int(11),
+    num                 int(11),
+    count               int(11),
+    createdAt            datetime ,
+    updatedAt            datetime ,
+    primary key(memberId,itemId,num)
 )
 ;
 create table if not exists memberNumForRegister
@@ -311,6 +424,13 @@ create table if not exists osType
     primary key(type)
 )
 ;
+create table if not exists packageType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
 create table if not exists popupInfo
 (
     id                   int(11),
@@ -335,6 +455,13 @@ create table if not exists popupType
 )
 ;
 create table if not exists providerType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
+create table if not exists purchaseType
 (
     type                 int(11),
     name                varchar(64),
@@ -386,6 +513,20 @@ create table if not exists reportType
 )
 ;
 create table if not exists roleType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
+create table if not exists saleType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
+create table if not exists Type
 (
     type                 int(11),
     name                varchar(64),

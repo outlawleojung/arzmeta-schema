@@ -50705,17 +50705,18 @@
       "type": 1,
       "name": "DEV",
       "accountServerUrl": "https://dev-account.arzmeta.net",
-      "agoraServerUrl": "ec2-43-201-98-116.ap-northeast-2.compute.amazonaws.com",
+      "agoraServerUrl": "https://dev-agora.arzmeta.net",
       "contentServerUrl": "https://dev-content.arzmeta.net",
-      "lobbyServerUrl": "ec2-43-201-98-116.ap-northeast-2.compute.amazonaws.com",
-      "meetingRoomServerUrl": "ec2-43-201-98-116.ap-northeast-2.compute.amazonaws.com",
+      "lobbyServerUrl": "http://20.249.49.123:45457",
+      "meetingRoomServerUrl": "http://20.249.50.110",
       "meetingRoomServerPort": 45457,
-      "matchingServerUrl": "ec2-43-201-98-116.ap-northeast-2.compute.amazonaws.com",
+      "matchingServerUrl": "http://20.214.77.2",
       "matchingServerPort": 45457,
-      "OXServerUrl": "ec2-43-201-98-116.ap-northeast-2.compute.amazonaws.com",
+      "OXServerUrl": "http://20.249.126.124",
       "OXServerPort": 45457,
       "storageUrl": "https://dev-arzmeta-s3.s3.ap-northeast-2.amazonaws.com/",
-      "gameServerPort": 45457
+      "homepageUrl": "https://dev.arzmeta.net",
+      "gameServerPort": 45456
     }
   ],
   "VideoScreenInfo": [
@@ -50818,6 +50819,10 @@
     {
       "worldType": 1,
       "areaType": 3
+    },
+    {
+      "worldType": 2,
+      "areaType": 1
     }
   ],
   "WorldType": [
@@ -50832,6 +50837,239 @@
     {
       "type": 3,
       "name": "프티프티"
+    }
+  ],
+  "CategoryType": [
+    {
+      "type": 1001,
+      "name": "소모품"
+    },
+    {
+      "type": 1002,
+      "name": "생산품"
+    },
+    {
+      "type": 1003,
+      "name": "재료"
+    },
+    {
+      "type": 1004,
+      "name": "도구"
+    },
+    {
+      "type": 1005,
+      "name": "탈 것"
+    },
+    {
+      "type": 1006,
+      "name": "펫"
+    },
+    {
+      "type": 1007,
+      "name": "기타"
+    },
+    {
+      "type": 2001,
+      "name": "가구"
+    },
+    {
+      "type": 2002,
+      "name": "장식"
+    },
+    {
+      "type": 2003,
+      "name": "특수"
+    },
+    {
+      "type": 2004,
+      "name": "바닥"
+    },
+    {
+      "type": 3001,
+      "name": "헤어"
+    },
+    {
+      "type": 3002,
+      "name": "상의"
+    },
+    {
+      "type": 3003,
+      "name": "하의"
+    },
+    {
+      "type": 3004,
+      "name": "전신"
+    },
+    {
+      "type": 3005,
+      "name": "신발"
+    },
+    {
+      "type": 3006,
+      "name": "액세서리"
+    }
+  ],
+  "GradeType": [
+    {
+      "type": 1,
+      "name": "일반"
+    },
+    {
+      "type": 2,
+      "name": "중급"
+    },
+    {
+      "type": 3,
+      "name": "상급"
+    },
+    {
+      "type": 4,
+      "name": "최상급"
+    }
+  ],
+  "InteriorInstallInfo": [
+    {
+      "categoryType": 2001,
+      "layerType": 1
+    },
+    {
+      "categoryType": 2002,
+      "layerType": 1
+    },
+    {
+      "categoryType": 2003,
+      "layerType": 1
+    },
+    {
+      "categoryType": 2004,
+      "layerType": 2
+    }
+  ],
+  "InteriorSize": [
+    {
+      "itemId": 110000,
+      "xSize": 2,
+      "ySize": 2
+    }
+  ],
+  "InventoryCapacity": [
+    {
+      "itemType": 1,
+      "capacity": 100
+    },
+    {
+      "itemType": 2,
+      "capacity": 0
+    },
+    {
+      "itemType": 3,
+      "capacity": 0
+    }
+  ],
+  "Item": [
+    {
+      "id": 110000,
+      "itemType": 1,
+      "categoryType": 1001,
+      "packageType": 1,
+      "name": "item_NE_test",
+      "description": "item_NE_test_description",
+      "prefab": "arz_item_NE0000_prefab",
+      "material": "arz_item_NE0000_mat",
+      "thumbnail": "arz_item_NE0000_thum",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 1,
+      "purchasePrice": 10,
+      "saleType": 1,
+      "salePrice": 10,
+      "gradeType": 1
+    }
+  ],
+  "ItemType": [
+    {
+      "type": 1,
+      "name": "일반 아이템"
+    },
+    {
+      "type": 2,
+      "name": "인테리어"
+    },
+    {
+      "type": 3,
+      "name": "코스튬"
+    }
+  ],
+  "LayerType": [
+    {
+      "type": 1,
+      "name": "오브젝트"
+    },
+    {
+      "type": 2,
+      "name": "바닥"
+    }
+  ],
+  "Localization": [
+    {
+      "id": "item_NE_test",
+      "kor": "테스트 아이템",
+      "eng": "test item"
+    },
+    {
+      "id": "item_NE_test_description",
+      "kor": "테스트 아이템의 상세 정보입니다.",
+      "eng": "This is test item."
+    }
+  ],
+  "PackageType": [
+    {
+      "type": 1,
+      "name": "패키지 없음"
+    }
+  ],
+  "PurchaseType": [
+    {
+      "type": 1,
+      "name": "비매품"
+    },
+    {
+      "type": 2,
+      "name": "무료재화"
+    },
+    {
+      "type": 3,
+      "name": "반유료재화"
+    },
+    {
+      "type": 4,
+      "name": "유료재화"
+    },
+    {
+      "type": 5,
+      "name": "이벤트재화"
+    }
+  ],
+  "SaleType": [
+    {
+      "type": 1,
+      "name": "비매품"
+    },
+    {
+      "type": 2,
+      "name": "무료재화"
+    },
+    {
+      "type": 3,
+      "name": "반유료재화"
+    },
+    {
+      "type": 4,
+      "name": "유료재화"
+    },
+    {
+      "type": 5,
+      "name": "이벤트재화"
     }
   ]
 }
