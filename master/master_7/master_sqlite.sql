@@ -322,6 +322,25 @@ insert into avatarParts ( id, chatId, avatarPartsType, prefabName, materialName,
 insert into avatarParts ( id, chatId, avatarPartsType, prefabName, materialName, thumbnailName, productThumbnailName, effectName, aniName, divisionType, questText, nameId, sizeType, colorType, groupType, partsOrder, description) values ( 6009,  609,  6,  'CG_A_Acc002',  'CG_A_Acc002_4',  'T_Acc009',  NULL,  'EF_Costume_02',  'emote_talk04',  1,  0,  2127,  1,  1,  1,  33,  '옐로우 수염' );
 insert into avatarParts ( id, chatId, avatarPartsType, prefabName, materialName, thumbnailName, productThumbnailName, effectName, aniName, divisionType, questText, nameId, sizeType, colorType, groupType, partsOrder, description) values ( 6010,  610,  6,  'CG_A_Acc003',  'CG_A_Acc003',  'T_Acc010',  NULL,  'EF_mark',  'emote_talk02',  2,  715,  2128,  1,  1,  1,  34,  '블랙 선글라스' );
 
+insert into avatarPreset ( presetType, partsType, partsId) values ( 1,  1,  1001 );
+insert into avatarPreset ( presetType, partsType, partsId) values ( 1,  2,  2005 );
+insert into avatarPreset ( presetType, partsType, partsId) values ( 1,  3,  3009 );
+insert into avatarPreset ( presetType, partsType, partsId) values ( 1,  5,  5011 );
+insert into avatarPreset ( presetType, partsType, partsId) values ( 1,  6,  6000 );
+insert into avatarPreset ( presetType, partsType, partsId) values ( 2,  1,  1009 );
+insert into avatarPreset ( presetType, partsType, partsId) values ( 2,  2,  2008 );
+insert into avatarPreset ( presetType, partsType, partsId) values ( 2,  3,  3014 );
+insert into avatarPreset ( presetType, partsType, partsId) values ( 2,  5,  5001 );
+insert into avatarPreset ( presetType, partsType, partsId) values ( 2,  6,  6000 );
+insert into avatarPreset ( presetType, partsType, partsId) values ( 3,  1,  1006 );
+insert into avatarPreset ( presetType, partsType, partsId) values ( 3,  4,  4001 );
+insert into avatarPreset ( presetType, partsType, partsId) values ( 3,  6,  6000 );
+insert into avatarPreset ( presetType, partsType, partsId) values ( 4,  1,  1010 );
+insert into avatarPreset ( presetType, partsType, partsId) values ( 4,  2,  2010 );
+insert into avatarPreset ( presetType, partsType, partsId) values ( 4,  3,  3005 );
+insert into avatarPreset ( presetType, partsType, partsId) values ( 4,  5,  5006 );
+insert into avatarPreset ( presetType, partsType, partsId) values ( 4,  6,  6000 );
+
 insert into forbiddenWords ( id, text) values ( 1,  '_com' );
 insert into forbiddenWords ( id, text) values ( 2,  '_kr' );
 insert into forbiddenWords ( id, text) values ( 3,  '_net' );
