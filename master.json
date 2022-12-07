@@ -3269,8 +3269,116 @@
       "name": "액세서리"
     }
   ],
-  "AvatarPreset": [],
-  "AvatarPresetType": [],
+  "AvatarPreset": [
+    {
+      "presetType": 1,
+      "partsType": 1,
+      "partsId": 1001
+    },
+    {
+      "presetType": 3,
+      "partsType": 1,
+      "partsId": 1006
+    },
+    {
+      "presetType": 2,
+      "partsType": 1,
+      "partsId": 1009
+    },
+    {
+      "presetType": 4,
+      "partsType": 1,
+      "partsId": 1010
+    },
+    {
+      "presetType": 1,
+      "partsType": 2,
+      "partsId": 2005
+    },
+    {
+      "presetType": 2,
+      "partsType": 2,
+      "partsId": 2008
+    },
+    {
+      "presetType": 4,
+      "partsType": 2,
+      "partsId": 2010
+    },
+    {
+      "presetType": 4,
+      "partsType": 3,
+      "partsId": 3005
+    },
+    {
+      "presetType": 1,
+      "partsType": 3,
+      "partsId": 3009
+    },
+    {
+      "presetType": 2,
+      "partsType": 3,
+      "partsId": 3014
+    },
+    {
+      "presetType": 3,
+      "partsType": 4,
+      "partsId": 4001
+    },
+    {
+      "presetType": 2,
+      "partsType": 5,
+      "partsId": 5001
+    },
+    {
+      "presetType": 4,
+      "partsType": 5,
+      "partsId": 5006
+    },
+    {
+      "presetType": 1,
+      "partsType": 5,
+      "partsId": 5011
+    },
+    {
+      "presetType": 1,
+      "partsType": 6,
+      "partsId": 6000
+    },
+    {
+      "presetType": 2,
+      "partsType": 6,
+      "partsId": 6000
+    },
+    {
+      "presetType": 3,
+      "partsType": 6,
+      "partsId": 6000
+    },
+    {
+      "presetType": 4,
+      "partsType": 6,
+      "partsId": 6000
+    }
+  ],
+  "AvatarPresetType": [
+    {
+      "type": 1,
+      "name": "프리셋1"
+    },
+    {
+      "type": 2,
+      "name": "프리셋2"
+    },
+    {
+      "type": 3,
+      "name": "프리셋3"
+    },
+    {
+      "type": 4,
+      "name": "프리셋4"
+    }
+  ],
   "BooleanType": [
     {
       "type": 0,
@@ -50982,7 +51090,421 @@
       "purchaseType": 1,
       "purchasePrice": 10,
       "saleType": 1,
-      "salePrice": 10,
+      "salePrice": 7,
+      "gradeType": 1
+    },
+    {
+      "id": 211001,
+      "itemType": 2,
+      "categoryType": 2001,
+      "packageType": 1,
+      "name": "item_My_Bed_01",
+      "description": "item_My_Bed_01_description",
+      "prefab": "My_Bed_01",
+      "material": "My_Bed_01",
+      "thumbnail": "My_Bed_01",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 500,
+      "saleType": 2,
+      "salePrice": 350,
+      "gradeType": 1
+    },
+    {
+      "id": 212001,
+      "itemType": 2,
+      "categoryType": 2001,
+      "packageType": 1,
+      "name": "item_My_Chair_01",
+      "description": "item_My_Chair_01_description",
+      "prefab": "My_Chair_01",
+      "material": "My_Chair_01",
+      "thumbnail": "My_Chair_01",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 100,
+      "saleType": 2,
+      "salePrice": 70,
+      "gradeType": 1
+    },
+    {
+      "id": 212002,
+      "itemType": 2,
+      "categoryType": 2001,
+      "packageType": 1,
+      "name": "item_My_Chair_02",
+      "description": "item_My_Chair_02_description",
+      "prefab": "My_Chair_02",
+      "material": "My_Chair_02",
+      "thumbnail": "My_Chair_02",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 150,
+      "saleType": 2,
+      "salePrice": 105,
+      "gradeType": 1
+    },
+    {
+      "id": 213001,
+      "itemType": 2,
+      "categoryType": 2001,
+      "packageType": 1,
+      "name": "item_My_Drawer_01",
+      "description": "item_My_Drawer_01_description",
+      "prefab": "My_Drawer_01",
+      "material": "My_Drawer_01",
+      "thumbnail": "My_Drawer_01",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 200,
+      "saleType": 2,
+      "salePrice": 140,
+      "gradeType": 1
+    },
+    {
+      "id": 213002,
+      "itemType": 2,
+      "categoryType": 2001,
+      "packageType": 1,
+      "name": "item_My_Drawer_02",
+      "description": "item_My_Drawer_02_description",
+      "prefab": "My_Drawer_02",
+      "material": "My_Drawer_02",
+      "thumbnail": "My_Drawer_02",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 80,
+      "saleType": 2,
+      "salePrice": 56,
+      "gradeType": 1
+    },
+    {
+      "id": 213003,
+      "itemType": 2,
+      "categoryType": 2001,
+      "packageType": 1,
+      "name": "item_My_Drawer_03",
+      "description": "item_My_Drawer_03_description",
+      "prefab": "My_Drawer_03",
+      "material": "My_Drawer_03",
+      "thumbnail": "My_Drawer_03",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 120,
+      "saleType": 2,
+      "salePrice": 84,
+      "gradeType": 1
+    },
+    {
+      "id": 213004,
+      "itemType": 2,
+      "categoryType": 2001,
+      "packageType": 1,
+      "name": "item_My_Drawer_04",
+      "description": "item_My_Drawer_04_description",
+      "prefab": "My_Drawer_04",
+      "material": "My_Drawer_04",
+      "thumbnail": "My_Drawer_04",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 270,
+      "saleType": 2,
+      "salePrice": 189,
+      "gradeType": 1
+    },
+    {
+      "id": 213005,
+      "itemType": 2,
+      "categoryType": 2001,
+      "packageType": 1,
+      "name": "item_My_Drawer_05",
+      "description": "item_My_Drawer_05_description",
+      "prefab": "My_Drawer_05",
+      "material": "My_Drawer_05",
+      "thumbnail": "My_Drawer_05",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 200,
+      "saleType": 2,
+      "salePrice": 140,
+      "gradeType": 1
+    },
+    {
+      "id": 213006,
+      "itemType": 2,
+      "categoryType": 2001,
+      "packageType": 1,
+      "name": "item_My_Drawer_06",
+      "description": "item_My_Drawer_06_description",
+      "prefab": "My_Drawer_06",
+      "material": "My_Drawer_06",
+      "thumbnail": "My_Drawer_06",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 220,
+      "saleType": 2,
+      "salePrice": 154,
+      "gradeType": 1
+    },
+    {
+      "id": 214001,
+      "itemType": 2,
+      "categoryType": 2001,
+      "packageType": 1,
+      "name": "item_My_Sofa_01",
+      "description": "item_My_Sofa_01_description",
+      "prefab": "My_Sofa_01",
+      "material": "My_Sofa_01",
+      "thumbnail": "My_Sofa_01",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 150,
+      "saleType": 2,
+      "salePrice": 105,
+      "gradeType": 1
+    },
+    {
+      "id": 214002,
+      "itemType": 2,
+      "categoryType": 2001,
+      "packageType": 1,
+      "name": "item_My_Sofa_02",
+      "description": "item_My_Sofa_02_description",
+      "prefab": "My_Sofa_02",
+      "material": "My_Sofa_02",
+      "thumbnail": "My_Sofa_02",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 250,
+      "saleType": 2,
+      "salePrice": 175,
+      "gradeType": 1
+    },
+    {
+      "id": 214003,
+      "itemType": 2,
+      "categoryType": 2001,
+      "packageType": 1,
+      "name": "item_My_Sofa_03",
+      "description": "item_My_Sofa_03_description",
+      "prefab": "My_Sofa_03",
+      "material": "My_Sofa_03",
+      "thumbnail": "My_Sofa_03",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 250,
+      "saleType": 2,
+      "salePrice": 175,
+      "gradeType": 1
+    },
+    {
+      "id": 215001,
+      "itemType": 2,
+      "categoryType": 2001,
+      "packageType": 1,
+      "name": "item_My_Table_01",
+      "description": "item_My_Table_01_description",
+      "prefab": "My_Table_01",
+      "material": "My_Table_01",
+      "thumbnail": "My_Table_01",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 300,
+      "saleType": 2,
+      "salePrice": 210,
+      "gradeType": 1
+    },
+    {
+      "id": 215002,
+      "itemType": 2,
+      "categoryType": 2001,
+      "packageType": 1,
+      "name": "item_My_Table_02",
+      "description": "item_My_Table_02_description",
+      "prefab": "My_Table_02",
+      "material": "My_Table_02",
+      "thumbnail": "My_Table_02",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 110,
+      "saleType": 2,
+      "salePrice": 77,
+      "gradeType": 1
+    },
+    {
+      "id": 215003,
+      "itemType": 2,
+      "categoryType": 2001,
+      "packageType": 1,
+      "name": "item_My_Table_03",
+      "description": "item_My_Table_03_description",
+      "prefab": "My_Table_03",
+      "material": "My_Table_03",
+      "thumbnail": "My_Table_03",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 270,
+      "saleType": 2,
+      "salePrice": 189,
+      "gradeType": 1
+    },
+    {
+      "id": 215004,
+      "itemType": 2,
+      "categoryType": 2001,
+      "packageType": 1,
+      "name": "item_My_Table_04",
+      "description": "item_My_Table_04_description",
+      "prefab": "My_Table_04",
+      "material": "My_Table_04",
+      "thumbnail": "My_Table_04",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 270,
+      "saleType": 2,
+      "salePrice": 189,
+      "gradeType": 1
+    },
+    {
+      "id": 215005,
+      "itemType": 2,
+      "categoryType": 2001,
+      "packageType": 1,
+      "name": "item_My_Table_05",
+      "description": "item_My_Table_05_description",
+      "prefab": "My_Table_05",
+      "material": "My_Table_05",
+      "thumbnail": "My_Table_05",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 150,
+      "saleType": 2,
+      "salePrice": 105,
+      "gradeType": 1
+    },
+    {
+      "id": 220001,
+      "itemType": 2,
+      "categoryType": 2002,
+      "packageType": 1,
+      "name": "item_My_Lamp_01",
+      "description": "item_My_Lamp_01_description",
+      "prefab": "My_Lamp_01",
+      "material": "My_Lamp_01",
+      "thumbnail": "My_Lamp_01",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 120,
+      "saleType": 2,
+      "salePrice": 84,
+      "gradeType": 1
+    },
+    {
+      "id": 220002,
+      "itemType": 2,
+      "categoryType": 2002,
+      "packageType": 1,
+      "name": "item_My_Wall_Pop_01",
+      "description": "item_My_Wall_Pop_01_description",
+      "prefab": "My_Wall_Pop_01",
+      "material": "My_Wall_Pop_01",
+      "thumbnail": "My_Wall_Pop_01",
+      "isNesting": 1,
+      "capacity": 30,
+      "purchaseType": 2,
+      "purchasePrice": 180,
+      "saleType": 2,
+      "salePrice": 126,
+      "gradeType": 1
+    },
+    {
+      "id": 230001,
+      "itemType": 2,
+      "categoryType": 2003,
+      "packageType": 1,
+      "name": "item_Mirror_01",
+      "description": "item_Mirror_01_description",
+      "prefab": "Mirror_01",
+      "material": "Mirror_01",
+      "thumbnail": "Mirror_01",
+      "isNesting": 0,
+      "capacity": 1,
+      "purchaseType": 1,
+      "purchasePrice": 0,
+      "saleType": 1,
+      "salePrice": 0,
+      "gradeType": 1
+    },
+    {
+      "id": 230002,
+      "itemType": 2,
+      "categoryType": 2003,
+      "packageType": 1,
+      "name": "item_MapPrint_01",
+      "description": "item_MapPrint_01_description",
+      "prefab": "MapPrint_01",
+      "material": "MapPrint_01",
+      "thumbnail": "MapPrint_01",
+      "isNesting": 0,
+      "capacity": 1,
+      "purchaseType": 1,
+      "purchasePrice": 0,
+      "saleType": 1,
+      "salePrice": 0,
+      "gradeType": 1
+    },
+    {
+      "id": 230003,
+      "itemType": 2,
+      "categoryType": 2003,
+      "packageType": 1,
+      "name": "item_Magazine_01",
+      "description": "item_Magazine_01_description",
+      "prefab": "Magazine_01",
+      "material": "Magazine_01",
+      "thumbnail": "Magazine_01",
+      "isNesting": 0,
+      "capacity": 1,
+      "purchaseType": 1,
+      "purchasePrice": 0,
+      "saleType": 1,
+      "salePrice": 0,
+      "gradeType": 1
+    },
+    {
+      "id": 230004,
+      "itemType": 2,
+      "categoryType": 2003,
+      "packageType": 1,
+      "name": "item_GameMachine_01",
+      "description": "item_GameMachine_01_description",
+      "prefab": "GameMachine_01",
+      "material": "GameMachine_01",
+      "thumbnail": "GameMachine_01",
+      "isNesting": 0,
+      "capacity": 1,
+      "purchaseType": 1,
+      "purchasePrice": 0,
+      "saleType": 1,
+      "salePrice": 0,
       "gradeType": 1
     }
   ],
@@ -51011,6 +51533,236 @@
     }
   ],
   "Localization": [
+    {
+      "id": "item_GameMachine_01",
+      "kor": "게임기 테이블",
+      "eng": ""
+    },
+    {
+      "id": "item_GameMachine_01_description",
+      "kor": "게임하기에 딱 좋은 테이블입니다. 게임 한 판 해볼까요?",
+      "eng": ""
+    },
+    {
+      "id": "item_Magazine_01",
+      "kor": "잡지테이블",
+      "eng": ""
+    },
+    {
+      "id": "item_Magazine_01_description",
+      "kor": "신비로운 잡지가 올려진 테이블입니다. 잡지에 특별한 기능이 있어 보이네요.",
+      "eng": ""
+    },
+    {
+      "id": "item_MapPrint_01",
+      "kor": "지도",
+      "eng": ""
+    },
+    {
+      "id": "item_MapPrint_01_description",
+      "kor": "전국 어디든 이동 가능한 지도입니다. 이번엔 어디로 여행을 떠나볼까요?",
+      "eng": ""
+    },
+    {
+      "id": "item_Mirror_01",
+      "kor": "전신거울",
+      "eng": ""
+    },
+    {
+      "id": "item_Mirror_01_description",
+      "kor": "아바타를 꾸밀 수 있는 거울입니다. 더 개성있게 꾸며보세요.",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Bed_01",
+      "kor": "싱글 침대",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Bed_01_description",
+      "kor": "푹신한 분홍색 침대입니다. 좌우로 굴러도 괜찮을 만큼 여유로워요!",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Chair_01",
+      "kor": "나무 의자",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Chair_01_description",
+      "kor": "심플한 나무 의자에요. 딱딱하지만 다리 아플 땐 이만한 의자가 없죠.",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Chair_02",
+      "kor": "게임용 고급의자",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Chair_02_description",
+      "kor": "게임 플레이에 최적화된 의자입니다. 언제까지고 앉아있을 수 있어요!",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Drawer_01",
+      "kor": "화이트 책장",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Drawer_01_description",
+      "kor": "정리되지 않은 화이트 책장입니다.",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Drawer_02",
+      "kor": "작은 서랍",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Drawer_02_description",
+      "kor": "작은 흰색 서랍이에요. 무엇을 넣을 수 있을까요?",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Drawer_03",
+      "kor": "나무 서랍",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Drawer_03_description",
+      "kor": "그리운 느낌이 나는 나무 서랍이에요. 빈티지한 느낌이 물씬 나는 것 같아요.",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Drawer_04",
+      "kor": "TV서랍",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Drawer_04_description",
+      "kor": "TV가 올려진 서랍이에요. TV는 너무 가까이에서 보면 안돼요!",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Drawer_05",
+      "kor": "나무 책장",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Drawer_05_description",
+      "kor": "정갈하게 도서가 놓인 나무 책장이에요. 먼지가 쌓이기 전에 읽어야겠어요.",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Drawer_06",
+      "kor": "나무 행거",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Drawer_06_description",
+      "kor": "심플한 나무 행거에요. 튼튼해서 옷을 잔뜩 걸어놓을 수 있어요!",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Lamp_01",
+      "kor": "심플 조명",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Lamp_01_description",
+      "kor": "포인트 주기에 딱 좋은 심플한 스탠드 조명입니다.",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Sofa_01",
+      "kor": "1인용 소파",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Sofa_01_description",
+      "kor": "혼자 앉아서 쉬기 좋은 1인용 소파에요.",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Sofa_02",
+      "kor": "미래형 주황 소파",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Sofa_02_description",
+      "kor": "편안함을 제공하는 모던 스타일의 소파에요. 보기보다 푹신하답니다.",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Sofa_03",
+      "kor": "블루 소파",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Sofa_03_description",
+      "kor": "둘이서 포근하게 앉아서 쉴 수 있는 파란색 소파에요.",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Table_01",
+      "kor": "화이트 테이블",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Table_01_description",
+      "kor": "동그란 모양이 참 예쁜 화이트 테이블입니다. 포인트 주기에 딱이에요.",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Table_02",
+      "kor": "미니 테이블",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Table_02_description",
+      "kor": "혼자 사용하기 딱 좋은 화이트 미니 테이블입니다.",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Table_03",
+      "kor": "화이트 컴퓨터 책상",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Table_03_description",
+      "kor": "듀얼 모니터가 올려져 있는 화이트톤의 책상입니다. 게임하기에 딱 좋은 걸요?",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Table_04",
+      "kor": "컴퓨터 책상",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Table_04_description",
+      "kor": "조금 낡아있는 컴퓨터 책상입니다. 이런 게 빈티지일지도?",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Table_05",
+      "kor": "바닥 테이블",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Table_05_description",
+      "kor": "옹기종기 둘러앉을 수 있는 바닥테이블입니다. 고향에 온 기분이 들 거에요.",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Wall_Pop_01",
+      "kor": "벌집 벽장식",
+      "eng": ""
+    },
+    {
+      "id": "item_My_Wall_Pop_01_description",
+      "kor": "주황빛 벌집 모양의 벽장식입니다. 포인트 주기에 딱 좋아요.",
+      "eng": ""
+    },
     {
       "id": "item_NE_test",
       "kor": "테스트 아이템",
