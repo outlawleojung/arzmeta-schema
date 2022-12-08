@@ -109,6 +109,13 @@ begin transaction;
 -- tablename : inventoryCapacity
 
 -- tablename : startInventory
+insert into startInventory(itemId,count) values (212002,1);
+insert into startInventory(itemId,count) values (213001,1);
+insert into startInventory(itemId,count) values (214002,2);
+insert into startInventory(itemId,count) values (230001,1);
+insert into startInventory(itemId,count) values (230002,1);
+insert into startInventory(itemId,count) values (230003,1);
+insert into startInventory(itemId,count) values (230004,1);
 
 -- tablename : startMyRoom
 update startMyRoom set id = 1,itemId = 212002,layerType = 1,x = 2,y = 11,rotation = 0 where id = 1;

@@ -12271,17 +12271,24 @@ insert into interiorSize ( itemId, xSize, ySize ) values ( 230004,  2,  2 );
 
 insert into startInventory ( itemId, count ) values ( 211001,  1 );
 insert into startInventory ( itemId, count ) values ( 212001,  1 );
+insert into startInventory ( itemId, count ) values ( 212002,  1 );
+insert into startInventory ( itemId, count ) values ( 213001,  1 );
 insert into startInventory ( itemId, count ) values ( 213002,  1 );
 insert into startInventory ( itemId, count ) values ( 213003,  1 );
 insert into startInventory ( itemId, count ) values ( 213004,  1 );
 insert into startInventory ( itemId, count ) values ( 213005,  1 );
 insert into startInventory ( itemId, count ) values ( 213006,  1 );
 insert into startInventory ( itemId, count ) values ( 214001,  1 );
+insert into startInventory ( itemId, count ) values ( 214002,  2 );
 insert into startInventory ( itemId, count ) values ( 214003,  1 );
 insert into startInventory ( itemId, count ) values ( 215002,  1 );
 insert into startInventory ( itemId, count ) values ( 215004,  1 );
 insert into startInventory ( itemId, count ) values ( 215005,  1 );
 insert into startInventory ( itemId, count ) values ( 220001,  1 );
+insert into startInventory ( itemId, count ) values ( 230001,  1 );
+insert into startInventory ( itemId, count ) values ( 230002,  1 );
+insert into startInventory ( itemId, count ) values ( 230003,  1 );
+insert into startInventory ( itemId, count ) values ( 230004,  1 );
 
 insert into startMyRoom ( id, layerType, itemId, x, y, rotation ) values ( 1,  1,  212002,  2,  11,  0 );
 insert into startMyRoom ( id, layerType, itemId, x, y, rotation ) values ( 2,  1,  213001,  1,  7,  270 );
