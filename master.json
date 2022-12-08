@@ -50812,7 +50812,7 @@
     {
       "type": 1,
       "name": "DEV",
-      "accountServerUrl": "https://dev-account.arzmeta.net",
+      "accountServerUrl": "https://dev-account.arzmeta.net/",
       "agoraServerUrl": "https://dev-agora.arzmeta.net",
       "contentServerUrl": "https://dev-content.arzmeta.net",
       "lobbyServerUrl": "http://20.249.49.123:45457",
@@ -51056,6 +51056,121 @@
   "InteriorSize": [
     {
       "itemId": 110000,
+      "xSize": 2,
+      "ySize": 2
+    },
+    {
+      "itemId": 211001,
+      "xSize": 2,
+      "ySize": 3
+    },
+    {
+      "itemId": 212001,
+      "xSize": 1,
+      "ySize": 1
+    },
+    {
+      "itemId": 212002,
+      "xSize": 1,
+      "ySize": 1
+    },
+    {
+      "itemId": 213001,
+      "xSize": 1,
+      "ySize": 1
+    },
+    {
+      "itemId": 213002,
+      "xSize": 1,
+      "ySize": 1
+    },
+    {
+      "itemId": 213003,
+      "xSize": 2,
+      "ySize": 1
+    },
+    {
+      "itemId": 213004,
+      "xSize": 3,
+      "ySize": 2
+    },
+    {
+      "itemId": 213005,
+      "xSize": 2,
+      "ySize": 1
+    },
+    {
+      "itemId": 213006,
+      "xSize": 2,
+      "ySize": 1
+    },
+    {
+      "itemId": 214001,
+      "xSize": 1,
+      "ySize": 1
+    },
+    {
+      "itemId": 214002,
+      "xSize": 3,
+      "ySize": 1
+    },
+    {
+      "itemId": 214003,
+      "xSize": 2,
+      "ySize": 1
+    },
+    {
+      "itemId": 215001,
+      "xSize": 2,
+      "ySize": 2
+    },
+    {
+      "itemId": 215002,
+      "xSize": 1,
+      "ySize": 1
+    },
+    {
+      "itemId": 215003,
+      "xSize": 2,
+      "ySize": 2
+    },
+    {
+      "itemId": 215004,
+      "xSize": 2,
+      "ySize": 1
+    },
+    {
+      "itemId": 215005,
+      "xSize": 2,
+      "ySize": 1
+    },
+    {
+      "itemId": 220001,
+      "xSize": 1,
+      "ySize": 1
+    },
+    {
+      "itemId": 220002,
+      "xSize": 4,
+      "ySize": 1
+    },
+    {
+      "itemId": 230001,
+      "xSize": 3,
+      "ySize": 1
+    },
+    {
+      "itemId": 230002,
+      "xSize": 4,
+      "ySize": 1
+    },
+    {
+      "itemId": 230003,
+      "xSize": 2,
+      "ySize": 2
+    },
+    {
+      "itemId": 230004,
       "xSize": 2,
       "ySize": 2
     }
