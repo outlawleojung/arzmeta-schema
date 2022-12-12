@@ -1480,9 +1480,9 @@
 
 <ArrayOfString>
 
-    <string>categoryType</string>
+    <string>itemId</string>
 
-    <string>카테고리 타입</string>
+    <string>아이템 아이디</string>
 
     <string>integer</string>
 
@@ -1512,9 +1512,49 @@
 
     <string></string>
 
-    <string>1</string>
+    <string></string>
 
     <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>xSize</string>
+
+    <string>x사이즈</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>ySize</string>
+
+    <string>y사이즈</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
 
   </ArrayOfString>
 
@@ -2668,21 +2708,21 @@
 
 <ArrayOfString>
 
-    <string>gridId</string>
+    <string>layerType</string>
 
-    <string>그리드 아이디</string>
+    <string>레이어 타입</string>
 
-    <string>nvarchar(64)</string>
+    <string>integer</string>
 
-    <string>Name</string>
+    <string>Identifier</string>
 
-    <string>nvarchar</string>
-
-    <string>64</string>
+    <string>integer</string>
 
     <string></string>
 
     <string></string>
+
+    <string>1</string>
 
   </ArrayOfString>
 
