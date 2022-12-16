@@ -51168,7 +51168,7 @@
             "itemId": 211001,
             "layerType": 1,
             "xSize": 2,
-            "ySize": 2
+            "ySize": 3
         },
         {
             "itemId": 212001,
@@ -51227,14 +51227,14 @@
         {
             "itemId": 214002,
             "layerType": 1,
-            "xSize": 3,
+            "xSize": 1,
             "ySize": 3
         },
         {
             "itemId": 214003,
             "layerType": 1,
-            "xSize": 2,
-            "ySize": 2
+            "xSize": 1,
+            "ySize": 3
         },
         {
             "itemId": 215001,
@@ -51270,7 +51270,7 @@
             "itemId": 215006,
             "layerType": 1,
             "xSize": 3,
-            "ySize": 3
+            "ySize": 2
         },
         {
             "itemId": 220001,
@@ -51282,7 +51282,7 @@
             "itemId": 220002,
             "layerType": 3,
             "xSize": 4,
-            "ySize": 4
+            "ySize": 1
         },
         {
             "itemId": 221001,
@@ -51317,14 +51317,62 @@
         {
             "itemId": 221007,
             "layerType": 4,
+            "xSize": 4,
+            "ySize": 5
+        },
+        {
+            "itemId": 221008,
+            "layerType": 2,
+            "xSize": 1,
+            "ySize": 1
+        },
+        {
+            "itemId": 221009,
+            "layerType": 2,
+            "xSize": 1,
+            "ySize": 2
+        },
+        {
+            "itemId": 221010,
+            "layerType": 2,
+            "xSize": 1,
+            "ySize": 1
+        },
+        {
+            "itemId": 221011,
+            "layerType": 2,
+            "xSize": 1,
+            "ySize": 1
+        },
+        {
+            "itemId": 221012,
+            "layerType": 2,
+            "xSize": 1,
+            "ySize": 1
+        },
+        {
+            "itemId": 221013,
+            "layerType": 2,
+            "xSize": 1,
+            "ySize": 1
+        },
+        {
+            "itemId": 221014,
+            "layerType": 2,
+            "xSize": 2,
+            "ySize": 2
+        },
+        {
+            "itemId": 221015,
+            "layerType": 3,
             "xSize": 1,
             "ySize": 1
         },
         {
             "itemId": 222001,
             "layerType": 4,
-            "xSize": 1,
-            "ySize": 1
+            "xSize": 3,
+            "ySize": 4
         },
         {
             "itemId": 230001,
@@ -51335,8 +51383,8 @@
         {
             "itemId": 230002,
             "layerType": 3,
-            "xSize": 4,
-            "ySize": 4
+            "xSize": 2,
+            "ySize": 1
         },
         {
             "itemId": 230003,
@@ -51359,20 +51407,20 @@
         {
             "itemId": 240002,
             "layerType": 2,
-            "xSize": 2,
-            "ySize": 2
+            "xSize": 4,
+            "ySize": 6
         },
         {
             "itemId": 240003,
             "layerType": 2,
-            "xSize": 2,
-            "ySize": 2
+            "xSize": 3,
+            "ySize": 3
         },
         {
             "itemId": 240004,
             "layerType": 2,
-            "xSize": 2,
-            "ySize": 2
+            "xSize": 5,
+            "ySize": 5
         }
     ],
     "InventoryCapacity": [

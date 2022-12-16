@@ -297,6 +297,25 @@ insert into item(id,itemType,categoryType,packageType,name,description,prefab,ma
 update item set id = 222001,itemType = 2,categoryType = 2002,packageType = 1,name = N'item_My_Light_01',description = N'item_My_Light_01_description',prefab = N'My_Light_01',material = N'My_Light_01',thumbnail = N'My_Light_01',capacity = 30,isNesting = 1,purchaseType = 2,purchasePrice = 100,saleType = 2,salePrice = 70,gradeType = 1 where id = 222001;
 
 -- tablename : interiorInstallInfo
+update interiorInstallInfo set itemId = 211001,layerType = 1,xSize = 2,ySize = 3 where itemId = 211001;
+update interiorInstallInfo set itemId = 214002,layerType = 1,xSize = 1,ySize = 3 where itemId = 214002;
+update interiorInstallInfo set itemId = 214003,layerType = 1,xSize = 1,ySize = 3 where itemId = 214003;
+update interiorInstallInfo set itemId = 215006,layerType = 1,xSize = 3,ySize = 2 where itemId = 215006;
+update interiorInstallInfo set itemId = 220002,layerType = 3,xSize = 4,ySize = 1 where itemId = 220002;
+update interiorInstallInfo set itemId = 222001,layerType = 4,xSize = 3,ySize = 4 where itemId = 222001;
+update interiorInstallInfo set itemId = 221007,layerType = 4,xSize = 4,ySize = 5 where itemId = 221007;
+update interiorInstallInfo set itemId = 230002,layerType = 3,xSize = 2,ySize = 1 where itemId = 230002;
+update interiorInstallInfo set itemId = 240002,layerType = 2,xSize = 4,ySize = 6 where itemId = 240002;
+update interiorInstallInfo set itemId = 240003,layerType = 2,xSize = 3,ySize = 3 where itemId = 240003;
+update interiorInstallInfo set itemId = 240004,layerType = 2,xSize = 5,ySize = 5 where itemId = 240004;
+insert into interiorInstallInfo(itemId,layerType,xSize,ySize) values (221008,2,1,1);
+insert into interiorInstallInfo(itemId,layerType,xSize,ySize) values (221009,2,1,2);
+insert into interiorInstallInfo(itemId,layerType,xSize,ySize) values (221010,2,1,1);
+insert into interiorInstallInfo(itemId,layerType,xSize,ySize) values (221011,2,1,1);
+insert into interiorInstallInfo(itemId,layerType,xSize,ySize) values (221012,2,1,1);
+insert into interiorInstallInfo(itemId,layerType,xSize,ySize) values (221013,2,1,1);
+insert into interiorInstallInfo(itemId,layerType,xSize,ySize) values (221014,2,2,2);
+insert into interiorInstallInfo(itemId,layerType,xSize,ySize) values (221015,3,1,1);
 
 -- tablename : inventoryCapacity
 
