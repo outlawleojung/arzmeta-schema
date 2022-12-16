@@ -5386,6 +5386,26 @@
 
 <ArrayOfString>
 
+    <string>passwordYn</string>
+
+    <string>패스워드 여부</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
     <string>roomName</string>
 
     <string>룸 이름</string>

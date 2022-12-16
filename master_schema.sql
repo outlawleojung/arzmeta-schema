@@ -843,6 +843,7 @@ CREATE TABLE officeMode
 	modeType             Identifier ,
 	gradeType            Identifier ,
 	privateYn            Value ,
+	passwordYn           Value ,
 	roomName             Nickname ,
 	roomDesc             Nickname ,
 	startMin             Value ,

@@ -478,6 +478,7 @@ create table if not exists officeMode
     modeType             int(11),
     gradeType            int(11),
     privateYn           int(11),
+    passwordYn          int(11),
     roomName            varchar(64),
     roomDesc            varchar(64),
     startMin            int(11),
