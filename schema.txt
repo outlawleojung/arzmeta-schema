@@ -1500,6 +1500,26 @@
 
 <ArrayOfString>
 
+    <string>prefab</string>
+
+    <string>프리팹</string>
+
+    <string>nvarchar(32)</string>
+
+    <string>Nickname</string>
+
+    <string>nvarchar</string>
+
+    <string>32</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
     <string>layerType</string>
 
     <string>레이어 타입</string>
