@@ -1578,6 +1578,26 @@
 
   </ArrayOfString>
 
+<ArrayOfString>
+
+    <string>removable</string>
+
+    <string>제거가능여부</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
 
 
   
@@ -7161,26 +7181,6 @@
     <string>integer</string>
 
     <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>removable</string>
-
-    <string>제거가능여부</string>
-
-    <string>integer</string>
-
-    <string>Value</string>
 
     <string>integer</string>
 
