@@ -56864,7 +56864,7 @@
       "name": "이벤트재화"
     }
   ],
-  "startMyRoom": [
+  "StartMyRoom": [
     {
       "id": 1,
       "itemId": 212002,
@@ -57125,6 +57125,132 @@
       "y": 3,
       "rotation": 0,
       "removable": 0
+    }
+  ],
+  "StartInventory": [
+    {
+      "itemId": 211001,
+      "count": 1
+    },
+    {
+      "itemId": 212002,
+      "count": 1
+    },
+    {
+      "itemId": 213001,
+      "count": 1
+    },
+    {
+      "itemId": 214002,
+      "count": 4
+    },
+    {
+      "itemId": 214003,
+      "count": 1
+    },
+    {
+      "itemId": 215002,
+      "count": 2
+    },
+    {
+      "itemId": 215006,
+      "count": 1
+    },
+    {
+      "itemId": 220001,
+      "count": 1
+    },
+    {
+      "itemId": 220002,
+      "count": 2
+    },
+    {
+      "itemId": 221001,
+      "count": 1
+    },
+    {
+      "itemId": 221002,
+      "count": 1
+    },
+    {
+      "itemId": 221003,
+      "count": 1
+    },
+    {
+      "itemId": 221004,
+      "count": 1
+    },
+    {
+      "itemId": 221005,
+      "count": 1
+    },
+    {
+      "itemId": 221007,
+      "count": 2
+    },
+    {
+      "itemId": 221008,
+      "count": 1
+    },
+    {
+      "itemId": 221009,
+      "count": 1
+    },
+    {
+      "itemId": 221010,
+      "count": 1
+    },
+    {
+      "itemId": 221011,
+      "count": 1
+    },
+    {
+      "itemId": 221012,
+      "count": 1
+    },
+    {
+      "itemId": 221013,
+      "count": 1
+    },
+    {
+      "itemId": 221014,
+      "count": 1
+    },
+    {
+      "itemId": 221015,
+      "count": 1
+    },
+    {
+      "itemId": 222001,
+      "count": 1
+    },
+    {
+      "itemId": 230001,
+      "count": 1
+    },
+    {
+      "itemId": 230002,
+      "count": 1
+    },
+    {
+      "itemId": 230003,
+      "count": 1
+    },
+    {
+      "itemId": 230004,
+      "count": 1
+    },
+    {
+      "itemId": 240001,
+      "count": 2
+    },
+    {
+      "itemId": 240002,
+      "count": 1
+    },
+    {
+      "itemId": 240004,
+      "count": 1
     }
   ],
   "OfficeAuthority": [
