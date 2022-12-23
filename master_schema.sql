@@ -924,6 +924,16 @@ go
 
 
 
+CREATE TABLE onfContentsType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT onfContentsType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE osType
 ( 
 	type                 Identifier ,
