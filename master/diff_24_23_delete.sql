@@ -1,7 +1,6 @@
-﻿use tcgprojectdb
-go
+﻿use dev_arzmeta_db;
 
-begin transaction;
+START TRANSACTION;
 
 
 -- tablename : avatarPartsColorType
@@ -134,4 +133,4 @@ begin transaction;
 
 -- tablename : officeRoomInfo
 
-rollback;
+ROLLBACK;

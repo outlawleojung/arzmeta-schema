@@ -1,7 +1,6 @@
-﻿use tcgprojectdb
-go
+﻿use dev_arzmeta_db;
 
-begin transaction;
+START TRANSACTION;
 
 
 -- tablename : avatarPartsColorType
@@ -517,4 +516,4 @@ insert into officeModeSlot(modeType,permissionType) values (1,2);
 
 -- tablename : officeRoomInfo
 
-rollback;
+ROLLBACK;
