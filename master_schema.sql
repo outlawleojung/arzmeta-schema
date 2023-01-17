@@ -675,6 +675,56 @@ go
 
 
 
+CREATE TABLE memberOfficeGradeType
+( 
+	memberId             Identifier_Member_Id  NOT NULL ,
+	gradeType            Identifier ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT memberOfficeGradeType_PK PRIMARY KEY  CLUSTERED (memberId ASC)
+)
+go
+
+
+
+CREATE TABLE memberOfficeReservationInfo
+( 
+	id                   Identifier ,
+	name                 Content ,
+	modeType             Identifier ,
+	topicType            Identifier ,
+	memberId             Identifier_Member_Id  NOT NULL ,
+	desc                 Content ,
+	password             Content ,
+	runningTime          Identifier ,
+	roomInfoId           Identifier ,
+	personnel            Identifier ,
+	reservationAt        _Datetime ,
+	repeatDay            Identifier ,
+	alarmType            Identifier ,
+	thumbnail            Content ,
+	isExpose             Identifier ,
+	isWaited             Identifier ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT memberOfficeReservationInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE memberOfficeReservationWaitingInfo
+( 
+	reservationId        Identifier ,
+	memberId             Identifier_Member_Id  NOT NULL ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT memberOfficeReservationWaitingInfo_PK PRIMARY KEY  CLUSTERED (reservationId ASC,memberId ASC)
+)
+go
+
+
+
 CREATE TABLE memberReportInfo
 ( 
 	id                   Identifier ,
@@ -769,6 +819,16 @@ CREATE TABLE npcSeqAct
 	seqIdAct3            Identifier ,
 	seqIdText3           Identifier ,
 	CONSTRAINT npcSeqAct_PK PRIMARY KEY  CLUSTERED (seqId ASC)
+)
+go
+
+
+
+CREATE TABLE officeAlarmType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT officeAlarmType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -1533,6 +1593,69 @@ go
 
 ALTER TABLE memberItemInven
 	ADD CONSTRAINT R_3336 FOREIGN KEY (itemId) REFERENCES item(id)
+go
+
+
+
+
+ALTER TABLE memberOfficeGradeType
+	ADD CONSTRAINT R_3370 FOREIGN KEY (memberId) REFERENCES member(memberId)
+go
+
+
+
+
+ALTER TABLE memberOfficeGradeType
+	ADD CONSTRAINT R_3371 FOREIGN KEY (gradeType) REFERENCES officeGradeType(type)
+go
+
+
+
+
+ALTER TABLE memberOfficeReservationInfo
+	ADD CONSTRAINT R_3372 FOREIGN KEY (memberId) REFERENCES member(memberId)
+go
+
+
+
+
+ALTER TABLE memberOfficeReservationInfo
+	ADD CONSTRAINT R_3373 FOREIGN KEY (modeType) REFERENCES officeModeType(type)
+go
+
+
+
+
+ALTER TABLE memberOfficeReservationInfo
+	ADD CONSTRAINT R_3375 FOREIGN KEY (roomInfoId) REFERENCES officeRoomInfo(id)
+go
+
+
+
+
+ALTER TABLE memberOfficeReservationInfo
+	ADD CONSTRAINT R_3376 FOREIGN KEY (topicType) REFERENCES officeTopicType(type)
+go
+
+
+
+
+ALTER TABLE memberOfficeReservationInfo
+	ADD CONSTRAINT R_3377 FOREIGN KEY (alarmType) REFERENCES officeAlarmType(type)
+go
+
+
+
+
+ALTER TABLE memberOfficeReservationWaitingInfo
+	ADD CONSTRAINT R_3378 FOREIGN KEY (reservationId) REFERENCES memberOfficeReservationInfo(id)
+go
+
+
+
+
+ALTER TABLE memberOfficeReservationWaitingInfo
+	ADD CONSTRAINT R_3379 FOREIGN KEY (memberId) REFERENCES member(memberId)
 go
 
 
