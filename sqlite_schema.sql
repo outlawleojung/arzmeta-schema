@@ -516,6 +516,22 @@ create table if not exists officeDefaultOption
     primary key(permissionType)
 )
 ;
+create table if not exists officeGradeAuthority
+(
+    gradeType            int(11),
+    isUsePaidRoom       int(11),
+    capacityLimit       int(11),
+    reserveLimit        int(11),
+    isThumbnail         int(11),
+    isWaitingRoom       int(11),
+    isAdvertising       int(11),
+    isObserver          int(11),
+    isChangeAdmin       int(11),
+    timeLimit           int(11),
+    isChangeTime        int(11),
+    primary key(gradeType)
+)
+;
 create table if not exists officeGradeType
 (
     type                 int(11),

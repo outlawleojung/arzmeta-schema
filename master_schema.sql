@@ -890,6 +890,25 @@ go
 
 
 
+CREATE TABLE officeGradeAuthority
+( 
+	gradeType            Identifier ,
+	isUsePaidRoom        Value ,
+	capacityLimit        Value ,
+	reserveLimit         Value ,
+	isThumbnail          Value ,
+	isWaitingRoom        Value ,
+	isAdvertising        Value ,
+	isObserver           Value ,
+	isChangeAdmin        Value ,
+	timeLimit            Value ,
+	isChangeTime         Value ,
+	CONSTRAINT officeGradeAuthority_PK PRIMARY KEY  CLUSTERED (gradeType ASC)
+)
+go
+
+
+
 CREATE TABLE officeGradeType
 ( 
 	type                 Identifier ,
@@ -1761,6 +1780,13 @@ go
 
 ALTER TABLE officeDefaultOption
 	ADD CONSTRAINT R_3366 FOREIGN KEY (spawnType) REFERENCES officeSpawnType(type)
+go
+
+
+
+
+ALTER TABLE officeGradeAuthority
+	ADD CONSTRAINT R_3380 FOREIGN KEY (gradeType) REFERENCES officeGradeType(type)
 go
 
 

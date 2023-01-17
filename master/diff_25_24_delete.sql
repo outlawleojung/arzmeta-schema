@@ -94,6 +94,10 @@ delete from localization where id = 'Office_Space_Meeting002';
 delete from localization where id = 'Office_Space_Lecture001';
 delete from localization where id = 'Office_Space_Lecture002';
 delete from localization where id = 'Office_Space_Conference001';
+delete from localization where id = 'item_blackrabbithat';
+delete from localization where id = 'item_blackrabbit';
+delete from localization where id = 'item_blackrabbithat_description';
+delete from localization where id = 'item_blackrabbit_description';
 
 -- tablename : faq
 

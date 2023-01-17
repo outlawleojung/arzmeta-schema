@@ -94,6 +94,10 @@ insert into localization(id,kor,eng) values (N'common_password error',N'비밀�
 insert into localization(id,kor,eng) values (N'common_password request',N'비밀번호를 입력해주세요.',N'');
 insert into localization(id,kor,eng) values (N'common_search',N'검색',N'search');
 insert into localization(id,kor,eng) values (N'common_yes',N'예',N'YES');
+insert into localization(id,kor,eng) values (N'item_rabbit',N'검은 토끼',N'blackrabbithat');
+insert into localization(id,kor,eng) values (N'item_rabbit_description',N'작성예정',N'');
+insert into localization(id,kor,eng) values (N'item_rabbithat',N'검은 토끼모자',N'blackrabbithat');
+insert into localization(id,kor,eng) values (N'item_rabbithat_description',N'작성예정',N'');
 insert into localization(id,kor,eng) values (N'office',N'오피스',N'office');
 insert into localization(id,kor,eng) values (N'office_anteroom',N'대기실',N'anteroom');
 insert into localization(id,kor,eng) values (N'office_ask_move_myreservation',N'나의 예약으로 이동하시겠습니까?',N'');
@@ -156,6 +160,16 @@ insert into localization(id,kor,eng) values (N'office_reservation_cancel_info',N
 -- tablename : forbiddenWords
 
 -- tablename : avatarParts
+update avatarParts set id = 1035,avatarPartsType = 1,chatId = 134,prefabName = N'c_p_rabbithat',materialName = N'c_m_rabbithat_c_001',productThumbnailName = N' ',thumbnailName = N'c_t_thum_rabbithat',effectName = N'EF_Costume_01',aniName = N'action_fingersnap_01',divisionType = 1,questText = 0,description = N'검은토끼 모자',nameId = 2165,sizeType = 1,colorType = 1,groupType = 1,partsOrder = 33 where id=1035;
+update avatarParts set id = 2043,avatarPartsType = 2,chatId = 244,prefabName = N'c_p_3buttonsuit',materialName = N'c_m_3buttonsuit_c_001',productThumbnailName = N' ',thumbnailName = N'c_t_thum_navy3buttonsuit',effectName = N'EF_Costume_01',aniName = N'emote_emotion_01',divisionType = 1,questText = 0,description = N'네이비 쓰리버튼 조끼',nameId = 2169,sizeType = 1,colorType = 1,groupType = 1,partsOrder = 20 where id=2043;
+update avatarParts set id = 2044,avatarPartsType = 2,chatId = 245,prefabName = N'c_p_3buttonsuit',materialName = N'c_m_3buttonsuit_c_002',productThumbnailName = N' ',thumbnailName = N'c_t_thum_green3buttonsuit',effectName = N'EF_Costume_01',aniName = N'emote_talk_02',divisionType = 1,questText = 0,description = N'그린 쓰리버튼 조끼',nameId = 2170,sizeType = 1,colorType = 1,groupType = 1,partsOrder = 21 where id=2044;
+update avatarParts set id = 2045,avatarPartsType = 2,chatId = 246,prefabName = N'c_p_3buttonsuit',materialName = N'c_m_3buttonsuit_c_003',productThumbnailName = N' ',thumbnailName = N'c_t_thum_brown3buttonsuit',effectName = N'EF_Costume_01',aniName = N'emote_talk_02',divisionType = 1,questText = 0,description = N'브라운 쓰리버튼 조끼',nameId = 2171,sizeType = 1,colorType = 1,groupType = 1,partsOrder = 22 where id=2045;
+update avatarParts set id = 2046,avatarPartsType = 2,chatId = 247,prefabName = N'c_p_doctorgown',materialName = N'c_m_doctorgown_c_001',productThumbnailName = N' ',thumbnailName = N'c_t_thum_doctorgown',effectName = N'EF_Costume_01',aniName = N'emote_talk_01',divisionType = 1,questText = 0,description = N'의사 가운',nameId = 2172,sizeType = 1,colorType = 1,groupType = 1,partsOrder = 23 where id=2046;
+update avatarParts set id = 2047,avatarPartsType = 2,chatId = 248,prefabName = N'c_p_blouse',materialName = N'c_m_blouse_c_003',productThumbnailName = N' ',thumbnailName = N'c_t_thum_greenblouse',effectName = N'EF_Costume_01',aniName = N'emote_talk_01',divisionType = 1,questText = 0,description = N'그린 블라우스',nameId = 2173,sizeType = 1,colorType = 1,groupType = 1,partsOrder = 17 where id=2047;
+update avatarParts set id = 3026,avatarPartsType = 3,chatId = 327,prefabName = N'c_p_suitpants',materialName = N'c_m_suitpants_c_002',productThumbnailName = N' ',thumbnailName = N'c_t_thum_navysuitpants',effectName = N'EF_Costume_01',aniName = N'emote_hi_01',divisionType = 1,questText = 0,description = N'네이비 정장 바지',nameId = 2175,sizeType = 1,colorType = 1,groupType = 1,partsOrder = 17 where id=3026;
+update avatarParts set id = 3027,avatarPartsType = 3,chatId = 328,prefabName = N'c_p_suitpants',materialName = N'c_m_suitpants_c_003',productThumbnailName = N' ',thumbnailName = N'c_t_thum_greensuitpants',effectName = N'EF_Costume_01',aniName = N'emote_talk_04',divisionType = 1,questText = 0,description = N'그린 정장 바지',nameId = 2176,sizeType = 1,colorType = 1,groupType = 1,partsOrder = 18 where id=3027;
+update avatarParts set id = 3028,avatarPartsType = 3,chatId = 329,prefabName = N'c_p_suitpants',materialName = N'c_m_suitpants_c_004',productThumbnailName = N' ',thumbnailName = N'c_t_thum_brownsuitpants',effectName = N'EF_Costume_01',aniName = N'emote_clap_01',divisionType = 1,questText = 0,description = N'브라운 정장 바지',nameId = 2177,sizeType = 1,colorType = 1,groupType = 1,partsOrder = 19 where id=3028;
+update avatarParts set id = 4028,avatarPartsType = 4,chatId = 426,prefabName = N'c_p_rabbit',materialName = N'c_m_rabbit_c_001',productThumbnailName = N' ',thumbnailName = N'c_t_thum_rabbit',effectName = N'EF_Costume_01',aniName = N'emote_cute_01',divisionType = 1,questText = 0,description = N'검은토끼',nameId = 2174,sizeType = 1,colorType = 1,groupType = 1,partsOrder = 29 where id=4028;
 
 -- tablename : npcSeq
 
@@ -184,6 +198,15 @@ insert into localization(id,kor,eng) values (N'office_reservation_cancel_info',N
 -- tablename : worldAreaInfo
 
 -- tablename : item
+update item set id = 310033,itemType = 3,categoryType = 3001,packageType = 1,name = N'item_rabbithat',description = N'item_rabbithat_description',prefab = N'c_p_rabbithat',material = N'c_m_rabbithat_c_001',thumbnail = N'c_t_thum_rabbithat',capacity = 1,isNesting = 0,purchaseType = 2,purchasePrice = 30,saleType = 2,salePrice = 21,gradeType = 1 where id = 310033;
+update item set id = 320034,itemType = 3,categoryType = 3002,packageType = 1,name = N'item_navy3buttonsuit',description = N'item_navy3buttonsuit_description',prefab = N'c_p_3buttonsuit',material = N'c_m_3buttonsuit_c_001',thumbnail = N'c_t_thum_navy3buttonsuit',capacity = 1,isNesting = 0,purchaseType = 2,purchasePrice = 30,saleType = 2,salePrice = 21,gradeType = 1 where id = 320034;
+update item set id = 320035,itemType = 3,categoryType = 3002,packageType = 1,name = N'item_green3buttonsuit',description = N'item_green3buttonsuit_description',prefab = N'c_p_3buttonsuit',material = N'c_m_3buttonsuit_c_002',thumbnail = N'c_t_thum_green3buttonsuit',capacity = 1,isNesting = 0,purchaseType = 2,purchasePrice = 30,saleType = 2,salePrice = 21,gradeType = 1 where id = 320035;
+update item set id = 320036,itemType = 3,categoryType = 3002,packageType = 1,name = N'item_brown3buttonsuit',description = N'item_brown3buttonsuit_description',prefab = N'c_p_3buttonsuit',material = N'c_m_3buttonsuit_c_003',thumbnail = N'c_t_thum_brown3buttonsuit',capacity = 1,isNesting = 0,purchaseType = 2,purchasePrice = 30,saleType = 2,salePrice = 21,gradeType = 1 where id = 320036;
+update item set id = 320037,itemType = 3,categoryType = 3002,packageType = 1,name = N'item_doctorgown',description = N'item_doctorgown_description',prefab = N'c_p_doctorgown',material = N'c_m_doctorgown_c_001',thumbnail = N'c_t_thum_doctorgown',capacity = 1,isNesting = 0,purchaseType = 2,purchasePrice = 30,saleType = 2,salePrice = 21,gradeType = 1 where id = 320037;
+update item set id = 330027,itemType = 3,categoryType = 3003,packageType = 1,name = N'item_navysuitpants',description = N'item_navysuitpants_description',prefab = N'c_p_suitpants',material = N'c_m_suitpants_c_002',thumbnail = N'c_t_thum_navysuitpants',capacity = 1,isNesting = 0,purchaseType = 2,purchasePrice = 30,saleType = 2,salePrice = 21,gradeType = 1 where id = 330027;
+update item set id = 330028,itemType = 3,categoryType = 3003,packageType = 1,name = N'item_greensuitpants',description = N'item_greensuitpants_description',prefab = N'c_p_suitpants',material = N'c_m_suitpants_c_003',thumbnail = N'c_t_thum_greensuitpants',capacity = 1,isNesting = 0,purchaseType = 2,purchasePrice = 30,saleType = 2,salePrice = 21,gradeType = 1 where id = 330028;
+update item set id = 330029,itemType = 3,categoryType = 3003,packageType = 1,name = N'item_brownsuitpants',description = N'item_brownsuitpants_description',prefab = N'c_p_suitpants',material = N'c_m_suitpants_c_004',thumbnail = N'c_t_thum_brownsuitpants',capacity = 1,isNesting = 0,purchaseType = 2,purchasePrice = 30,saleType = 2,salePrice = 21,gradeType = 1 where id = 330029;
+update item set id = 340029,itemType = 3,categoryType = 3005,packageType = 1,name = N'item_rabbit',description = N'item_rabbit_description',prefab = N'c_p_rabbit',material = N'c_m_rabbit_c_001',thumbnail = N'c_t_thum_rabbit',capacity = 1,isNesting = 0,purchaseType = 2,purchasePrice = 30,saleType = 2,salePrice = 21,gradeType = 1 where id = 340029;
 
 -- tablename : interiorInstallInfo
 
@@ -200,11 +223,17 @@ insert into localization(id,kor,eng) values (N'office_reservation_cancel_info',N
 -- tablename : officeDefaultOption
 
 -- tablename : officeMode
+update officeMode set modeType = 1,gradeType = 1,privateYn = 1,passwordYn = 1,roomName = N'office_room_name_for_meeting',roomDesc = N'office_room_desc_for_meeting',startMin = 0,minGap = 45,timeCount = 1 where modeType = 1 and gradeType = 1;
+update officeMode set modeType = 2,gradeType = 1,privateYn = 1,passwordYn = 1,roomName = N'office_room_name_for_lecture',roomDesc = N'office_room_desc_for_lecture',startMin = 0,minGap = 45,timeCount = 1 where modeType = 2 and gradeType = 1;
+update officeMode set modeType = 3,gradeType = 1,privateYn = 1,passwordYn = 1,roomName = N'office_room_name_for_conference',roomDesc = N'office_room_desc_for_conference',startMin = 0,minGap = 45,timeCount = 1 where modeType = 3 and gradeType = 1;
 
 -- tablename : officeModeSlot
 
 -- tablename : officeRoomInfo
-update officeRoomInfo set id = 2001,modeType = 2,description = N'Office_Space_Lecture001',thumbnail = N'thumb_LectureHall',sceneName = N'108_Scene_LectureHall',defaultCapacity = 30,minCapacity = 1,maxCapacity = 52,maxObserver = 50 where id = 2001;
-update officeRoomInfo set id = 2002,modeType = 2,description = N'Office_Space_Lecture002',thumbnail = N'thumb_LectureHall_22christmas',sceneName = N'108_Scene_LectureHall_22Christmas',defaultCapacity = 30,minCapacity = 1,maxCapacity = 52,maxObserver = 50 where id = 2002;
+update officeRoomInfo set id = 1001,modeType = 1,description = N'office_space_meeting001',thumbnail = N'thumb_meetingroom',sceneName = N'106_Scene_MeetingRoom',defaultCapacity = 10,minCapacity = 1,maxCapacity = 18,maxObserver = 20 where id = 1001;
+update officeRoomInfo set id = 1002,modeType = 1,description = N'office_space_meeting002',thumbnail = N'thumb_meetingroom_22christmas',sceneName = N'106_Scene_MeetingRoom_22Christmas',defaultCapacity = 10,minCapacity = 1,maxCapacity = 18,maxObserver = 20 where id = 1002;
+update officeRoomInfo set id = 2001,modeType = 2,description = N'office_space_lecture001',thumbnail = N'thumb_LectureHall',sceneName = N'108_Scene_LectureHall',defaultCapacity = 30,minCapacity = 1,maxCapacity = 52,maxObserver = 50 where id = 2001;
+update officeRoomInfo set id = 2002,modeType = 2,description = N'office_space_lecture002',thumbnail = N'thumb_LectureHall_22christmas',sceneName = N'108_Scene_LectureHall_22Christmas',defaultCapacity = 30,minCapacity = 1,maxCapacity = 52,maxObserver = 50 where id = 2002;
+update officeRoomInfo set id = 3001,modeType = 3,description = N'office_space_conference001',thumbnail = N'',sceneName = N'',defaultCapacity = 50,minCapacity = 1,maxCapacity = 200,maxObserver = 100 where id = 3001;
 
 ROLLBACK;
