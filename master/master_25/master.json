@@ -51424,6 +51424,60 @@
       "name": "최상급"
     }
   ],
+  "OfficeGradeAuthority": [
+    {
+      "modeType": 1,
+      "isUsePaidRoom": 0,
+      "capacityLimit": 6,
+      "reserveLimit": 1,
+      "isThumbnail": 0,
+      "isWaitingRoom": 0,
+      "isAdvertising": 0,
+      "isObserver": 0,
+      "isChangeAdmin": 0,
+      "timeLimit": 45,
+      "isChangeTime": 0
+    },
+    {
+      "modeType": 2,
+      "isUsePaidRoom": 1,
+      "capacityLimit": 0,
+      "reserveLimit": 0,
+      "isThumbnail": 0,
+      "isWaitingRoom": 0,
+      "isAdvertising": 0,
+      "isObserver": 0,
+      "isChangeAdmin": 0,
+      "timeLimit": 1920,
+      "isChangeTime": 1
+    },
+    {
+      "modeType": 3,
+      "isUsePaidRoom": 1,
+      "capacityLimit": 0,
+      "reserveLimit": 0,
+      "isThumbnail": 1,
+      "isWaitingRoom": 1,
+      "isAdvertising": 0,
+      "isObserver": 1,
+      "isChangeAdmin": 1,
+      "timeLimit": 1920,
+      "isChangeTime": 1
+    },
+    {
+      "modeType": 4,
+      "isUsePaidRoom": 1,
+      "capacityLimit": 0,
+      "reserveLimit": 0,
+      "isThumbnail": 1,
+      "isWaitingRoom": 1,
+      "isAdvertising": 1,
+      "isObserver": 1,
+      "isChangeAdmin": 1,
+      "timeLimit": 1920,
+      "isChangeTime": 1
+    }
+  ],
   "InteriorInstallInfo": [
     {
       "itemId": 211001,
