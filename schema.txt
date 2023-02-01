@@ -88,6 +88,26 @@
 
 <ArrayOfString>
 
+    <string>itemId</string>
+
+    <string>아이템 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
     <string>avatarPartsType</string>
 
     <string>아바타 파츠 타입</string>
@@ -574,154 +594,6 @@
 
 <ArrayOfString>
 
-    <string>avatarPartsPrice</string>
-
-    <string>구매 파츠 가격</string>
-
-  </ArrayOfString>
-
-  
-
-<ArrayOfString>
-
-    <string>partsId</string>
-
-    <string>아바타 파츠 아이디</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string>1</string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>arwPrice</string>
-
-    <string>아로와나 가격</string>
-
-    <string>integer</string>
-
-    <string>Value</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>krwPrice</string>
-
-    <string>원화 가격</string>
-
-    <string>integer</string>
-
-    <string>Value</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-
-
-  
-
-<ArrayOfString>
-
-    <string>avatarPartsSizeDetail</string>
-
-    <string>아바타 파츠 사이즈 상세</string>
-
-  </ArrayOfString>
-
-  
-
-<ArrayOfString>
-
-    <string>id</string>
-
-    <string>아이디</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string>1</string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>sizeType</string>
-
-    <string>사이즈 타입</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>data</string>
-
-    <string>데이타</string>
-
-    <string>nvarchar(64)</string>
-
-    <string>Name</string>
-
-    <string>nvarchar</string>
-
-    <string>64</string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-
-
-  
-
-<ArrayOfString>
-
     <string>avatarPartsSizeType</string>
 
     <string>아바타 파츠 사이즈 타입</string>
@@ -952,6 +824,26 @@
 
   </ArrayOfString>
 
+<ArrayOfString>
+
+    <string>itemId</string>
+
+    <string>아이템 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
 
 
   
@@ -1012,6 +904,120 @@
 
 <ArrayOfString>
 
+    <string>businessCardInfo</string>
+
+    <string>명함 정보</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>desc</string>
+
+    <string>설명 아이디</string>
+
+    <string>nvarchar(32)</string>
+
+    <string>Nickname</string>
+
+    <string>nvarchar</string>
+
+    <string>32</string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>purchaseType</string>
+
+    <string>구매 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>deleteable</string>
+
+    <string>삭제가능여부</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>price</string>
+
+    <string>가격</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
     <string>categoryType</string>
 
     <string>카테고리 타입</string>
@@ -1057,6 +1063,140 @@
     <string></string>
 
     <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>commerceZoneItem</string>
+
+    <string>커머스존 아이템</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>itemId</string>
+
+    <string>아이템 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>arwPrice</string>
+
+    <string>아로와나 가격</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>krwPrice</string>
+
+    <string>원화 가격</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>groupType</string>
+
+    <string>그룹 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>colorType</string>
+
+    <string>색상 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>sizeType</string>
+
+    <string>사이즈 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
 
   </ArrayOfString>
 
@@ -1139,6 +1279,26 @@
     <string>partsId</string>
 
     <string>아바타 파츠 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>itemId</string>
+
+    <string>아이템 아이디</string>
 
     <string>integer</string>
 
@@ -2099,6 +2259,80 @@
     <string>name</string>
 
     <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>itemUseEffect</string>
+
+    <string>아이템 사용 효과</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>itemId</string>
+
+    <string>아이템 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>chat</string>
+
+    <string>챗</string>
+
+    <string>nvarchar(32)</string>
+
+    <string>Nickname</string>
+
+    <string>nvarchar</string>
+
+    <string>32</string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>animationName</string>
+
+    <string>애니메이션 이름</string>
 
     <string>nvarchar(64)</string>
 
@@ -6562,9 +6796,9 @@
 
 <ArrayOfString>
 
-    <string>officeRoomInfo</string>
+    <string>officeSpaceInfo</string>
 
-    <string>오피스 룸 선택 정보</string>
+    <string>오피스 공간 선택 정보</string>
 
   </ArrayOfString>
 
@@ -6632,6 +6866,26 @@
 
 <ArrayOfString>
 
+    <string>spaceName</string>
+
+    <string>공간 이름</string>
+
+    <string>nvarchar(32)</string>
+
+    <string>Nickname</string>
+
+    <string>nvarchar</string>
+
+    <string>32</string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
     <string>thumbnail</string>
 
     <string>썸네일</string>
@@ -6663,6 +6917,26 @@
     <string>nvarchar</string>
 
     <string>32</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>sitCapacity</string>
+
+    <string>자리 공간</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
 
     <string></string>
 
