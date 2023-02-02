@@ -1632,6 +1632,8 @@ insert into localization ( id, kor, eng ) values ( '90040',  '받은 친구 요�
 insert into localization ( id, kor, eng ) values ( '90041',  '진행 중인 투표가 없습니다.',  '진행 중인 투표가 없습니다.' );
 insert into localization ( id, kor, eng ) values ( '90042',  '여기서는 지도를 볼 수 없습니다.',  '여기서는 지도를 볼 수 없습니다.' );
 insert into localization ( id, kor, eng ) values ( '90043',  '여기서는 코스튬 설정이 불가능합니다.',  '여기서는 코스튬 설정이 불가능합니다.' );
+insert into localization ( id, kor, eng ) values ( 'businesscard_arzmeta',  '아즈메타 기본 명함',  '' );
+insert into localization ( id, kor, eng ) values ( 'businesscard_business1',  '기본 비즈니스 명함',  '' );
 
 insert into osType ( type, name, storeUrl) values ( 1,  'android',  'https://google.com' );
 insert into osType ( type, name, storeUrl) values ( 2,  'iOS',  'https://apple.com' );
@@ -14285,7 +14287,7 @@ insert into officeGradeAuthority ( gradeType, isUsePaidRoom, capacityLimit, rese
 insert into officeGradeAuthority ( gradeType, isUsePaidRoom, capacityLimit, reserveLimit, isThumbnail, isWaitingRoom, isAdvertising, isObserver, isChangeAdmin, timeLimit, isChangeTime ) values ( 3,  1,  0,  0,  1,  1,  0,  1,  1,  720,  1 );
 insert into officeGradeAuthority ( gradeType, isUsePaidRoom, capacityLimit, reserveLimit, isThumbnail, isWaitingRoom, isAdvertising, isObserver, isChangeAdmin, timeLimit, isChangeTime ) values ( 4,  1,  0,  0,  1,  1,  1,  1,  1,  720,  1 );
 
-insert into businessCardInfo ( id, desc, deleteable, purchaseType, price ) values ( 1,  'businesscard_arzmeta',  0,  1,  0 );
-insert into businessCardInfo ( id, desc, deleteable, purchaseType, price ) values ( 2,  'businesscard_business',  1,  1,  0 );
+insert into businessCardInfo ( id, description, deleteable, purchaseType, price ) values ( 1,  'businesscard_arzmeta',  0,  1,  0 );
+insert into businessCardInfo ( id, description, deleteable, purchaseType, price ) values ( 2,  'businesscard_business1',  1,  1,  0 );
 
 

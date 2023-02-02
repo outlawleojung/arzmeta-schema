@@ -92,7 +92,7 @@ create table if not exists avatarPresetType
 create table if not exists businessCardInfo
 (
     id                   int(11),
-    desc                varchar(64),
+    description         varchar(64),
     purchaseType         int(11),
     deleteable          int(11),
     price               int(11),

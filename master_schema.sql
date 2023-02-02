@@ -325,7 +325,7 @@ go
 CREATE TABLE businessCardInfo
 ( 
 	id                   Identifier ,
-	desc                 Nickname ,
+	description          Nickname ,
 	purchaseType         Identifier ,
 	deleteable           Value ,
 	price                Value ,
@@ -1429,7 +1429,7 @@ go
 
 
 ALTER TABLE businessCardInfo
-	ADD CONSTRAINT R_3397 FOREIGN KEY (desc) REFERENCES localization(id)
+	ADD CONSTRAINT R_3397 FOREIGN KEY (description) REFERENCES localization(id)
 go
 
 

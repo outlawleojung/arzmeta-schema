@@ -934,7 +934,7 @@
 
 <ArrayOfString>
 
-    <string>desc</string>
+    <string>description</string>
 
     <string>설명 아이디</string>
 
