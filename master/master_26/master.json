@@ -55920,6 +55920,813 @@
       "gradeType": 1
     }
   ],
+  "ItemUseEffect": [
+    {
+      "itemId": 310001,
+      "chat": "item_shorthair_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 310002,
+      "chat": "item_longstraighthair_chat",
+      "animationName": "emote_talk_02"
+    },
+    {
+      "itemId": 310003,
+      "chat": "item_grayhat_chat",
+      "animationName": "emote_talk_03"
+    },
+    {
+      "itemId": 310004,
+      "chat": "item_pinkpigtails_chat",
+      "animationName": "emote_talk_02"
+    },
+    {
+      "itemId": 310005,
+      "chat": "item_graycombedbackhair_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 310006,
+      "chat": "item_browncombedbackhair_chat",
+      "animationName": "emote_talk_03"
+    },
+    {
+      "itemId": 310007,
+      "chat": "item_blackhair_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 310008,
+      "chat": "item_blackwoolfcut_chat",
+      "animationName": "emote_talk_03"
+    },
+    {
+      "itemId": 310009,
+      "chat": "item_blondcombedbackhair_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 310010,
+      "chat": "item_yellowshorthair_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 310011,
+      "chat": "item_dinosaurhead_chat",
+      "animationName": "emote_hi_01"
+    },
+    {
+      "itemId": 310012,
+      "chat": "item_alienhead_chat",
+      "animationName": "emote_hi_01"
+    },
+    {
+      "itemId": 310013,
+      "chat": "item_purplerobothead_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 310014,
+      "chat": "item_pinkrobothead_chat",
+      "animationName": "emote_talk_03"
+    },
+    {
+      "itemId": 310015,
+      "chat": "item_suncappermhair_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 310016,
+      "chat": "item_redwavyhair_chat",
+      "animationName": "emote_talk_02"
+    },
+    {
+      "itemId": 310017,
+      "chat": "item_whitefoamhonggildonghair_chat",
+      "animationName": "emote_talk_03"
+    },
+    {
+      "itemId": 310018,
+      "chat": "item_redfoamhonggildonghair_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 310019,
+      "chat": "item_yellowbandana_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 310020,
+      "chat": "item_blackbandana_chat",
+      "animationName": "emote_talk_02"
+    },
+    {
+      "itemId": 310021,
+      "chat": "item_grandmahair_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 310022,
+      "chat": "item_basicgod_chat",
+      "animationName": "emote_talk_03"
+    },
+    {
+      "itemId": 310023,
+      "chat": "item_koreanflowerhairpin_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 310024,
+      "chat": "item_basicgod_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 310025,
+      "chat": "item_koreanflowerhairpin_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 310026,
+      "chat": "item_yugwansoonhair_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 310027,
+      "chat": "item_connectitylogoballcap_chat",
+      "animationName": "emote_hi_01"
+    },
+    {
+      "itemId": 310028,
+      "chat": "item_cnctballcap_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 310029,
+      "chat": "item_santahat_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 310030,
+      "chat": "item_christmaselfhat_chat",
+      "animationName": "emote_hi_01"
+    },
+    {
+      "itemId": 310031,
+      "chat": "item_rudolphhat_chat",
+      "animationName": "emote_cute_01"
+    },
+    {
+      "itemId": 310032,
+      "chat": "item_gingerbreadhat_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 310033,
+      "chat": "item_rabbithat_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 320001,
+      "chat": "item_blackskulltshirt_chat",
+      "animationName": "emote_followme_01"
+    },
+    {
+      "itemId": 320002,
+      "chat": "item_smiletshirt_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 320003,
+      "chat": "item_whiteshirt_chat",
+      "animationName": "emote_talk_02"
+    },
+    {
+      "itemId": 320004,
+      "chat": "item_redplaidshirt_chat",
+      "animationName": "emote_talk_02"
+    },
+    {
+      "itemId": 320005,
+      "chat": "item_blueplaidshirt_chat",
+      "animationName": "emote_talk_01"
+    },
+    {
+      "itemId": 320006,
+      "chat": "item_blackshirt_chat",
+      "animationName": "emote_talk_01"
+    },
+    {
+      "itemId": 320007,
+      "chat": "item_ribbonblouse_chat",
+      "animationName": "emote_emotion_01"
+    },
+    {
+      "itemId": 320008,
+      "chat": "item_whitesleeveless_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 320009,
+      "chat": "item_popartsleeveless_chat",
+      "animationName": "emote_emotion_01"
+    },
+    {
+      "itemId": 320010,
+      "chat": "item_rainbowsleeveless_chat",
+      "animationName": "emote_clap_01"
+    },
+    {
+      "itemId": 320011,
+      "chat": "item_croptop_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 320012,
+      "chat": "item_sailorcroptop_chat",
+      "animationName": "emote_clap_01"
+    },
+    {
+      "itemId": 320013,
+      "chat": "item_pinklovercroptop_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 320014,
+      "chat": "item_blacksuitjacket_chat",
+      "animationName": "emote_hi_01"
+    },
+    {
+      "itemId": 320015,
+      "chat": "item_trainingjacket_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 320016,
+      "chat": "item_cnctivoryanorak_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 320017,
+      "chat": "item_cnctbeigeanorak_chat",
+      "animationName": "emote_talk_01"
+    },
+    {
+      "itemId": 320018,
+      "chat": "item_cnctblackanorak_chat",
+      "animationName": "emote_clap_01"
+    },
+    {
+      "itemId": 320019,
+      "chat": "item_cnctivorywindbreak_chat",
+      "animationName": "emote_hi_01"
+    },
+    {
+      "itemId": 320020,
+      "chat": "item_cnctbeigewindbreak_chat",
+      "animationName": "emote_talk_02"
+    },
+    {
+      "itemId": 320021,
+      "chat": "item_cnctblackwindbreak_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 320022,
+      "chat": "item_cnctwhitelogotshirt_chat",
+      "animationName": "emote_cute_01"
+    },
+    {
+      "itemId": 320023,
+      "chat": "item_cnctkhakilogotshirt_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 320024,
+      "chat": "item_cnctblacklogotshirt_chat",
+      "animationName": "emote_cute_01"
+    },
+    {
+      "itemId": 320025,
+      "chat": "item_cnctgraycottonanorakjumper_chat",
+      "animationName": "emote_talk_02"
+    },
+    {
+      "itemId": 320026,
+      "chat": "item_cnctnavycottonanorakjumper_chat",
+      "animationName": "emote_hi_01"
+    },
+    {
+      "itemId": 320027,
+      "chat": "item_cnctgraybouclesweatshirt_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 320028,
+      "chat": "item_cnctblackbouclesweatshirt_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 320029,
+      "chat": "item_cnctivoryhalfzipupsweatshirt_chat",
+      "animationName": "emote_talk_01"
+    },
+    {
+      "itemId": 320030,
+      "chat": "item_cnctnavyhalfzipupsweatshirt_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 320031,
+      "chat": "item_whitenecktieshirt_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 320032,
+      "chat": "item_redblouse_chat",
+      "animationName": "emote_hi_01"
+    },
+    {
+      "itemId": 320033,
+      "chat": "item_brownsuitjacket_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 320034,
+      "chat": "item_navy3buttonsuit_chat",
+      "animationName": "emote_emotion_01"
+    },
+    {
+      "itemId": 320035,
+      "chat": "item_green3buttonsuit_chat",
+      "animationName": "emote_talk_02"
+    },
+    {
+      "itemId": 320036,
+      "chat": "item_brown3buttonsuit_chat",
+      "animationName": "emote_talk_02"
+    },
+    {
+      "itemId": 320038,
+      "chat": "item_greenblouse_chat",
+      "animationName": "emote_talk_01"
+    },
+    {
+      "itemId": 330001,
+      "chat": "item_blackshorts_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 330002,
+      "chat": "item_beigeshorts_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 330003,
+      "chat": "item_darkjeans_chat",
+      "animationName": "action_checking_01"
+    },
+    {
+      "itemId": 330004,
+      "chat": "item_lightjeans_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 330005,
+      "chat": "item_whitelongpants_chat",
+      "animationName": "emote_talk_02"
+    },
+    {
+      "itemId": 330006,
+      "chat": "item_blacklongpants_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 330007,
+      "chat": "item_khakilongpants_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 330008,
+      "chat": "item_blueplaidpleatedminiskirt_chat",
+      "animationName": "action_checking_01"
+    },
+    {
+      "itemId": 330009,
+      "chat": "item_whitepleatedminiskirt_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 330010,
+      "chat": "item_blackpleatedminiskirt_chat",
+      "animationName": "emote_talk_02"
+    },
+    {
+      "itemId": 330011,
+      "chat": "item_brownplaidskirt_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 330012,
+      "chat": "item_whitezipperskirt_chat",
+      "animationName": "emote_hi_01"
+    },
+    {
+      "itemId": 330013,
+      "chat": "item_blackzipperskirt_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 330014,
+      "chat": "item_greenplaidlongskirt_chat",
+      "animationName": "emote_talk_02"
+    },
+    {
+      "itemId": 330015,
+      "chat": "item_blacksuitpants_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 330016,
+      "chat": "item_trainingpants_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 330017,
+      "chat": "item_cnctivoryhalfpants_chat",
+      "animationName": "emote_clap_01"
+    },
+    {
+      "itemId": 330018,
+      "chat": "item_cnctbeigehalfpants_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 330019,
+      "chat": "item_cnctblackhalfpants_chat",
+      "animationName": "emote_hi_01"
+    },
+    {
+      "itemId": 330020,
+      "chat": "item_cnctivoryjoggerpants_chat",
+      "animationName": "emote_hi_01"
+    },
+    {
+      "itemId": 330021,
+      "chat": "item_cnctbeigejoggerpants_chat",
+      "animationName": "emote_talk_01"
+    },
+    {
+      "itemId": 330022,
+      "chat": "item_cnctblackjoggerpants_chat",
+      "animationName": "emote_cute_01"
+    },
+    {
+      "itemId": 330023,
+      "chat": "item_cnctgraybandjoggerpants_chat",
+      "animationName": "emote_hi_01"
+    },
+    {
+      "itemId": 330024,
+      "chat": "item_cnctnavybandjoggerpants_chat",
+      "animationName": "emote_clap_01"
+    },
+    {
+      "itemId": 330025,
+      "chat": "item_cnctivorylipjoggerpants_chat",
+      "animationName": "emote_talk_01"
+    },
+    {
+      "itemId": 330026,
+      "chat": "item_cnctnavylipjoggerpants_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 330027,
+      "chat": "item_navysuitpants_chat",
+      "animationName": "emote_hi_01"
+    },
+    {
+      "itemId": 330028,
+      "chat": "item_greensuitpants_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 330029,
+      "chat": "item_brownsuitpants_chat",
+      "animationName": "emote_clap_01"
+    },
+    {
+      "itemId": 340001,
+      "chat": "item_robotsuit_chat",
+      "animationName": "emote_hi_01"
+    },
+    {
+      "itemId": 340002,
+      "chat": "item_leatherdress_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 340003,
+      "chat": "item_skydress_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 340004,
+      "chat": "item_dinosaursuit_chat",
+      "animationName": "emote_hi_01"
+    },
+    {
+      "itemId": 340005,
+      "chat": "item_aliensuit_chat",
+      "animationName": "emote_hi_01"
+    },
+    {
+      "itemId": 340006,
+      "chat": "item_blueoveralls_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 340007,
+      "chat": "item_rashguard_chat",
+      "animationName": "emote_followme_01"
+    },
+    {
+      "itemId": 340008,
+      "chat": "item_bluejumpsuit_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 340009,
+      "chat": "item_greenapron_chat",
+      "animationName": "emote_talk_02"
+    },
+    {
+      "itemId": 340010,
+      "chat": "item_whiteapron_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 340011,
+      "chat": "item_blueapron_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 340012,
+      "chat": "item_blackapron_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 340013,
+      "chat": "item_greengakseori_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 340014,
+      "chat": "item_browngakseori_chat",
+      "animationName": "action_checking_01"
+    },
+    {
+      "itemId": 340015,
+      "chat": "item_yellowapron_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 340016,
+      "chat": "item_orangeapron_chat",
+      "animationName": "emote_talk_02"
+    },
+    {
+      "itemId": 340017,
+      "chat": "item_blueworkpants_chat",
+      "animationName": "action_checking_01"
+    },
+    {
+      "itemId": 340018,
+      "chat": "item_redworkpants_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 340019,
+      "chat": "item_menspurplehanbok_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 340020,
+      "chat": "item_menspurplehanbok_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 340021,
+      "chat": "item_womenspinkhanbok_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 340022,
+      "chat": "item_menskoreantopcoat_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 340023,
+      "chat": "item_menskoreantopcoat_chat",
+      "animationName": "emote_talk_03"
+    },
+    {
+      "itemId": 340024,
+      "chat": "item_yugwansoonhair_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 340025,
+      "chat": "item_santaclause_chat",
+      "animationName": "emote_hi_01"
+    },
+    {
+      "itemId": 340026,
+      "chat": "item_christmaself_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 340027,
+      "chat": "item_rudolph_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 340028,
+      "chat": "item_gingerbread_chat",
+      "animationName": "emote_cute_01"
+    },
+    {
+      "itemId": 340029,
+      "chat": "item_rabbit_chat",
+      "animationName": "emote_cute_01"
+    },
+    {
+      "itemId": 350001,
+      "chat": "item_blackshoes_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 350002,
+      "chat": "item_blacklowcanvas_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 350003,
+      "chat": "item_brownsandals_chat",
+      "animationName": "emote_talk_03"
+    },
+    {
+      "itemId": 350004,
+      "chat": "item_khakisandals_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 350005,
+      "chat": "item_blackslippers_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 350006,
+      "chat": "item_blackthreelineslippers_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 350007,
+      "chat": "item_pinkthreelineslippers_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 350008,
+      "chat": "item_skythreelineslippers_chat",
+      "animationName": "emote_talk_03"
+    },
+    {
+      "itemId": 350009,
+      "chat": "item_pinkrabbitslippers_chat",
+      "animationName": "action_checking_01"
+    },
+    {
+      "itemId": 350010,
+      "chat": "item_trainingrunningshoes_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 350011,
+      "chat": "item_blackhighcanvas_chat",
+      "animationName": "emote_talk_03"
+    },
+    {
+      "itemId": 350012,
+      "chat": "item_redhighcanvas_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 350013,
+      "chat": "item_minthighcanvas_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 350014,
+      "chat": "item_purplehighcanvas_chat",
+      "animationName": "emote_talk_03"
+    },
+    {
+      "itemId": 350015,
+      "chat": "item_bluehighcanvas_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 350016,
+      "chat": "item_greenhighcanvas_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 350017,
+      "chat": "item_yellowhighcanvas_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 350018,
+      "chat": "item_orangehighcanvas_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 350019,
+      "chat": "item_whitehighcanvas_chat",
+      "animationName": "emote_talk_03"
+    },
+    {
+      "itemId": 350020,
+      "chat": "item_blackwalker_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 350021,
+      "chat": "item_redflats_chat",
+      "animationName": "emote_cute_01"
+    },
+    {
+      "itemId": 350022,
+      "chat": "item_flippers_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 360001,
+      "chat": "item_blackroundglasses_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 360002,
+      "chat": "item_redroundglasses_chat",
+      "animationName": "action_checking_01"
+    },
+    {
+      "itemId": 360003,
+      "chat": "item_goldroundglasses_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 360004,
+      "chat": "item_silverroundglasses_chat",
+      "animationName": "action_fingersnap_01"
+    },
+    {
+      "itemId": 360005,
+      "chat": "item_graybeard_chat",
+      "animationName": "emote_talk_02"
+    },
+    {
+      "itemId": 360006,
+      "chat": "item_brownbeard_chat",
+      "animationName": "emote_talk_03"
+    },
+    {
+      "itemId": 360007,
+      "chat": "item_blackbeard_chat",
+      "animationName": "emote_talk_03"
+    },
+    {
+      "itemId": 360008,
+      "chat": "item_blondebeard_chat",
+      "animationName": "action_checking_01"
+    },
+    {
+      "itemId": 360009,
+      "chat": "item_yellowbeard_chat",
+      "animationName": "emote_talk_04"
+    },
+    {
+      "itemId": 360010,
+      "chat": "item_blacksunglasses_chat",
+      "animationName": "emote_talk_02"
+    },
+    {
+      "itemId": 360011,
+      "chat": "item_santabeard_chat",
+      "animationName": "emote_talk_04"
+    }
+  ],
   "ItemType": [
     {
       "type": 1,
