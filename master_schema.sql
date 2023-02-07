@@ -322,6 +322,16 @@ go
 
 
 
+CREATE TABLE avatarResetInfo
+( 
+	partsType            Identifier ,
+	itemId               Identifier ,
+	CONSTRAINT avatarResetInfo_PK PRIMARY KEY  CLUSTERED (partsType ASC)
+)
+go
+
+
+
 CREATE TABLE businessCardInfo
 ( 
 	id                   Identifier ,
@@ -329,6 +339,7 @@ CREATE TABLE businessCardInfo
 	purchaseType         Identifier ,
 	deleteable           Value ,
 	price                Value ,
+	maxHold              Value ,
 	CONSTRAINT businessCardInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
@@ -498,6 +509,7 @@ CREATE TABLE itemUseEffect
 	itemId               Identifier ,
 	chat                 Nickname ,
 	animationName        Name ,
+	partsType            Identifier ,
 	CONSTRAINT itemUseEffect_PK PRIMARY KEY  CLUSTERED (itemId ASC)
 )
 go
@@ -643,6 +655,21 @@ go
 
 
 
+CREATE TABLE memberArzmetaCardInfo
+( 
+	memberId             Identifier_Member_Id  NOT NULL ,
+	cardInfoId           Identifier ,
+	num                  Value ,
+	nickname             Nickname ,
+	stateMessage         Content ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT memberArzmetaCardInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,cardInfoId ASC,num ASC)
+)
+go
+
+
+
 CREATE TABLE memberAvatarInfo
 ( 
 	memberId             Identifier_Member_Id  NOT NULL ,
@@ -651,6 +678,36 @@ CREATE TABLE memberAvatarInfo
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
 	CONSTRAINT memberAvatarInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,avatarPartsType ASC)
+)
+go
+
+
+
+CREATE TABLE memberBusinessCardInfo
+( 
+	memberId             Identifier_Member_Id  NOT NULL ,
+	cardInfoId           Identifier ,
+	num                  Value ,
+	name                 Name ,
+	job                  Nickname ,
+	email                Name ,
+	phone                Phone ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT memberBusinessCardInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,cardInfoId ASC,num ASC)
+)
+go
+
+
+
+CREATE TABLE memberCardInfo
+( 
+	memberId             Identifier_Member_Id  NOT NULL ,
+	cardInfoId           Identifier ,
+	num                  Value ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT memberCardInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,cardInfoId ASC,num ASC)
 )
 go
 
@@ -909,6 +966,26 @@ go
 
 
 
+CREATE TABLE officeExposure
+( 
+	exposureType         Identifier ,
+	modeType             Identifier ,
+	CONSTRAINT officeExposure_PK PRIMARY KEY  CLUSTERED (exposureType ASC,modeType ASC)
+)
+go
+
+
+
+CREATE TABLE officeExposureType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT officeExposureType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE officeGradeAuthority
 ( 
 	gradeType            Identifier ,
@@ -944,6 +1021,8 @@ CREATE TABLE officeMode
 	gradeType            Identifier ,
 	privateYn            Value ,
 	passwordYn           Value ,
+	icon                 Name ,
+	modeDesc             Nickname ,
 	roomName             Nickname ,
 	roomDesc             Nickname ,
 	startMin             Value ,
@@ -968,7 +1047,7 @@ go
 CREATE TABLE officeModeType
 ( 
 	type                 Identifier ,
-	name                 Name ,
+	name                 Nickname ,
 	CONSTRAINT officeModeType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
@@ -980,6 +1059,19 @@ CREATE TABLE officePermissionType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT officePermissionType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE officeProductItem
+( 
+	id                   Identifier ,
+	officeGradeType      Identifier ,
+	paymentType          Identifier ,
+	purchaseType         Identifier ,
+	price                Value ,
+	CONSTRAINT officeProductItem_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
 
@@ -1050,6 +1142,16 @@ CREATE TABLE packageType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT packageType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE paymentType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT paymentType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -1428,6 +1530,20 @@ go
 
 
 
+ALTER TABLE avatarResetInfo
+	ADD CONSTRAINT R_3414 FOREIGN KEY (partsType) REFERENCES avatarPartsType(type)
+go
+
+
+
+
+ALTER TABLE avatarResetInfo
+	ADD CONSTRAINT R_3415 FOREIGN KEY (itemId) REFERENCES item(id)
+go
+
+
+
+
 ALTER TABLE businessCardInfo
 	ADD CONSTRAINT R_3397 FOREIGN KEY (description) REFERENCES localization(id)
 go
@@ -1596,6 +1712,13 @@ go
 
 
 
+ALTER TABLE itemUseEffect
+	ADD CONSTRAINT R_3413 FOREIGN KEY (partsType) REFERENCES avatarPartsType(type)
+go
+
+
+
+
 ALTER TABLE jumpingMatchingLevel
 	ADD CONSTRAINT R_3266 FOREIGN KEY (gameType) REFERENCES jumpingMatchingGameType(type)
 go
@@ -1652,6 +1775,13 @@ go
 
 
 
+ALTER TABLE memberArzmetaCardInfo
+	ADD CONSTRAINT R_3402 FOREIGN KEY (memberId,cardInfoId,num) REFERENCES memberCardInfo(memberId,cardInfoId,num)
+go
+
+
+
+
 ALTER TABLE memberAvatarInfo
 	ADD CONSTRAINT R_3253 FOREIGN KEY (memberId) REFERENCES member(memberId)
 go
@@ -1668,6 +1798,27 @@ go
 
 ALTER TABLE memberAvatarInfo
 	ADD CONSTRAINT R_3255 FOREIGN KEY (avatarPartsId) REFERENCES avatarParts(id)
+go
+
+
+
+
+ALTER TABLE memberBusinessCardInfo
+	ADD CONSTRAINT R_3403 FOREIGN KEY (memberId,cardInfoId,num) REFERENCES memberCardInfo(memberId,cardInfoId,num)
+go
+
+
+
+
+ALTER TABLE memberCardInfo
+	ADD CONSTRAINT R_3400 FOREIGN KEY (cardInfoId) REFERENCES businessCardInfo(id)
+go
+
+
+
+
+ALTER TABLE memberCardInfo
+	ADD CONSTRAINT R_3401 FOREIGN KEY (memberId) REFERENCES member(memberId)
 go
 
 
@@ -1869,6 +2020,20 @@ go
 
 
 
+ALTER TABLE officeExposure
+	ADD CONSTRAINT R_3410 FOREIGN KEY (exposureType) REFERENCES officeExposureType(type)
+go
+
+
+
+
+ALTER TABLE officeExposure
+	ADD CONSTRAINT R_3412 FOREIGN KEY (modeType) REFERENCES officeModeType(type)
+go
+
+
+
+
 ALTER TABLE officeGradeAuthority
 	ADD CONSTRAINT R_3380 FOREIGN KEY (gradeType) REFERENCES officeGradeType(type)
 go
@@ -1904,6 +2069,13 @@ go
 
 
 
+ALTER TABLE officeMode
+	ADD CONSTRAINT R_3409 FOREIGN KEY (modeDesc) REFERENCES localization(id)
+go
+
+
+
+
 ALTER TABLE officeModeSlot
 	ADD CONSTRAINT R_3362 FOREIGN KEY (modeType) REFERENCES officeModeType(type)
 go
@@ -1913,6 +2085,34 @@ go
 
 ALTER TABLE officeModeSlot
 	ADD CONSTRAINT R_3365 FOREIGN KEY (permissionType) REFERENCES officePermissionType(type)
+go
+
+
+
+
+ALTER TABLE officeModeType
+	ADD CONSTRAINT R_3408 FOREIGN KEY (name) REFERENCES localization(id)
+go
+
+
+
+
+ALTER TABLE officeProductItem
+	ADD CONSTRAINT R_3416 FOREIGN KEY (officeGradeType) REFERENCES officeGradeType(type)
+go
+
+
+
+
+ALTER TABLE officeProductItem
+	ADD CONSTRAINT R_3418 FOREIGN KEY (paymentType) REFERENCES paymentType(type)
+go
+
+
+
+
+ALTER TABLE officeProductItem
+	ADD CONSTRAINT R_3419 FOREIGN KEY (purchaseType) REFERENCES purchaseType(type)
 go
 
 
