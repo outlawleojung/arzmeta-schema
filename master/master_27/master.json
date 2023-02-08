@@ -3373,7 +3373,20 @@
             "name": "구매 파츠 (Lock)"
         }
     ],
-    "AvatarResetInfo": [],
+    "AvatarResetInfo": [
+        {
+            "partsType": 1,
+            "itemId": 310001
+        },
+        {
+            "partsType": 2,
+            "itemId": 320008
+        },
+        {
+            "partsType": 3,
+            "itemId": 330001
+        }
+    ],
     "BusinessCardInfo": [
         {
             "id": 1,
