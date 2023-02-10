@@ -435,6 +435,16 @@ go
 
 
 
+CREATE TABLE inquiryType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT inquiryType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE interiorInstallInfo
 ( 
 	itemId               Identifier ,
@@ -1253,6 +1263,26 @@ CREATE TABLE quizTimeType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT quizTimeType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE reportCategory
+( 
+	reportType           Identifier ,
+	reasonType           Identifier ,
+	CONSTRAINT reportCategory_PK PRIMARY KEY  CLUSTERED (reportType ASC,reasonType ASC)
+)
+go
+
+
+
+CREATE TABLE reportReasonType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT reportReasonType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -2162,6 +2192,20 @@ go
 
 ALTER TABLE quizRoundTime
 	ADD CONSTRAINT R_3268 FOREIGN KEY (TimeType) REFERENCES quizTimeType(type)
+go
+
+
+
+
+ALTER TABLE reportCategory
+	ADD CONSTRAINT R_3420 FOREIGN KEY (reasonType) REFERENCES reportReasonType(type)
+go
+
+
+
+
+ALTER TABLE reportCategory
+	ADD CONSTRAINT R_3421 FOREIGN KEY (reportType) REFERENCES reportType(type)
 go
 
 
