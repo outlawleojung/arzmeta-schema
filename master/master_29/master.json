@@ -3389,14 +3389,6 @@
   ],
   "BusinessCardInfo": [
     {
-      "id": 1,
-      "description": "businesscard_arzmeta",
-      "purchaseType": 1,
-      "deleteable": 0,
-      "price": 0,
-      "maxHold": 1
-    },
-    {
       "id": 2,
       "description": "businesscard_business1",
       "purchaseType": 1,
@@ -64129,7 +64121,7 @@
       "isAdvertising": 0,
       "isObserver": 0,
       "isChangeAdmin": 0,
-      "timeLimit": 1920,
+      "timeLimit": 720,
       "isChangeTime": 1
     },
     {
@@ -64142,7 +64134,7 @@
       "isAdvertising": 0,
       "isObserver": 1,
       "isChangeAdmin": 1,
-      "timeLimit": 1920,
+      "timeLimit": 720,
       "isChangeTime": 1
     },
     {
@@ -64155,7 +64147,7 @@
       "isAdvertising": 1,
       "isObserver": 1,
       "isChangeAdmin": 1,
-      "timeLimit": 1920,
+      "timeLimit": 720,
       "isChangeTime": 1
     }
   ],
