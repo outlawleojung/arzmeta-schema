@@ -1431,6 +1431,11 @@ insert into startInventory(itemId,count) values (360010,1);
 
 -- tablename : officeSpaceInfo
 
+-- tablename : officeGradeAuthority
+update officeGradeAuthority set gradeType = 2,isUsePaidRoom = 1,capacityLimit = 0,reserveLimit = 0,isThumbnail = 0,isWaitingRoom = 0,isAdvertising = 0,isObserver = 0,isChangeAdmin = 0,timeLimit = 720,isChangeTime = 1 where gradeType = 2;
+update officeGradeAuthority set gradeType = 3,isUsePaidRoom = 1,capacityLimit = 0,reserveLimit = 0,isThumbnail = 1,isWaitingRoom = 1,isAdvertising = 0,isObserver = 1,isChangeAdmin = 1,timeLimit = 720,isChangeTime = 1 where gradeType = 3;
+update officeGradeAuthority set gradeType = 4,isUsePaidRoom = 1,capacityLimit = 0,reserveLimit = 0,isThumbnail = 1,isWaitingRoom = 1,isAdvertising = 1,isObserver = 1,isChangeAdmin = 1,timeLimit = 720,isChangeTime = 1 where gradeType = 4;
+
 -- tablename : businessCardInfo
 
 ROLLBACK;

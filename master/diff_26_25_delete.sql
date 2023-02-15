@@ -153,4 +153,6 @@ delete from avatarPreset where presetType = 4 and partsType = 6;
 
 -- tablename : officeModeSlot
 
+-- tablename : officeGradeAuthority
+
 ROLLBACK;
