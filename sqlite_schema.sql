@@ -110,6 +110,7 @@ create table if not exists businessCardTemplate
     jobField            int(11),
     positonField        int(11),
     introFiled          int(11),
+    thumbnailField      int(11),
     primary key(id)
 )
 ;

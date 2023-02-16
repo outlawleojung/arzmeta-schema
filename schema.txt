@@ -1206,6 +1206,26 @@
 
   </ArrayOfString>
 
+<ArrayOfString>
+
+    <string>thumbnailField</string>
+
+    <string>썸네일 필드</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
 
 
   

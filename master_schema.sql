@@ -346,6 +346,7 @@ CREATE TABLE businessCardTemplate
 	jobField             Value ,
 	positonField         Value ,
 	introFiled           Value ,
+	thumbnailField       Value ,
 	CONSTRAINT businessCardTemplate_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
