@@ -332,15 +332,21 @@ go
 
 
 
-CREATE TABLE businessCardInfo
+CREATE TABLE businessCardTemplate
 ( 
 	id                   Identifier ,
-	description          Nickname ,
+	descripntion         Nickname ,
 	purchaseType         Identifier ,
-	deleteable           Value ,
 	price                Value ,
-	maxHold              Value ,
-	CONSTRAINT businessCardInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
+	nameField            Value ,
+	phoneField           Value ,
+	emailField           Value ,
+	addrField            Value ,
+	faxField             Value ,
+	jobField             Value ,
+	positonField         Value ,
+	introFiled           Value ,
+	CONSTRAINT businessCardTemplate_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
 
@@ -668,13 +674,12 @@ go
 CREATE TABLE memberArzmetaCardInfo
 ( 
 	memberId             Identifier_Member_Id  NOT NULL ,
-	cardInfoId           Identifier ,
 	num                  Value ,
 	nickname             Nickname ,
 	stateMessage         Content ,
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
-	CONSTRAINT memberArzmetaCardInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,cardInfoId ASC,num ASC)
+	CONSTRAINT memberArzmetaCardInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,num ASC)
 )
 go
 
@@ -696,7 +701,27 @@ go
 CREATE TABLE memberBusinessCardInfo
 ( 
 	memberId             Identifier_Member_Id  NOT NULL ,
-	cardInfoId           Identifier ,
+	templateId           Identifier ,
+	num                  Value ,
+	name                 Name ,
+	phone                Name ,
+	email                Name ,
+	addr                 Name ,
+	fax                  Name ,
+	job                  Name ,
+	positon              Name ,
+	intro                Content ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT memberBusinessCardInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,templateId ASC,num ASC)
+)
+go
+
+
+
+CREATE TABLE memberBusinessCardInfo
+( 
+	memberId             Identifier_Member_Id  NOT NULL ,
 	num                  Value ,
 	name                 Name ,
 	job                  Nickname ,
@@ -704,7 +729,7 @@ CREATE TABLE memberBusinessCardInfo
 	phone                Phone ,
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
-	CONSTRAINT memberBusinessCardInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,cardInfoId ASC,num ASC)
+	CONSTRAINT memberBusinessCardInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,num ASC)
 )
 go
 
@@ -713,11 +738,10 @@ go
 CREATE TABLE memberCardInfo
 ( 
 	memberId             Identifier_Member_Id  NOT NULL ,
-	cardInfoId           Identifier ,
 	num                  Value ,
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
-	CONSTRAINT memberCardInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,cardInfoId ASC,num ASC)
+	CONSTRAINT memberCardInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,num ASC)
 )
 go
 
@@ -1574,15 +1598,15 @@ go
 
 
 
-ALTER TABLE businessCardInfo
-	ADD CONSTRAINT R_3397 FOREIGN KEY (description) REFERENCES localization(id)
+ALTER TABLE businessCardTemplate
+	ADD CONSTRAINT R_3422 FOREIGN KEY (descripntion) REFERENCES localization(id)
 go
 
 
 
 
-ALTER TABLE businessCardInfo
-	ADD CONSTRAINT R_3398 FOREIGN KEY (purchaseType) REFERENCES purchaseType(type)
+ALTER TABLE businessCardTemplate
+	ADD CONSTRAINT R_3424 FOREIGN KEY (purchaseType) REFERENCES purchaseType(type)
 go
 
 
@@ -1806,7 +1830,7 @@ go
 
 
 ALTER TABLE memberArzmetaCardInfo
-	ADD CONSTRAINT R_3402 FOREIGN KEY (memberId,cardInfoId,num) REFERENCES memberCardInfo(memberId,cardInfoId,num)
+	ADD CONSTRAINT R_3402 FOREIGN KEY (memberId,num) REFERENCES memberCardInfo(memberId,num)
 go
 
 
@@ -1834,14 +1858,21 @@ go
 
 
 ALTER TABLE memberBusinessCardInfo
-	ADD CONSTRAINT R_3403 FOREIGN KEY (memberId,cardInfoId,num) REFERENCES memberCardInfo(memberId,cardInfoId,num)
+	ADD CONSTRAINT R_3427 FOREIGN KEY (templateId) REFERENCES businessCardTemplate(id)
 go
 
 
 
 
-ALTER TABLE memberCardInfo
-	ADD CONSTRAINT R_3400 FOREIGN KEY (cardInfoId) REFERENCES businessCardInfo(id)
+ALTER TABLE memberBusinessCardInfo
+	ADD CONSTRAINT R_3428 FOREIGN KEY (memberId) REFERENCES member(memberId)
+go
+
+
+
+
+ALTER TABLE memberBusinessCardInfo
+	ADD CONSTRAINT R_3403 FOREIGN KEY (memberId,num) REFERENCES memberCardInfo(memberId,num)
 go
 
 
