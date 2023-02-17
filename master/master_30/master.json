@@ -64538,7 +64538,8 @@
       "defaultCapacity": 10,
       "minCapacity": 1,
       "maxCapacity": 18,
-      "maxObserver": 0
+      "maxObserver": 0,
+      "sitCapacity": 18
     },
     {
       "id": 1002,
@@ -64550,7 +64551,8 @@
       "defaultCapacity": 10,
       "minCapacity": 1,
       "maxCapacity": 18,
-      "maxObserver": 0
+      "maxObserver": 0,
+      "sitCapacity": 18
     },
     {
       "id": 2001,
@@ -64562,7 +64564,8 @@
       "defaultCapacity": 30,
       "minCapacity": 1,
       "maxCapacity": 52,
-      "maxObserver": 50
+      "maxObserver": 50,
+      "sitCapacity": 52
     },
     {
       "id": 2002,
@@ -64574,7 +64577,8 @@
       "defaultCapacity": 30,
       "minCapacity": 1,
       "maxCapacity": 52,
-      "maxObserver": 50
+      "maxObserver": 50,
+      "sitCapacity": 52
     },
     {
       "id": 3001,
@@ -64586,7 +64590,8 @@
       "defaultCapacity": 50,
       "minCapacity": 1,
       "maxCapacity": 200,
-      "maxObserver": 100
+      "maxObserver": 100,
+      "sitCapacity": 100
     },
     {
       "id": 4001,
@@ -64598,7 +64603,8 @@
       "defaultCapacity": 2,
       "minCapacity": 1,
       "maxCapacity": 4,
-      "maxObserver": 0
+      "maxObserver": 0,
+      "sitCapacity": 4
     }
   ],
   "OfficeSpawnType": [
