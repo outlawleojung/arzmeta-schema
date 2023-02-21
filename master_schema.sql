@@ -335,7 +335,7 @@ go
 CREATE TABLE businessCardTemplate
 ( 
 	id                   Identifier ,
-	descripntion         Nickname ,
+	description          Nickname ,
 	purchaseType         Identifier ,
 	price                Value ,
 	nameField            Value ,
@@ -344,9 +344,9 @@ CREATE TABLE businessCardTemplate
 	addrField            Value ,
 	faxField             Value ,
 	jobField             Value ,
-	positonField         Value ,
-	introFiled           Value ,
-	thumbnailField       Value ,
+	positionField        Value ,
+	introField           Value ,
+	thumbnailName        Name ,
 	CONSTRAINT businessCardTemplate_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
@@ -1600,7 +1600,7 @@ go
 
 
 ALTER TABLE businessCardTemplate
-	ADD CONSTRAINT R_3422 FOREIGN KEY (descripntion) REFERENCES localization(id)
+	ADD CONSTRAINT R_3422 FOREIGN KEY (description) REFERENCES localization(id)
 go
 
 

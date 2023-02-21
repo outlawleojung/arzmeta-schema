@@ -988,7 +988,7 @@
 
 <ArrayOfString>
 
-    <string>descripntion</string>
+    <string>description</string>
 
     <string>설명</string>
 
@@ -1168,7 +1168,7 @@
 
 <ArrayOfString>
 
-    <string>positonField</string>
+    <string>positionField</string>
 
     <string>직책 필드</string>
 
@@ -1188,7 +1188,7 @@
 
 <ArrayOfString>
 
-    <string>introFiled</string>
+    <string>introField</string>
 
     <string>소개 필드</string>
 
@@ -1208,17 +1208,17 @@
 
 <ArrayOfString>
 
-    <string>thumbnailField</string>
+    <string>thumbnailName</string>
 
-    <string>썸네일 필드</string>
+    <string>썸네일 이름</string>
 
-    <string>integer</string>
+    <string>nvarchar(64)</string>
 
-    <string>Value</string>
+    <string>Name</string>
 
-    <string>integer</string>
+    <string>nvarchar</string>
 
-    <string></string>
+    <string>64</string>
 
     <string></string>
 
