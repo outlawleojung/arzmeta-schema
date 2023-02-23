@@ -58562,7 +58562,7 @@
     {
       "id": "3047",
       "kor": "아즈메타 로그인",
-      "eng": "a:rz META Logi"
+      "eng": "a:rz META Login"
     },
     {
       "id": "3048",
@@ -60372,12 +60372,12 @@
     {
       "id": "item_arzmatarug",
       "kor": "아즈메타 카펫",
-      "eng": "arzmatarug"
+      "eng": "a:rzmatarug"
     },
     {
       "id": "item_arzmatarug_description",
       "kor": "아즈메타의 시그니처 로고가 담긴 고급스러운 카펫입니다.",
-      "eng": "It's a luxurious carpet with arzmeta's signature logo."
+      "eng": "It's a luxurious carpet with a:rzmeta's signature logo."
     },
     {
       "id": "item_basicbookshelf",
@@ -63222,7 +63222,7 @@
     {
       "id": "item_whitenecktieshirt_chat",
       "kor": "아즈메타에도 회사원처럼 다녀야하다니..",
-      "eng": "I ca't believe I'm working like an office worker in a:rzmeta."
+      "eng": "I can't believe I'm working like an office worker in a:rzmeta."
     },
     {
       "id": "item_whitenecktieshirt_description",
@@ -63757,7 +63757,7 @@
     {
       "id": "office_instant_creation",
       "kor": "즉시 개설",
-      "eng": "Opne now"
+      "eng": "Create"
     },
     {
       "id": "office_kick",
