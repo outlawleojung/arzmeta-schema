@@ -59930,6 +59930,11 @@
       "eng": "Setting"
     },
     {
+      "id": "arzphone_a:rztalk",
+      "kor": "아즈톡",
+      "eng": "a:rzTalk"
+    },
+    {
       "id": "arzphone_camera",
       "kor": "카메라",
       "eng": "Camera"
@@ -63953,6 +63958,11 @@
       "id": "office_profile_permissio",
       "kor": "권한 상태",
       "eng": "Permissio"
+    },
+    {
+      "id": "office_profile_permission",
+      "kor": "권한 상태",
+      "eng": "Permission"
     },
     {
       "id": "office_profile_screenshare",
