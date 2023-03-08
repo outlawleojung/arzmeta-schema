@@ -157,6 +157,28 @@ create table if not exists departmentType
     primary key(type)
 )
 ;
+create table if not exists disciplineDetail
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
+create table if not exists disciplineReview
+(
+    restrictionType      int(11),
+    restrictionDetail    int(11),
+    disciplineDetail     int(11),
+    primary key(restrictionType,restrictionDetail,disciplineDetail)
+)
+;
+create table if not exists disciplineType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
 create table if not exists faq
 (
     id                   int(11),
@@ -169,6 +191,14 @@ create table if not exists forbiddenWords
 (
     id                   int(11),
     text                 varchar(2048) ,
+    primary key(id)
+)
+;
+create table if not exists functionTable
+(
+    id                   int(11),
+    description          varchar(2048) ,
+    value               int(11),
     primary key(id)
 )
 ;
@@ -203,13 +233,6 @@ create table if not exists interiorSize
     xSize                int(11),
     ySize                int(11),
     primary key(itemId)
-)
-;
-create table if not exists inventoryCapacity
-(
-    itemType             int(11),
-    capacity            int(11),
-    primary key(itemType)
 )
 ;
 create table if not exists item
@@ -284,6 +307,28 @@ create table if not exists layerType
     type                 int(11),
     name                varchar(64),
     primary key(type)
+)
+;
+create table if not exists licenseFunction
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
+create table if not exists licenseType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
+create table if not exists licenseTypeInfo
+(
+    licenseType          int(11),
+    licenseFunc          int(11),
+    value               int(11),
+    primary key(licenseType,licenseFunc)
 )
 ;
 create table if not exists localization
@@ -440,6 +485,16 @@ create table if not exists memberOfficeGradeType
     createdAt            datetime ,
     updatedAt            datetime ,
     primary key(memberId)
+)
+;
+create table if not exists memberOfficeLicenseInfo
+(
+    memberId             varchar(100)    ,
+    licenseSerial        varchar(2048) ,
+    email                varchar(2048) ,
+    createdAt            datetime ,
+    updatedAt            datetime ,
+    primary key(memberId,licenseSerial)
 )
 ;
 create table if not exists memberOfficeReservationInfo
@@ -643,6 +698,55 @@ create table if not exists officeGradeType
     primary key(type)
 )
 ;
+create table if not exists officeLicenseDomainInfo
+(
+    id                   int(11),
+    affiliation          varchar(2048) ,
+    domainName           varchar(2048) ,
+    chargeName          varchar(64),
+    chargePosition      varchar(64),
+    chargeEmail         varchar(64),
+    chargevarchar(64)Number   varchar(64),
+    createdAt            datetime ,
+    updatedAt            datetime ,
+    primary key(id)
+)
+;
+create table if not exists officeLicenseGroupInfo
+(
+    id                   int(11),
+    domainId             int(11),
+    licenseType          int(11),
+    name                varchar(64),
+    issueCount          int(11),
+    useCount            int(11),
+    startedAt            datetime ,
+    endedAt              datetime ,
+    createdAt            datetime ,
+    updatedAt            datetime ,
+    primary key(id)
+)
+;
+create table if not exists officeLicenseInfo
+(
+    licenseSerial        varchar(2048) ,
+    groupId              int(11),
+    createdAt            datetime ,
+    updatedAt            datetime ,
+    primary key(licenseSerial)
+)
+;
+create table if not exists officeLicenseIssueLog
+(
+    id                   int(11),
+    groupId              int(11),
+    issueCount          int(11),
+    adminId              int(11),
+    createdAt            datetime ,
+    updatedAt            datetime ,
+    primary key(id)
+)
+;
 create table if not exists officeMode
 (
     modeType             int(11),
@@ -838,6 +942,20 @@ create table if not exists reportReasonType
 )
 ;
 create table if not exists reportType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
+create table if not exists restrictionDetail
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
+create table if not exists restrictionType
 (
     type                 int(11),
     name                varchar(64),

@@ -411,6 +411,37 @@ go
 
 
 
+CREATE TABLE disciplineDetail
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT disciplineDetail_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE disciplineReview
+( 
+	restrictionType      Identifier ,
+	restrictionDetail    Identifier ,
+	disciplineDetail     Identifier ,
+	CONSTRAINT disciplineReview_PK PRIMARY KEY  CLUSTERED (restrictionType ASC,restrictionDetail ASC,disciplineDetail ASC)
+)
+go
+
+
+
+CREATE TABLE disciplineType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT disciplineType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE faq
 ( 
 	id                   Identifier ,
@@ -427,6 +458,17 @@ CREATE TABLE forbiddenWords
 	id                   Identifier ,
 	text                 Content ,
 	CONSTRAINT forbiddenWords_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE functionTable
+( 
+	id                   Identifier ,
+	description          Content ,
+	value                Value ,
+	CONSTRAINT functionTable_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
 
@@ -472,16 +514,6 @@ CREATE TABLE interiorSize
 	xSize                Identifier ,
 	ySize                Identifier ,
 	CONSTRAINT interiorSize_PK PRIMARY KEY  CLUSTERED (itemId ASC)
-)
-go
-
-
-
-CREATE TABLE inventoryCapacity
-( 
-	itemType             Identifier ,
-	capacity             Value ,
-	CONSTRAINT inventoryCapacity_PK PRIMARY KEY  CLUSTERED (itemType ASC)
 )
 go
 
@@ -577,6 +609,37 @@ CREATE TABLE layerType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT layerType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE licenseFunction
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT licenseFunction_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE licenseType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT licenseType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE licenseTypeInfo
+( 
+	licenseType          Identifier ,
+	licenseFunc          Identifier ,
+	value                Value ,
+	CONSTRAINT licenseTypeInfo_PK PRIMARY KEY  CLUSTERED (licenseType ASC,licenseFunc ASC)
 )
 go
 
@@ -793,6 +856,19 @@ CREATE TABLE memberOfficeGradeType
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
 	CONSTRAINT memberOfficeGradeType_PK PRIMARY KEY  CLUSTERED (memberId ASC)
+)
+go
+
+
+
+CREATE TABLE memberOfficeLicenseInfo
+( 
+	memberId             Identifier_Member_Id  NOT NULL ,
+	licenseSerial        Content ,
+	email                Content ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT memberOfficeLicenseInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,licenseSerial ASC)
 )
 go
 
@@ -1045,6 +1121,67 @@ CREATE TABLE officeGradeType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT officeGradeType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE officeLicenseDomainInfo
+( 
+	id                   Identifier ,
+	affiliation          Content ,
+	domainName           Content ,
+	chargeName           Name ,
+	chargePosition       Name ,
+	chargeEmail          Name ,
+	chargePhone          Name ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT officeLicenseDomainInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE officeLicenseGroupInfo
+( 
+	id                   Identifier ,
+	domainId             Identifier ,
+	licenseType          Identifier ,
+	name                 Name ,
+	issueCount           Value ,
+	useCount             Value ,
+	startedAt            _Datetime ,
+	endedAt              _Datetime ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT officeLicenseGroupInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE officeLicenseInfo
+( 
+	licenseSerial        Content ,
+	groupId              Identifier ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT officeLicenseInfo_PK PRIMARY KEY  CLUSTERED (licenseSerial ASC)
+)
+go
+
+
+
+CREATE TABLE officeLicenseIssueLog
+( 
+	id                   Identifier ,
+	groupId              Identifier ,
+	issueCount           Value ,
+	adminId              Identifier ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT officeLicenseIssueLog_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
 
@@ -1318,6 +1455,26 @@ CREATE TABLE reportType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT reportType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE restrictionDetail
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT restrictionDetail_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE restrictionType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT restrictionType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -1669,6 +1826,27 @@ go
 
 
 
+ALTER TABLE disciplineReview
+	ADD CONSTRAINT R_3440 FOREIGN KEY (restrictionType) REFERENCES restrictionType(type)
+go
+
+
+
+
+ALTER TABLE disciplineReview
+	ADD CONSTRAINT R_3442 FOREIGN KEY (restrictionDetail) REFERENCES restrictionDetail(type)
+go
+
+
+
+
+ALTER TABLE disciplineReview
+	ADD CONSTRAINT R_3443 FOREIGN KEY (disciplineDetail) REFERENCES disciplineDetail(type)
+go
+
+
+
+
 ALTER TABLE interiorInstallInfo
 	ADD CONSTRAINT R_3333 FOREIGN KEY (layerType) REFERENCES layerType(type)
 go
@@ -1685,13 +1863,6 @@ go
 
 ALTER TABLE interiorSize
 	ADD CONSTRAINT R_3334 FOREIGN KEY (itemId) REFERENCES item(id)
-go
-
-
-
-
-ALTER TABLE inventoryCapacity
-	ADD CONSTRAINT R_3337 FOREIGN KEY (itemType) REFERENCES itemType(type)
 go
 
 
@@ -1776,6 +1947,20 @@ go
 
 ALTER TABLE jumpingMatchingLevel
 	ADD CONSTRAINT R_3266 FOREIGN KEY (gameType) REFERENCES jumpingMatchingGameType(type)
+go
+
+
+
+
+ALTER TABLE licenseTypeInfo
+	ADD CONSTRAINT R_3437 FOREIGN KEY (licenseType) REFERENCES licenseType(type)
+go
+
+
+
+
+ALTER TABLE licenseTypeInfo
+	ADD CONSTRAINT R_3438 FOREIGN KEY (licenseFunc) REFERENCES licenseFunction(type)
 go
 
 
@@ -1923,6 +2108,20 @@ go
 
 ALTER TABLE memberOfficeGradeType
 	ADD CONSTRAINT R_3371 FOREIGN KEY (gradeType) REFERENCES officeGradeType(type)
+go
+
+
+
+
+ALTER TABLE memberOfficeLicenseInfo
+	ADD CONSTRAINT R_3430 FOREIGN KEY (memberId) REFERENCES member(memberId)
+go
+
+
+
+
+ALTER TABLE memberOfficeLicenseInfo
+	ADD CONSTRAINT R_3431 FOREIGN KEY (licenseSerial) REFERENCES officeLicenseInfo(licenseSerial)
 go
 
 
@@ -2098,6 +2297,34 @@ go
 
 ALTER TABLE officeGradeAuthority
 	ADD CONSTRAINT R_3380 FOREIGN KEY (gradeType) REFERENCES officeGradeType(type)
+go
+
+
+
+
+ALTER TABLE officeLicenseGroupInfo
+	ADD CONSTRAINT R_3432 FOREIGN KEY (domainId) REFERENCES officeLicenseDomainInfo(id)
+go
+
+
+
+
+ALTER TABLE officeLicenseGroupInfo
+	ADD CONSTRAINT R_3439 FOREIGN KEY (licenseType) REFERENCES licenseType(type)
+go
+
+
+
+
+ALTER TABLE officeLicenseInfo
+	ADD CONSTRAINT R_3433 FOREIGN KEY (groupId) REFERENCES officeLicenseGroupInfo(id)
+go
+
+
+
+
+ALTER TABLE officeLicenseIssueLog
+	ADD CONSTRAINT R_3434 FOREIGN KEY (groupId) REFERENCES officeLicenseGroupInfo(id)
 go
 
 
