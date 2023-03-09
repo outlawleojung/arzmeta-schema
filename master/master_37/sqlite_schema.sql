@@ -706,7 +706,7 @@ create table if not exists officeLicenseDomainInfo
     chargeName          varchar(64),
     chargePosition      varchar(64),
     chargeEmail         varchar(64),
-    chargevarchar(64)         varchar(64),
+    chargePhone         varchar(64),
     createdAt            datetime ,
     updatedAt            datetime ,
     primary key(id)
