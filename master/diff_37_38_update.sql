@@ -179,6 +179,10 @@ insert into item(id,itemType,categoryType,packageType,name,description,prefab,ma
 -- tablename : worldAreaInfo
 
 -- tablename : interiorInstallInfo
+insert into interiorInstallInfo(itemId,prefab,layerType,xSize,ySize,removable) values (210000,N'b_p_refrigeratortest',1,1,1,1);
+insert into interiorInstallInfo(itemId,prefab,layerType,xSize,ySize,removable) values (215007,N'b_p_refrigerator',1,1,1,1);
+insert into interiorInstallInfo(itemId,prefab,layerType,xSize,ySize,removable) values (220000,N'b_p_scootertest',1,1,1,1);
+insert into interiorInstallInfo(itemId,prefab,layerType,xSize,ySize,removable) values (221016,N'b_p_scooter',1,1,1,1);
 
 -- tablename : startInventory
 

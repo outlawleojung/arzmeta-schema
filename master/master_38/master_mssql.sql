@@ -1365,10 +1365,10 @@ insert into localization ( id, kor, eng ) values ( N'item_middlehimecut',  N'미
 insert into localization ( id, kor, eng ) values ( N'item_middlehimecut_chat',  N'히메컷 어때? 너도 해볼래?',  N'Do you want to try it?' );
 insert into localization ( id, kor, eng ) values ( N'item_middlehimecut_description',  N'긴 생머리에 층계형으로 자른 히메컷입니다.',  N'' );
 insert into localization ( id, kor, eng ) values ( N'item_femaleshorthair',  N'여성 숏헤어',  N'femaleshorthair' );
-insert into localization ( id, kor, eng ) values ( N'item_femaleshorthair_chat',  N'어때 매력넘치지?',  N'What do you think? It''s full of charm, right?' );
+insert into localization ( id, kor, eng ) values ( N'item_femaleshorthair_chat',  N'어때 매력넘치지?',  N'What do you think? It''''s full of charm, right?' );
 insert into localization ( id, kor, eng ) values ( N'item_femaleshorthair_description',  N'여성 숏헤어 입니다.',  N'' );
 insert into localization ( id, kor, eng ) values ( N'item_uptwintail',  N'업 트윈테일',  N'uptwintail' );
-insert into localization ( id, kor, eng ) values ( N'item_uptwintail_chat',  N'래빗 스타일 트윈테일이야! 이쁘지!',  N'Rabbit-style twin tail! Isn''t it pretty?' );
+insert into localization ( id, kor, eng ) values ( N'item_uptwintail_chat',  N'래빗 스타일 트윈테일이야! 이쁘지!',  N'Rabbit-style twin tail! Isn''''t it pretty?' );
 insert into localization ( id, kor, eng ) values ( N'item_uptwintail_description',  N'양갈래로 묶은 트윈테일입니다.',  N'' );
 insert into localization ( id, kor, eng ) values ( N'item_downtwintail',  N'다운 트윈테일',  N'downtwintail' );
 insert into localization ( id, kor, eng ) values ( N'item_downtwintail_chat',  N'역시 난 트윈테일도 잘어울려!',  N'As expected, I look good with twin tails!' );
@@ -1377,7 +1377,7 @@ insert into localization ( id, kor, eng ) values ( N'item_upponytail',  N'업 �
 insert into localization ( id, kor, eng ) values ( N'item_upponytail_chat',  N'얼굴 라인을 돋보이게 하고, 청순한 이미지를 준다구~!',  N'It makes your face line stand out and gives you a pure image!' );
 insert into localization ( id, kor, eng ) values ( N'item_upponytail_description',  N'성숙하고 청순한 이미지를 주는 포니테일입니다.',  N'' );
 insert into localization ( id, kor, eng ) values ( N'item_downponytail',  N'다운 포니테일',  N'downponytail' );
-insert into localization ( id, kor, eng ) values ( N'item_downponytail_chat',  N'내 스타일리시함 엄청나지?',  N'Isn''t my style amazing?' );
+insert into localization ( id, kor, eng ) values ( N'item_downponytail_chat',  N'내 스타일리시함 엄청나지?',  N'Isn''''t my style amazing?' );
 insert into localization ( id, kor, eng ) values ( N'item_downponytail_description',  N'어느 스타일에도 어울리는 포니테일입니다.',  N'' );
 insert into localization ( id, kor, eng ) values ( N'item_mysantahat',  N'산타모자',  N'santahat' );
 insert into localization ( id, kor, eng ) values ( N'item_mysantahat_description',  N'산타 모자! 누가 흘리고 간 걸까요?',  N'Santa''''s hat! Guess who spilled it.' );
@@ -14353,6 +14353,10 @@ insert into interiorInstallInfo ( itemId, prefab, layerType, xSize, ySize, remov
 insert into interiorInstallInfo ( itemId, prefab, layerType, xSize, ySize, removable ) values ( 221013,  N'b_p_snowman',  1,  1,  1,  1 );
 insert into interiorInstallInfo ( itemId, prefab, layerType, xSize, ySize, removable ) values ( 221014,  N'b_p_christmastree',  1,  2,  2,  1 );
 insert into interiorInstallInfo ( itemId, prefab, layerType, xSize, ySize, removable ) values ( 221015,  N'b_p_christmaswreath',  3,  1,  1,  1 );
+insert into interiorInstallInfo ( itemId, prefab, layerType, xSize, ySize, removable ) values ( 210000,  N'b_p_refrigeratortest',  1,  1,  1,  1 );
+insert into interiorInstallInfo ( itemId, prefab, layerType, xSize, ySize, removable ) values ( 215007,  N'b_p_refrigerator',  1,  1,  1,  1 );
+insert into interiorInstallInfo ( itemId, prefab, layerType, xSize, ySize, removable ) values ( 220000,  N'b_p_scootertest',  1,  1,  1,  1 );
+insert into interiorInstallInfo ( itemId, prefab, layerType, xSize, ySize, removable ) values ( 221016,  N'b_p_scooter',  1,  1,  1,  1 );
 
 insert into startInventory ( itemId, count ) values ( 211001,  1 );
 insert into startInventory ( itemId, count ) values ( 212002,  1 );

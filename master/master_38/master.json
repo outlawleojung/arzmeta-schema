@@ -51647,6 +51647,14 @@
   ],
   "InteriorInstallInfo": [
     {
+      "itemId": 210000,
+      "prefab": "b_p_refrigeratortest",
+      "layerType": 1,
+      "xSize": 1,
+      "ySize": 1,
+      "removable": 1
+    },
+    {
       "itemId": 211001,
       "prefab": "b_p_singlebed",
       "layerType": 1,
@@ -51791,6 +51799,22 @@
       "removable": 1
     },
     {
+      "itemId": 215007,
+      "prefab": "b_p_refrigerator",
+      "layerType": 1,
+      "xSize": 1,
+      "ySize": 1,
+      "removable": 1
+    },
+    {
+      "itemId": 220000,
+      "prefab": "b_p_scootertest",
+      "layerType": 1,
+      "xSize": 1,
+      "ySize": 1,
+      "removable": 1
+    },
+    {
       "itemId": 220001,
       "prefab": "b_p_floorstand",
       "layerType": 1,
@@ -51914,6 +51938,14 @@
       "itemId": 221015,
       "prefab": "b_p_christmaswreath",
       "layerType": 3,
+      "xSize": 1,
+      "ySize": 1,
+      "removable": 1
+    },
+    {
+      "itemId": 221016,
+      "prefab": "b_p_scooter",
+      "layerType": 1,
       "xSize": 1,
       "ySize": 1,
       "removable": 1
