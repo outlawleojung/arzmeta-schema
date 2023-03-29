@@ -864,11 +864,10 @@ go
 CREATE TABLE memberOfficeLicenseInfo
 ( 
 	memberId             Identifier_Member_Id  NOT NULL ,
-	licenseSerial        Content ,
 	email                Content ,
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
-	CONSTRAINT memberOfficeLicenseInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,licenseSerial ASC)
+	CONSTRAINT memberOfficeLicenseInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC)
 )
 go
 
@@ -1126,67 +1125,6 @@ go
 
 
 
-CREATE TABLE officeLicenseDomainInfo
-( 
-	id                   Identifier ,
-	affiliation          Content ,
-	domainName           Content ,
-	chargeName           Name ,
-	chargePosition       Name ,
-	chargeEmail          Name ,
-	chargePhone          Name ,
-	createdAt            _Datetime ,
-	updatedAt            _Datetime ,
-	CONSTRAINT officeLicenseDomainInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
-)
-go
-
-
-
-CREATE TABLE officeLicenseGroupInfo
-( 
-	id                   Identifier ,
-	domainId             Identifier ,
-	licenseType          Identifier ,
-	name                 Name ,
-	issueCount           Value ,
-	useCount             Value ,
-	startedAt            _Datetime ,
-	endedAt              _Datetime ,
-	createdAt            _Datetime ,
-	updatedAt            _Datetime ,
-	CONSTRAINT officeLicenseGroupInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
-)
-go
-
-
-
-CREATE TABLE officeLicenseInfo
-( 
-	licenseSerial        Content ,
-	groupId              Identifier ,
-	createdAt            _Datetime ,
-	updatedAt            _Datetime ,
-	CONSTRAINT officeLicenseInfo_PK PRIMARY KEY  CLUSTERED (licenseSerial ASC)
-)
-go
-
-
-
-CREATE TABLE officeLicenseIssueLog
-( 
-	id                   Identifier ,
-	groupId              Identifier ,
-	issueCount           Value ,
-	adminId              Identifier ,
-	createdAt            _Datetime ,
-	updatedAt            _Datetime ,
-	CONSTRAINT officeLicenseIssueLog_PK PRIMARY KEY  CLUSTERED (id ASC)
-)
-go
-
-
-
 CREATE TABLE officeMode
 ( 
 	modeType             Identifier ,
@@ -1249,10 +1187,24 @@ go
 
 
 
+CREATE TABLE officeShowRoomInfo
+( 
+	id                   Identifier ,
+	roomId               Identifier ,
+	roomName             Nickname ,
+	roomDesc             Nickname ,
+	thumbnail            Name ,
+	CONSTRAINT officeShowRoomInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
 CREATE TABLE officeSpaceInfo
 ( 
 	id                   Identifier ,
 	modeType             Identifier ,
+	exposureOrder        Value ,
 	description          Nickname ,
 	spaceName            Nickname ,
 	thumbnail            Nickname ,
@@ -2120,13 +2072,6 @@ go
 
 
 
-ALTER TABLE memberOfficeLicenseInfo
-	ADD CONSTRAINT R_3431 FOREIGN KEY (licenseSerial) REFERENCES officeLicenseInfo(licenseSerial)
-go
-
-
-
-
 ALTER TABLE memberOfficeReservationInfo
 	ADD CONSTRAINT R_3372 FOREIGN KEY (memberId) REFERENCES member(memberId)
 go
@@ -2302,34 +2247,6 @@ go
 
 
 
-ALTER TABLE officeLicenseGroupInfo
-	ADD CONSTRAINT R_3432 FOREIGN KEY (domainId) REFERENCES officeLicenseDomainInfo(id)
-go
-
-
-
-
-ALTER TABLE officeLicenseGroupInfo
-	ADD CONSTRAINT R_3439 FOREIGN KEY (licenseType) REFERENCES licenseType(type)
-go
-
-
-
-
-ALTER TABLE officeLicenseInfo
-	ADD CONSTRAINT R_3433 FOREIGN KEY (groupId) REFERENCES officeLicenseGroupInfo(id)
-go
-
-
-
-
-ALTER TABLE officeLicenseIssueLog
-	ADD CONSTRAINT R_3434 FOREIGN KEY (groupId) REFERENCES officeLicenseGroupInfo(id)
-go
-
-
-
-
 ALTER TABLE officeMode
 	ADD CONSTRAINT R_3353 FOREIGN KEY (modeType) REFERENCES officeModeType(type)
 go
@@ -2402,6 +2319,20 @@ go
 
 ALTER TABLE officeProductItem
 	ADD CONSTRAINT R_3419 FOREIGN KEY (purchaseType) REFERENCES purchaseType(type)
+go
+
+
+
+
+ALTER TABLE officeShowRoomInfo
+	ADD CONSTRAINT R_3444 FOREIGN KEY (roomName) REFERENCES localization(id)
+go
+
+
+
+
+ALTER TABLE officeShowRoomInfo
+	ADD CONSTRAINT R_3446 FOREIGN KEY (roomDesc) REFERENCES localization(id)
 go
 
 
