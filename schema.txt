@@ -3132,6 +3132,60 @@
 
 <ArrayOfString>
 
+    <string>landType</string>
+
+    <string>랜드 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
     <string>languageType</string>
 
     <string>언어 타입</string>
@@ -3604,6 +3658,294 @@
 
 <ArrayOfString>
 
+    <string>mapExposulInfo</string>
+
+    <string>지도 노출 정보</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>landType</string>
+
+    <string>랜드 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>mapInfoType</string>
+
+    <string>맵 정보 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>sort</string>
+
+    <string>정렬</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>image</string>
+
+    <string>이미지</string>
+
+    <string>nvarchar(32)</string>
+
+    <string>Nickname</string>
+
+    <string>nvarchar</string>
+
+    <string>32</string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(32)</string>
+
+    <string>Nickname</string>
+
+    <string>nvarchar</string>
+
+    <string>32</string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>description</string>
+
+    <string>설명</string>
+
+    <string>nvarchar(32)</string>
+
+    <string>Nickname</string>
+
+    <string>nvarchar</string>
+
+    <string>32</string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>positionX</string>
+
+    <string>x 좌표</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>positionY</string>
+
+    <string>y 좌표</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>positionZ</string>
+
+    <string>z 좌표</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>rotationY</string>
+
+    <string>y 로테이션</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>mapInfoType</string>
+
+    <string>맵 정보 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
     <string>meberMyRoomItemInfo</string>
 
     <string>회원 마이룸 아이템</string>
@@ -3983,6 +4325,26 @@
     <string></string>
 
     <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>myRoomStateType</string>
+
+    <string>마이룸상태타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
 
   </ArrayOfString>
 
@@ -4390,26 +4752,6 @@
 
 <ArrayOfString>
 
-    <string>memberId</string>
-
-    <string>회원 아이디</string>
-
-    <string>varchar(100)</string>
-
-    <string>Identifier_Member_Id</string>
-
-    <string>varchar</string>
-
-    <string>100</string>
-
-    <string>1</string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
     <string>templateId</string>
 
     <string>템플릿 아이디</string>
@@ -4421,6 +4763,26 @@
     <string>integer</string>
 
     <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>memberId</string>
+
+    <string>회원 아이디</string>
+
+    <string>varchar(100)</string>
+
+    <string>Identifier_Member_Id</string>
+
+    <string>varchar</string>
+
+    <string>100</string>
 
     <string>1</string>
 
@@ -6255,6 +6617,60 @@
     <string>datetime</string>
 
     <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>myRoomStateType</string>
+
+    <string>마이룸 상태 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
 
     <string></string>
 

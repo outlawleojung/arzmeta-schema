@@ -594,6 +594,16 @@ go
 
 
 
+CREATE TABLE landType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT landType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE languageType
 ( 
 	type                 Identifier ,
@@ -676,6 +686,35 @@ go
 
 
 
+CREATE TABLE mapExposulInfo
+( 
+	id                   Identifier ,
+	landType             Identifier ,
+	mapInfoType          Identifier ,
+	sort                 Value ,
+	image                Nickname ,
+	name                 Nickname ,
+	description          Nickname ,
+	positionX            Value ,
+	positionY            Value ,
+	positionZ            Value ,
+	rotationY            Value ,
+	CONSTRAINT mapExposulInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE mapInfoType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT mapInfoType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE meberMyRoomItemInfo
 ( 
 	memberId             Identifier_Member_Id  NOT NULL ,
@@ -704,6 +743,7 @@ CREATE TABLE member
 	normalizeEmail       Identifier_Email  NOT NULL ,
 	nickname             Nickname  NULL ,
 	normalizeNickname    Nickname  NULL ,
+	myRoomStateType      Identifier ,
 	seqLoginCnt          Value ,
 	totalLoginCnt        Value ,
 	isBlock              Value ,
@@ -764,8 +804,8 @@ go
 
 CREATE TABLE memberBusinessCardInfo
 ( 
-	memberId             Identifier_Member_Id  NOT NULL ,
 	templateId           Identifier ,
+	memberId             Identifier_Member_Id  NOT NULL ,
 	num                  Value ,
 	name                 Name ,
 	phone                Name ,
@@ -777,7 +817,7 @@ CREATE TABLE memberBusinessCardInfo
 	intro                Content ,
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
-	CONSTRAINT memberBusinessCardInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,templateId ASC,num ASC)
+	CONSTRAINT memberBusinessCardInfo_PK PRIMARY KEY  CLUSTERED (templateId ASC,memberId ASC,num ASC)
 )
 go
 
@@ -939,6 +979,16 @@ CREATE TABLE memberVoteInfo
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
 	CONSTRAINT memberVoteInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,voteId ASC,num ASC)
+)
+go
+
+
+
+CREATE TABLE myRoomStateType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT myRoomStateType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -1932,6 +1982,41 @@ go
 
 
 
+ALTER TABLE mapExposulInfo
+	ADD CONSTRAINT R_3447 FOREIGN KEY (landType) REFERENCES landType(type)
+go
+
+
+
+
+ALTER TABLE mapExposulInfo
+	ADD CONSTRAINT R_3448 FOREIGN KEY (mapInfoType) REFERENCES mapInfoType(type)
+go
+
+
+
+
+ALTER TABLE mapExposulInfo
+	ADD CONSTRAINT R_3450 FOREIGN KEY (image) REFERENCES localization(id)
+go
+
+
+
+
+ALTER TABLE mapExposulInfo
+	ADD CONSTRAINT R_3451 FOREIGN KEY (name) REFERENCES localization(id)
+go
+
+
+
+
+ALTER TABLE mapExposulInfo
+	ADD CONSTRAINT R_3452 FOREIGN KEY (description) REFERENCES localization(id)
+go
+
+
+
+
 ALTER TABLE meberMyRoomItemInfo
 	ADD CONSTRAINT R_3346 FOREIGN KEY (memberId,id) REFERENCES memberFurnitureItemInven(memberId,id)
 go
@@ -1962,6 +2047,13 @@ go
 
 ALTER TABLE member
 	ADD CONSTRAINT R_3279 FOREIGN KEY (countryCodeId) REFERENCES countryCode(id)
+go
+
+
+
+
+ALTER TABLE member
+	ADD CONSTRAINT R_3449 FOREIGN KEY (myRoomStateType) REFERENCES myRoomStateType(type)
 go
 
 

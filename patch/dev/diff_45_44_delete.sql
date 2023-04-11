@@ -89,6 +89,20 @@ START TRANSACTION;
 
 -- tablename : reportReasonType
 
+-- tablename : restrictionType
+
+-- tablename : restrictionDetail
+
+-- tablename : disciplineType
+
+-- tablename : disciplineDetail
+
+-- tablename : licenseType
+
+-- tablename : licenseFunction
+
+-- tablename : functionTable
+
 -- tablename : faq
 
 -- tablename : forbiddenWords
@@ -125,8 +139,6 @@ START TRANSACTION;
 
 -- tablename : interiorInstallInfo
 
--- tablename : inventoryCapacity
-
 -- tablename : startInventory
 
 -- tablename : startMyRoom
@@ -146,13 +158,24 @@ START TRANSACTION;
 -- tablename : officeExposure
 
 -- tablename : officeProductItem
+delete from officeProductItem where id = 1201;
+delete from officeProductItem where id = 1202;
+delete from officeProductItem where id = 1301;
+delete from officeProductItem where id = 1302;
+delete from officeProductItem where id = 1402;
 
 -- tablename : officeGradeAuthority
+
+-- tablename : officeShowRoomInfo
 
 -- tablename : businessCardTemplate
 
 -- tablename : avatarResetInfo
 
 -- tablename : reportCategory
+
+-- tablename : licenseTypeInfo
+
+-- tablename : disciplineReview
 
 ROLLBACK;
