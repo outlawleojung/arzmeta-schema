@@ -58,380 +58,6 @@
 
 <ArrayOfString>
 
-    <string>avatarParts</string>
-
-    <string>아바타 파츠</string>
-
-  </ArrayOfString>
-
-  
-
-<ArrayOfString>
-
-    <string>id</string>
-
-    <string>아바타 파츠 아이디</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string>1</string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>itemId</string>
-
-    <string>아이템 아이디</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>avatarPartsType</string>
-
-    <string>아바타 파츠 타입</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>chatId</string>
-
-    <string>챗 아이디</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>prefabName</string>
-
-    <string>프리팹 이름</string>
-
-    <string>varchar(40)</string>
-
-    <string>Resource_Name</string>
-
-    <string>varchar</string>
-
-    <string>40</string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>materialName</string>
-
-    <string>머터리얼 이름</string>
-
-    <string>varchar(40)</string>
-
-    <string>Resource_Name</string>
-
-    <string>varchar</string>
-
-    <string>40</string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>productThumbnailName</string>
-
-    <string>제품 썸네일 이름</string>
-
-    <string>nvarchar(2048)</string>
-
-    <string>Content</string>
-
-    <string>nvarchar</string>
-
-    <string>2048</string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>thumbnailName</string>
-
-    <string>썸네일 이름</string>
-
-    <string>varchar(40)</string>
-
-    <string>Resource_Name</string>
-
-    <string>varchar</string>
-
-    <string>40</string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>effectName</string>
-
-    <string>이펙트 이름</string>
-
-    <string>varchar(40)</string>
-
-    <string>Resource_Name</string>
-
-    <string>varchar</string>
-
-    <string>40</string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>aniName</string>
-
-    <string>애니메이션 이름</string>
-
-    <string>varchar(40)</string>
-
-    <string>Resource_Name</string>
-
-    <string>varchar</string>
-
-    <string>40</string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>divisionType</string>
-
-    <string>아바타 파츠 구분 타입</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>questText</string>
-
-    <string>퀘스트 텍스트</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>description</string>
-
-    <string>설명</string>
-
-    <string>nvarchar(2048)</string>
-
-    <string>Content</string>
-
-    <string>nvarchar</string>
-
-    <string>2048</string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>nameId</string>
-
-    <string>파츠 이름 아이디</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>sizeType</string>
-
-    <string>사이즈 타입</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>colorType</string>
-
-    <string>색상 타입</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>groupType</string>
-
-    <string>그룹 타입</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>partsOrder</string>
-
-    <string>정렬순서</string>
-
-    <string>integer</string>
-
-    <string>Value</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-
-
-  
-
-<ArrayOfString>
-
     <string>avatarPartsColorType</string>
 
     <string>아바타 파츠 색상 타입</string>
@@ -799,26 +425,6 @@
     <string></string>
 
     <string>1</string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>partsId</string>
-
-    <string>아바타 파츠 아이디</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
 
     <string>1</string>
 
@@ -1473,26 +1079,6 @@
     <string>partsType</string>
 
     <string>아바타 파츠 타입</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>partsId</string>
-
-    <string>아바타 파츠 아이디</string>
 
     <string>integer</string>
 
@@ -4678,26 +4264,6 @@
 
 <ArrayOfString>
 
-    <string>avatarPartsId</string>
-
-    <string>아바타 파츠 아이디</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
     <string>createdAt</string>
 
     <string>생성일시</string>
@@ -4721,6 +4287,180 @@
     <string>updatedAt</string>
 
     <string>갱신일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>memberBusinessCardInfo</string>
+
+    <string>회원 비즈니스 명함</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>memberId</string>
+
+    <string>회원 아이디</string>
+
+    <string>varchar(100)</string>
+
+    <string>Identifier_Member_Id</string>
+
+    <string>varchar</string>
+
+    <string>100</string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>num</string>
+
+    <string>번호</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>job</string>
+
+    <string>직업</string>
+
+    <string>nvarchar(32)</string>
+
+    <string>Nickname</string>
+
+    <string>nvarchar</string>
+
+    <string>32</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>email</string>
+
+    <string>이메일</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>phone</string>
+
+    <string>전화번호</string>
+
+    <string>varchar(32)</string>
+
+    <string>Phone</string>
+
+    <string>varchar</string>
+
+    <string>32</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>createdAt</string>
+
+    <string>생성 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>updatedAt</string>
+
+    <string>갱신 일시</string>
 
     <string>datetime</string>
 
@@ -4963,180 +4703,6 @@
     <string>nvarchar</string>
 
     <string>2048</string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>createdAt</string>
-
-    <string>생성 일시</string>
-
-    <string>datetime</string>
-
-    <string>_Datetime</string>
-
-    <string>datetime</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>updatedAt</string>
-
-    <string>갱신 일시</string>
-
-    <string>datetime</string>
-
-    <string>_Datetime</string>
-
-    <string>datetime</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-
-
-  
-
-<ArrayOfString>
-
-    <string>memberBusinessCardInfo</string>
-
-    <string>회원 비즈니스 명함</string>
-
-  </ArrayOfString>
-
-  
-
-<ArrayOfString>
-
-    <string>memberId</string>
-
-    <string>회원 아이디</string>
-
-    <string>varchar(100)</string>
-
-    <string>Identifier_Member_Id</string>
-
-    <string>varchar</string>
-
-    <string>100</string>
-
-    <string>1</string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>num</string>
-
-    <string>번호</string>
-
-    <string>integer</string>
-
-    <string>Value</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string>1</string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>name</string>
-
-    <string>이름</string>
-
-    <string>nvarchar(64)</string>
-
-    <string>Name</string>
-
-    <string>nvarchar</string>
-
-    <string>64</string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>job</string>
-
-    <string>직업</string>
-
-    <string>nvarchar(32)</string>
-
-    <string>Nickname</string>
-
-    <string>nvarchar</string>
-
-    <string>32</string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>email</string>
-
-    <string>이메일</string>
-
-    <string>nvarchar(64)</string>
-
-    <string>Name</string>
-
-    <string>nvarchar</string>
-
-    <string>64</string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>phone</string>
-
-    <string>전화번호</string>
-
-    <string>varchar(32)</string>
-
-    <string>Phone</string>
-
-    <string>varchar</string>
-
-    <string>32</string>
 
     <string></string>
 
@@ -6738,9 +6304,9 @@
 
 <ArrayOfString>
 
-    <string>npc</string>
+    <string>npcArrange</string>
 
-    <string>NPC</string>
+    <string>NPC 배치</string>
 
   </ArrayOfString>
 
@@ -6748,9 +6314,9 @@
 
 <ArrayOfString>
 
-    <string>id</string>
+    <string>npcId</string>
 
-    <string>npc아이디</string>
+    <string>npc 아이디</string>
 
     <string>integer</string>
 
@@ -6762,55 +6328,15 @@
 
     <string>1</string>
 
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>seqId</string>
-
-    <string>시퀀스 아이디</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
     <string>1</string>
 
   </ArrayOfString>
 
 <ArrayOfString>
 
-    <string>nameId</string>
+    <string>sceneType</string>
 
-    <string>이름 아이디</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>mapPosType</string>
-
-    <string>위치 타입</string>
+    <string>타입</string>
 
     <string>integer</string>
 
@@ -6828,7 +6354,7 @@
 
 <ArrayOfString>
 
-    <string>xPos</string>
+    <string>positionX</string>
 
     <string>x좌표</string>
 
@@ -6848,7 +6374,7 @@
 
 <ArrayOfString>
 
-    <string>yPos</string>
+    <string>positionY</string>
 
     <string>y좌표</string>
 
@@ -6868,7 +6394,7 @@
 
 <ArrayOfString>
 
-    <string>zPos</string>
+    <string>positionZ</string>
 
     <string>z좌표</string>
 
@@ -6888,29 +6414,9 @@
 
 <ArrayOfString>
 
-    <string>xRot</string>
+    <string>rotationY</string>
 
-    <string>x회전</string>
-
-    <string>integer</string>
-
-    <string>Value</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>yRot</string>
-
-    <string>y회전</string>
+    <string>y로테이션</string>
 
     <string>integer</string>
 
@@ -6928,17 +6434,17 @@
 
 <ArrayOfString>
 
-    <string>zRot</string>
+    <string>animation</string>
 
-    <string>z회전</string>
+    <string>애니메이션</string>
 
-    <string>integer</string>
+    <string>nvarchar(64)</string>
 
-    <string>Value</string>
+    <string>Name</string>
 
-    <string>integer</string>
+    <string>nvarchar</string>
 
-    <string></string>
+    <string>64</string>
 
     <string></string>
 
@@ -6946,15 +6452,69 @@
 
   </ArrayOfString>
 
+
+
+  
+
 <ArrayOfString>
 
-    <string>scale</string>
+    <string>npcCostume</string>
 
-    <string>스케일</string>
+    <string>NPC 코스튭</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>npcId</string>
+
+    <string>npc 아이디</string>
 
     <string>integer</string>
 
-    <string>Value</string>
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>partsType</string>
+
+    <string>아바타 파츠 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>itemId</string>
+
+    <string>아이템 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
 
     <string>integer</string>
 
@@ -6962,7 +6522,101 @@
 
     <string></string>
 
+    <string>1</string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>npcList</string>
+
+    <string>NPC 리스트</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
     <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>npcType</string>
+
+    <string>npc타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>npcLookType</string>
+
+    <string>npc외형타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(32)</string>
+
+    <string>Nickname</string>
+
+    <string>nvarchar</string>
+
+    <string>32</string>
+
+    <string></string>
+
+    <string>1</string>
 
   </ArrayOfString>
 
@@ -6972,13 +6626,13 @@
 
     <string>프리팹</string>
 
-    <string>nvarchar(2048)</string>
+    <string>nvarchar(64)</string>
 
-    <string>Content</string>
+    <string>Name</string>
 
     <string>nvarchar</string>
 
-    <string>2048</string>
+    <string>64</string>
 
     <string></string>
 
@@ -6992,9 +6646,9 @@
 
 <ArrayOfString>
 
-    <string>npcMapPositionType</string>
+    <string>npcLookType</string>
 
-    <string>NPC 맵 위치</string>
+    <string>NPC 외형 타입</string>
 
   </ArrayOfString>
 
@@ -7004,7 +6658,7 @@
 
     <string>type</string>
 
-    <string>위치 타입</string>
+    <string>타입</string>
 
     <string>integer</string>
 
@@ -7046,9 +6700,9 @@
 
 <ArrayOfString>
 
-    <string>npcSeq</string>
+    <string>npcType</string>
 
-    <string>NPC 시퀀스</string>
+    <string>NPC 타입</string>
 
   </ArrayOfString>
 
@@ -7056,9 +6710,9 @@
 
 <ArrayOfString>
 
-    <string>id</string>
+    <string>type</string>
 
-    <string>시퀀스 아이디</string>
+    <string>타입</string>
 
     <string>integer</string>
 
@@ -7076,191 +6730,17 @@
 
 <ArrayOfString>
 
-    <string>textId</string>
+    <string>name</string>
 
-    <string>텍스트아이디</string>
+    <string>이름</string>
 
-    <string>integer</string>
+    <string>nvarchar(64)</string>
 
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>aniName</string>
-
-    <string>애니메이션</string>
-
-    <string>nvarchar(2048)</string>
-
-    <string>Content</string>
+    <string>Name</string>
 
     <string>nvarchar</string>
 
-    <string>2048</string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-
-
-  
-
-<ArrayOfString>
-
-    <string>npcSeqAct</string>
-
-    <string>NPC 시퀀스 액션</string>
-
-  </ArrayOfString>
-
-  
-
-<ArrayOfString>
-
-    <string>seqId</string>
-
-    <string>시퀀스 아이디</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string>1</string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>seqIdAct1</string>
-
-    <string>시퀀스 액션 1</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>seqIdText1</string>
-
-    <string>시퀀스 액션 1 텍스트</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>seqIdAct2</string>
-
-    <string>시퀀스 액션 2</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>seqIdText2</string>
-
-    <string>시퀀스 액션 2 텍스트</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>seqIdAct3</string>
-
-    <string>시퀀스 액션 3</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>seqIdText3</string>
-
-    <string>시퀀스 액션 3 텍스트</string>
-
-    <string>integer</string>
-
-    <string>Identifier</string>
-
-    <string>integer</string>
-
-    <string></string>
+    <string>64</string>
 
     <string></string>
 
@@ -10671,6 +10151,60 @@
     <string>type</string>
 
     <string>판매 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>sceneType</string>
+
+    <string>씬 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>타입</string>
 
     <string>integer</string>
 

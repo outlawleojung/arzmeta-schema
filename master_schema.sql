@@ -214,47 +214,11 @@ go
 
 
 
-CREATE TABLE avatarParts
-( 
-	id                   Identifier ,
-	itemId               Identifier ,
-	avatarPartsType      Identifier ,
-	chatId               Identifier ,
-	prefabName           Resource_Name ,
-	materialName         Resource_Name ,
-	productThumbnailName Content ,
-	thumbnailName        Resource_Name ,
-	effectName           Resource_Name ,
-	aniName              Resource_Name ,
-	divisionType         Identifier ,
-	questText            Identifier ,
-	description          Content ,
-	nameId               Identifier ,
-	sizeType             Identifier ,
-	colorType            Identifier ,
-	groupType            Identifier ,
-	partsOrder           Value ,
-	CONSTRAINT avatarParts_PK PRIMARY KEY  CLUSTERED (id ASC)
-)
-go
-
-
-
 CREATE TABLE avatarPartsColorType
 ( 
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT avatarPartsColorType_PK PRIMARY KEY  CLUSTERED (type ASC)
-)
-go
-
-
-
-CREATE TABLE avatarPartsDivisionType
-( 
-	type                 Identifier ,
-	name                 Name ,
-	CONSTRAINT avatarPartsDivisionType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -304,7 +268,6 @@ CREATE TABLE avatarPreset
 ( 
 	presetType           Identifier ,
 	partsType            Identifier ,
-	partsId              Identifier ,
 	itemId               Identifier ,
 	CONSTRAINT avatarPreset_PK PRIMARY KEY  CLUSTERED (presetType ASC,partsType ASC)
 )
@@ -382,7 +345,6 @@ CREATE TABLE commerceZoneMannequin
 	id                   Identifier ,
 	modelType            Identifier ,
 	partsType            Identifier ,
-	partsId              Identifier ,
 	itemId               Identifier ,
 	CONSTRAINT commerceZoneMannequin_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
@@ -793,7 +755,6 @@ CREATE TABLE memberAvatarInfo
 ( 
 	memberId             Identifier_Member_Id  NOT NULL ,
 	avatarPartsType      Identifier ,
-	avatarPartsId        Identifier ,
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
 	CONSTRAINT memberAvatarInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,avatarPartsType ASC)
@@ -1004,57 +965,60 @@ go
 
 
 
-CREATE TABLE npc
+CREATE TABLE npcArrange
 ( 
-	id                   Identifier ,
-	seqId                Identifier ,
-	nameId               Identifier ,
-	mapPosType           Identifier ,
-	xPos                 Value ,
-	yPos                 Value ,
-	zPos                 Value ,
-	xRot                 Value ,
-	yRot                 Value ,
-	zRot                 Value ,
-	scale                Value ,
-	prefab               Content ,
-	CONSTRAINT npc_PK PRIMARY KEY  CLUSTERED (id ASC)
+	npcId                Identifier ,
+	sceneType            Identifier ,
+	positionX            Value ,
+	positionY            Value ,
+	positionZ            Value ,
+	rotationY            Value ,
+	animation            Name ,
+	CONSTRAINT npcArrange_PK PRIMARY KEY  CLUSTERED (npcId ASC)
 )
 go
 
 
 
-CREATE TABLE npcMapPositionType
+CREATE TABLE npcCostume
+( 
+	npcId                Identifier ,
+	partsType            Identifier ,
+	itemId               Identifier ,
+	CONSTRAINT npcCostume_PK PRIMARY KEY  CLUSTERED (npcId ASC,partsType ASC)
+)
+go
+
+
+
+CREATE TABLE npcList
+( 
+	id                   Identifier ,
+	npcType              Identifier ,
+	npcLookType          Identifier ,
+	name                 Nickname ,
+	prefab               Name ,
+	CONSTRAINT npcList_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE npcLookType
 ( 
 	type                 Identifier ,
 	name                 Name ,
-	CONSTRAINT npcMapPositionType_PK PRIMARY KEY  CLUSTERED (type ASC)
+	CONSTRAINT npcLookType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
 
 
-CREATE TABLE npcSeq
+CREATE TABLE npcType
 ( 
-	id                   Identifier ,
-	textId               Identifier ,
-	aniName              Content ,
-	CONSTRAINT npcSeq_PK PRIMARY KEY  CLUSTERED (id ASC)
-)
-go
-
-
-
-CREATE TABLE npcSeqAct
-( 
-	seqId                Identifier ,
-	seqIdAct1            Identifier ,
-	seqIdText1           Identifier ,
-	seqIdAct2            Identifier ,
-	seqIdText2           Identifier ,
-	seqIdAct3            Identifier ,
-	seqIdText3           Identifier ,
-	CONSTRAINT npcSeqAct_PK PRIMARY KEY  CLUSTERED (seqId ASC)
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT npcType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -1502,6 +1466,16 @@ go
 
 
 
+CREATE TABLE sceneType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT sceneType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE startInventory
 ( 
 	itemId               Identifier ,
@@ -1674,48 +1648,6 @@ go
 
 
 
-ALTER TABLE avatarParts
-	ADD CONSTRAINT R_3228 FOREIGN KEY (avatarPartsType) REFERENCES avatarPartsType(type)
-go
-
-
-
-
-ALTER TABLE avatarParts
-	ADD CONSTRAINT R_3290 FOREIGN KEY (divisionType) REFERENCES avatarPartsDivisionType(type)
-go
-
-
-
-
-ALTER TABLE avatarParts
-	ADD CONSTRAINT R_3297 FOREIGN KEY (sizeType) REFERENCES avatarPartsSizeType(type)
-go
-
-
-
-
-ALTER TABLE avatarParts
-	ADD CONSTRAINT R_3298 FOREIGN KEY (colorType) REFERENCES avatarPartsColorType(type)
-go
-
-
-
-
-ALTER TABLE avatarParts
-	ADD CONSTRAINT R_3299 FOREIGN KEY (groupType) REFERENCES avatarPartsGroupType(type)
-go
-
-
-
-
-ALTER TABLE avatarParts
-	ADD CONSTRAINT R_3393 FOREIGN KEY (itemId) REFERENCES item(id)
-go
-
-
-
-
 ALTER TABLE avatarPreset
 	ADD CONSTRAINT R_3304 FOREIGN KEY (presetType) REFERENCES avatarPresetType(type)
 go
@@ -1725,13 +1657,6 @@ go
 
 ALTER TABLE avatarPreset
 	ADD CONSTRAINT R_3305 FOREIGN KEY (partsType) REFERENCES avatarPartsType(type)
-go
-
-
-
-
-ALTER TABLE avatarPreset
-	ADD CONSTRAINT R_3306 FOREIGN KEY (partsId) REFERENCES avatarParts(id)
 go
 
 
@@ -1809,13 +1734,6 @@ go
 
 ALTER TABLE commerceZoneMannequin
 	ADD CONSTRAINT R_3293 FOREIGN KEY (modelType) REFERENCES mannequinModelType(type)
-go
-
-
-
-
-ALTER TABLE commerceZoneMannequin
-	ADD CONSTRAINT R_3294 FOREIGN KEY (partsId) REFERENCES avatarParts(id)
 go
 
 
@@ -2080,13 +1998,6 @@ go
 
 
 
-ALTER TABLE memberAvatarInfo
-	ADD CONSTRAINT R_3255 FOREIGN KEY (avatarPartsId) REFERENCES avatarParts(id)
-go
-
-
-
-
 ALTER TABLE memberBusinessCardInfo
 	ADD CONSTRAINT R_3427 FOREIGN KEY (templateId) REFERENCES businessCardTemplate(id)
 go
@@ -2248,43 +2159,57 @@ go
 
 
 
-ALTER TABLE npc
-	ADD CONSTRAINT R_3258 FOREIGN KEY (mapPosType) REFERENCES npcMapPositionType(type)
+ALTER TABLE npcArrange
+	ADD CONSTRAINT R_3460 FOREIGN KEY (npcId) REFERENCES npcList(id)
 go
 
 
 
 
-ALTER TABLE npc
-	ADD CONSTRAINT R_3259 FOREIGN KEY (seqId) REFERENCES npcSeq(id)
+ALTER TABLE npcArrange
+	ADD CONSTRAINT R_3461 FOREIGN KEY (sceneType) REFERENCES sceneType(type)
 go
 
 
 
 
-ALTER TABLE npcSeqAct
-	ADD CONSTRAINT R_3260 FOREIGN KEY (seqIdAct1) REFERENCES npcSeq(id)
+ALTER TABLE npcCostume
+	ADD CONSTRAINT R_3457 FOREIGN KEY (npcId) REFERENCES npcList(id)
 go
 
 
 
 
-ALTER TABLE npcSeqAct
-	ADD CONSTRAINT R_3263 FOREIGN KEY (seqIdAct2) REFERENCES npcSeq(id)
+ALTER TABLE npcCostume
+	ADD CONSTRAINT R_3458 FOREIGN KEY (partsType) REFERENCES avatarPartsType(type)
 go
 
 
 
 
-ALTER TABLE npcSeqAct
-	ADD CONSTRAINT R_3264 FOREIGN KEY (seqIdAct3) REFERENCES npcSeq(id)
+ALTER TABLE npcCostume
+	ADD CONSTRAINT R_3459 FOREIGN KEY (itemId) REFERENCES item(id)
 go
 
 
 
 
-ALTER TABLE npcSeqAct
-	ADD CONSTRAINT R_3265 FOREIGN KEY (seqId) REFERENCES npcSeq(id)
+ALTER TABLE npcList
+	ADD CONSTRAINT R_3454 FOREIGN KEY (npcType) REFERENCES npcType(type)
+go
+
+
+
+
+ALTER TABLE npcList
+	ADD CONSTRAINT R_3455 FOREIGN KEY (npcLookType) REFERENCES npcLookType(type)
+go
+
+
+
+
+ALTER TABLE npcList
+	ADD CONSTRAINT R_3456 FOREIGN KEY (name) REFERENCES localization(id)
 go
 
 
