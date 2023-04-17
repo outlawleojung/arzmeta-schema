@@ -648,6 +648,16 @@ go
 
 
 
+CREATE TABLE mapExposulBrand
+( 
+	mapExposulInfoId     Identifier ,
+	brandName            Name ,
+	CONSTRAINT mapExposulBrand_PK PRIMARY KEY  CLUSTERED (mapExposulInfoId ASC,brandName ASC)
+)
+go
+
+
+
 CREATE TABLE mapExposulInfo
 ( 
 	id                   Identifier ,
@@ -1895,6 +1905,13 @@ go
 
 ALTER TABLE mannequinPurchaseState
 	ADD CONSTRAINT R_3300 FOREIGN KEY (stateType) REFERENCES avatarPartsStateType(type)
+go
+
+
+
+
+ALTER TABLE mapExposulBrand
+	ADD CONSTRAINT R_3462 FOREIGN KEY (mapExposulInfoId) REFERENCES mapExposulInfo(id)
 go
 
 
