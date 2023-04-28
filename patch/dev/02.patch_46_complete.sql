@@ -1,0 +1,74 @@
+
+insert into npcType(type, name) values(1, N'Main');
+insert into npcType(type, name) values(2, N'Sub');
+insert into npcType(type, name) values(3, N'Dummy');
+
+insert into npcLookType(type, name) values(1, N'avatar');
+insert into npcLookType(type, name) values(2, N'character');
+
+insert into sceneType(type, name) values(202, N'202_Scene_OfficeLobbyZone.unity');
+
+insert into npcList ( id, npcType, npcLookType, name, prefab ) values ( 11001,  1,  1,  N'npc_m_a_office_001',  N'avatar' );
+insert into npcList ( id, npcType, npcLookType, name, prefab ) values ( 21001,  2,  2,  N'npc_s_c_office_001',  N'arty' );
+insert into npcList ( id, npcType, npcLookType, name, prefab ) values ( 51001,  3,  1,  N'npc_d_a_office_001',  N'avatar' );
+insert into npcList ( id, npcType, npcLookType, name, prefab ) values ( 51002,  3,  1,  N'npc_d_a_office_002',  N'avatar' );
+insert into npcList ( id, npcType, npcLookType, name, prefab ) values ( 51003,  3,  1,  N'npc_d_a_office_003',  N'avatar' );
+insert into npcList ( id, npcType, npcLookType, name, prefab ) values ( 51004,  3,  1,  N'npc_d_a_office_004',  N'avatar' );
+insert into npcList ( id, npcType, npcLookType, name, prefab ) values ( 51005,  3,  1,  N'npc_d_a_office_005',  N'avatar' );
+insert into npcList ( id, npcType, npcLookType, name, prefab ) values ( 51006,  3,  1,  N'npc_d_a_office_006',  N'avatar' );
+insert into npcList ( id, npcType, npcLookType, name, prefab ) values ( 51007,  3,  1,  N'npc_d_a_office_007',  N'avatar' );
+insert into npcList ( id, npcType, npcLookType, name, prefab ) values ( 51008,  3,  1,  N'npc_d_a_office_008',  N'avatar' );
+insert into npcList ( id, npcType, npcLookType, name, prefab ) values ( 51009,  3,  1,  N'npc_d_a_office_009',  N'avatar' );
+
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51001,  1,  310002 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51001,  4,  340003 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51002,  1,  310004 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51002,  2,  320007 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51002,  3,  330030 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51002,  5,  350017 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51002,  6,  360004 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51003,  1,  310005 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51003,  2,  320014 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51003,  3,  320006 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51003,  5,  350001 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51003,  6,  360010 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51004,  1,  310019 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51004,  2,  320001 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51004,  3,  330007 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51004,  5,  350010 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51005,  1,  310009 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51005,  4,  340006 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51005,  6,  360004 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51006,  1,  310008 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51006,  2,  320034 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51006,  3,  330027 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51006,  5,  350001 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51007,  1,  310016 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51007,  2,  320032 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51007,  3,  330014 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51007,  5,  350001 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51007,  6,  360002 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51008,  1,  310007 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51008,  2,  320031 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51008,  3,  330015 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51008,  5,  350020 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51008,  6,  360004 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51009,  1,  310037 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 51009,  4,  340002 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 11001,  1,  310038 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 11001,  6,  360012 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 11001,  2,  320036 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 11001,  3,  330029 );
+insert into npcCostume ( npcId, partsType, itemId ) values ( 11001,  5,  350001 );
+
+insert into npcArrange ( npcId, sceneType, positionX, positionY, positionZ, rotationY, animation ) values ( 11001,  202,  1400,  0,  2050,  0,  N'action_idle_01' );
+insert into npcArrange ( npcId, sceneType, positionX, positionY, positionZ, rotationY, animation ) values ( 21001,  202,  -700,  300,  1650,  0,  N'ani_eggbot_idle_01' );
+insert into npcArrange ( npcId, sceneType, positionX, positionY, positionZ, rotationY, animation ) values ( 51001,  202,  -300,  0,  1100,  0,  N'action_idle_01' );
+insert into npcArrange ( npcId, sceneType, positionX, positionY, positionZ, rotationY, animation ) values ( 51002,  202,  -500,  0,  200,  0,  N'action_idle_01' );
+insert into npcArrange ( npcId, sceneType, positionX, positionY, positionZ, rotationY, animation ) values ( 51003,  202,  1100,  440,  1100,  0,  N'action_idle_01' );
+insert into npcArrange ( npcId, sceneType, positionX, positionY, positionZ, rotationY, animation ) values ( 51004,  202,  1400,  0,  -440,  0,  N'action_sit' );
+insert into npcArrange ( npcId, sceneType, positionX, positionY, positionZ, rotationY, animation ) values ( 51005,  202,  1570,  0,  -440,  0,  N'action_sit' );
+insert into npcArrange ( npcId, sceneType, positionX, positionY, positionZ, rotationY, animation ) values ( 51006,  202,  300,  280,  -1070,  0,  N'action_sit' );
+insert into npcArrange ( npcId, sceneType, positionX, positionY, positionZ, rotationY, animation ) values ( 51007,  202,  -100,  440,  -1850,  0,  N'action_idle_01' );
+insert into npcArrange ( npcId, sceneType, positionX, positionY, positionZ, rotationY, animation ) values ( 51008,  202,  -350,  400,  -1300,  0,  N'action_sit' );
+insert into npcArrange ( npcId, sceneType, positionX, positionY, positionZ, rotationY, animation ) values ( 51009,  202,  0,  120,  -800,  0,  N'action_sit' );
