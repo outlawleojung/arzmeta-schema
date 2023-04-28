@@ -175,6 +175,8 @@ START TRANSACTION;
 
 -- tablename : mapExposulInfo
 
+-- tablename : mapExposulBrand
+
 -- tablename : npcList
 
 -- tablename : npcCostume
