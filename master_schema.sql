@@ -204,6 +204,16 @@ go
 
 
 
+CREATE TABLE appendType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT appendType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE areaType
 ( 
 	type                 Identifier ,
@@ -628,6 +638,16 @@ go
 
 
 
+CREATE TABLE logActionType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT logActionType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE mannequinModelType
 ( 
 	type                 Identifier ,
@@ -922,6 +942,42 @@ go
 
 
 
+CREATE TABLE memberPostBox
+( 
+	id                   Identifier ,
+	memberId             Identifier_Member_Id  NOT NULL ,
+	postalType           Identifier ,
+	postalState          Identifier ,
+	subject              Subject ,
+	period               Value ,
+	summary              Content ,
+	contents             Subject ,
+	sendAt               _Datetime ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	endedAt              _Datetime ,
+	CONSTRAINT memberPostBox_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE memberPostBoxAppend
+( 
+	id                   Identifier ,
+	postBoxId            Identifier ,
+	appendType           Identifier ,
+	appendValue          Identifier ,
+	count                Value ,
+	orderNum             Value ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT memberPostBoxAppend_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
 CREATE TABLE memberReportInfo
 ( 
 	id                   Identifier ,
@@ -950,6 +1006,16 @@ CREATE TABLE memberVoteInfo
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
 	CONSTRAINT memberVoteInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,voteId ASC,num ASC)
+)
+go
+
+
+
+CREATE TABLE moneyType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT moneyType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -1329,6 +1395,94 @@ CREATE TABLE popupType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT popupType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE postalEffectType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT postalEffectType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE postalItemProperty
+( 
+	itemType             Identifier ,
+	categoryType         Identifier ,
+	postalEffectType     Identifier ,
+	effectResource       Content ,
+	CONSTRAINT postalItemProperty_PK PRIMARY KEY  CLUSTERED (itemType ASC,categoryType ASC)
+)
+go
+
+
+
+CREATE TABLE postalLog
+( 
+	id                   Identifier ,
+	postalLogType        Identifier ,
+	logActionType        Identifier ,
+	prevData             Content ,
+	changeData           Content ,
+	adminId              Identifier_Identity  NOT NULL ,
+	createdAt            _Datetime ,
+	CONSTRAINT postalLog_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE postalLogType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT postalLogType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE postalMoneyProperty
+( 
+	moneyType            Identifier ,
+	postalEffectType     Identifier ,
+	effectResource       Content ,
+	CONSTRAINT postalMoneyProperty_PK PRIMARY KEY  CLUSTERED (moneyType ASC)
+)
+go
+
+
+
+CREATE TABLE postalState
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT postalState_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE postalType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT postalType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE postalTypeProperty
+( 
+	postalType           Identifier ,
+	period               Value ,
+	CONSTRAINT postalTypeProperty_PK PRIMARY KEY  CLUSTERED (postalType ASC)
 )
 go
 
@@ -2141,6 +2295,41 @@ go
 
 
 
+ALTER TABLE memberPostBox
+	ADD CONSTRAINT R_3471 FOREIGN KEY (memberId) REFERENCES member(memberId)
+go
+
+
+
+
+ALTER TABLE memberPostBox
+	ADD CONSTRAINT R_3472 FOREIGN KEY (postalType) REFERENCES postalType(type)
+go
+
+
+
+
+ALTER TABLE memberPostBox
+	ADD CONSTRAINT R_3475 FOREIGN KEY (postalState) REFERENCES postalState(type)
+go
+
+
+
+
+ALTER TABLE memberPostBoxAppend
+	ADD CONSTRAINT R_3473 FOREIGN KEY (postBoxId) REFERENCES memberPostBox(id)
+go
+
+
+
+
+ALTER TABLE memberPostBoxAppend
+	ADD CONSTRAINT R_3474 FOREIGN KEY (appendType) REFERENCES appendType(type)
+go
+
+
+
+
 ALTER TABLE memberReportInfo
 	ADD CONSTRAINT R_3319 FOREIGN KEY (reporterMemberId) REFERENCES member(memberId)
 go
@@ -2402,6 +2591,62 @@ go
 
 ALTER TABLE popupInfo
 	ADD CONSTRAINT R_3289 FOREIGN KEY (adminId) REFERENCES user(id)
+go
+
+
+
+
+ALTER TABLE postalItemProperty
+	ADD CONSTRAINT R_3467 FOREIGN KEY (itemType) REFERENCES itemType(type)
+go
+
+
+
+
+ALTER TABLE postalItemProperty
+	ADD CONSTRAINT R_3469 FOREIGN KEY (postalEffectType) REFERENCES postalEffectType(type)
+go
+
+
+
+
+ALTER TABLE postalItemProperty
+	ADD CONSTRAINT R_3484 FOREIGN KEY (categoryType) REFERENCES categoryType(type)
+go
+
+
+
+
+ALTER TABLE postalLog
+	ADD CONSTRAINT R_3476 FOREIGN KEY (adminId) REFERENCES user(id)
+go
+
+
+
+
+ALTER TABLE postalLog
+	ADD CONSTRAINT R_3477 FOREIGN KEY (postalLogType) REFERENCES postalLogType(type)
+go
+
+
+
+
+ALTER TABLE postalLog
+	ADD CONSTRAINT R_3478 FOREIGN KEY (logActionType) REFERENCES logActionType(type)
+go
+
+
+
+
+ALTER TABLE postalMoneyProperty
+	ADD CONSTRAINT R_3483 FOREIGN KEY (moneyType) REFERENCES moneyType(type)
+go
+
+
+
+
+ALTER TABLE postalTypeProperty
+	ADD CONSTRAINT R_3470 FOREIGN KEY (postalType) REFERENCES postalType(type)
 go
 
 

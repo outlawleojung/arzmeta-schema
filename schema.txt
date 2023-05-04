@@ -4,6 +4,60 @@
 
 <ArrayOfString>
 
+    <string>appendType</string>
+
+    <string>첨부 종류</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
     <string>areaType</string>
 
     <string>구역 타입</string>
@@ -3082,6 +3136,60 @@
 
 <ArrayOfString>
 
+    <string>logActionType</string>
+
+    <string>로그 발생 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
     <string>mannequinModelType</string>
 
     <string>마네킹 모델 타입</string>
@@ -5828,6 +5936,434 @@
 
 <ArrayOfString>
 
+    <string>memberPostBox</string>
+
+    <string>회원 우편함</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>memberId</string>
+
+    <string>회원 아이디</string>
+
+    <string>varchar(100)</string>
+
+    <string>Identifier_Member_Id</string>
+
+    <string>varchar</string>
+
+    <string>100</string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>postalType</string>
+
+    <string>우편 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>postalState</string>
+
+    <string>발송 상태</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>subject</string>
+
+    <string>제목</string>
+
+    <string>nvarchar(256)</string>
+
+    <string>Subject</string>
+
+    <string>nvarchar</string>
+
+    <string>256</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>period</string>
+
+    <string>보관 기간</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>summary</string>
+
+    <string>요약 내용</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>contents</string>
+
+    <string>상세 내용</string>
+
+    <string>nvarchar(256)</string>
+
+    <string>Subject</string>
+
+    <string>nvarchar</string>
+
+    <string>256</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>sendAt</string>
+
+    <string>발송일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>createdAt</string>
+
+    <string>생성일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>updatedAt</string>
+
+    <string>갱신일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>endedAt</string>
+
+    <string>종료일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>memberPostBoxAppend</string>
+
+    <string>회원 우편함 첨부</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>postBoxId</string>
+
+    <string>우편함 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>appendType</string>
+
+    <string>첨부 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>appendValue</string>
+
+    <string>첨부 아이템</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>count</string>
+
+    <string>갯수</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>orderNum</string>
+
+    <string>우선순위</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>createdAt</string>
+
+    <string>생성일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>updatedAt</string>
+
+    <string>갱신일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
     <string>memberReportInfo</string>
 
     <string>회원 신고 정보</string>
@@ -6183,6 +6719,60 @@
     <string>datetime</string>
 
     <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>moneyType</string>
+
+    <string>재화 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
 
     <string></string>
 
@@ -9383,6 +9973,598 @@
     <string>nvarchar</string>
 
     <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>postalEffectType</string>
+
+    <string>우편 획득 연출</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>postalItemProperty</string>
+
+    <string>아이템 첨부 속성</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>itemType</string>
+
+    <string>아이템 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>categoryType</string>
+
+    <string>카테고리 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>postalEffectType</string>
+
+    <string>연출 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>effectResource</string>
+
+    <string>연출 리소스</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>postalLog</string>
+
+    <string>우편 발송 로그</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>postalLogType</string>
+
+    <string>우편 발송 로그 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>logActionType</string>
+
+    <string>로그 발생 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>prevData</string>
+
+    <string>이전 데이터</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>changeData</string>
+
+    <string>변경 데이터</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>adminId</string>
+
+    <string>관리자 아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier_Identity</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>createdAt</string>
+
+    <string>생성일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>postalLogType</string>
+
+    <string>우편 발송 로그 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>postalMoneyProperty</string>
+
+    <string>재화 첨부 속성</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>moneyType</string>
+
+    <string>재화 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>postalEffectType</string>
+
+    <string>연출 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>effectResource</string>
+
+    <string>연출 리소스</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>postalState</string>
+
+    <string>우편 발송 상태</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>postalType</string>
+
+    <string>우편 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>postalTypeProperty</string>
+
+    <string>우편 타입 속성</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>postalType</string>
+
+    <string>우편 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>period</string>
+
+    <string>보관 날짜</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
 
     <string></string>
 
