@@ -942,42 +942,6 @@ go
 
 
 
-CREATE TABLE memberPostBox
-( 
-	id                   Identifier ,
-	memberId             Identifier_Member_Id  NOT NULL ,
-	postalType           Identifier ,
-	postalState          Identifier ,
-	subject              Subject ,
-	period               Value ,
-	summary              Content ,
-	contents             Subject ,
-	sendAt               _Datetime ,
-	createdAt            _Datetime ,
-	updatedAt            _Datetime ,
-	endedAt              _Datetime ,
-	CONSTRAINT memberPostBox_PK PRIMARY KEY  CLUSTERED (id ASC)
-)
-go
-
-
-
-CREATE TABLE memberPostBoxAppend
-( 
-	id                   Identifier ,
-	postBoxId            Identifier ,
-	appendType           Identifier ,
-	appendValue          Identifier ,
-	count                Value ,
-	orderNum             Value ,
-	createdAt            _Datetime ,
-	updatedAt            _Datetime ,
-	CONSTRAINT memberPostBoxAppend_PK PRIMARY KEY  CLUSTERED (id ASC)
-)
-go
-
-
-
 CREATE TABLE memberReportInfo
 ( 
 	id                   Identifier ,
@@ -1424,14 +1388,15 @@ go
 
 CREATE TABLE postalLog
 ( 
-	id                   Identifier ,
+	logId                Identifier ,
+	postboxId            Identifier ,
 	postalLogType        Identifier ,
 	logActionType        Identifier ,
 	prevData             Content ,
 	changeData           Content ,
 	adminId              Identifier_Identity  NOT NULL ,
 	createdAt            _Datetime ,
-	CONSTRAINT postalLog_PK PRIMARY KEY  CLUSTERED (id ASC)
+	CONSTRAINT postalLog_PK PRIMARY KEY  CLUSTERED (logId ASC)
 )
 go
 
@@ -1453,6 +1418,16 @@ CREATE TABLE postalMoneyProperty
 	postalEffectType     Identifier ,
 	effectResource       Content ,
 	CONSTRAINT postalMoneyProperty_PK PRIMARY KEY  CLUSTERED (moneyType ASC)
+)
+go
+
+
+
+CREATE TABLE postalSendType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT postalSendType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -1483,6 +1458,42 @@ CREATE TABLE postalTypeProperty
 	postalType           Identifier ,
 	period               Value ,
 	CONSTRAINT postalTypeProperty_PK PRIMARY KEY  CLUSTERED (postalType ASC)
+)
+go
+
+
+
+CREATE TABLE postbox
+( 
+	id                   Identifier ,
+	postalType           Identifier ,
+	postalSendType       Identifier ,
+	postalState          Identifier ,
+	subject              Subject ,
+	period               Value ,
+	summary              Content ,
+	contents             Subject ,
+	sendAt               _Datetime ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	endedAt              _Datetime ,
+	CONSTRAINT postbox_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE postboxAppend
+( 
+	id                   Identifier ,
+	postboxId            Identifier ,
+	appendType           Identifier ,
+	appendValue          Identifier ,
+	count                Value ,
+	orderNum             Value ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT postboxAppend_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
 
@@ -1806,6 +1817,32 @@ CREATE TABLE worldType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT worldType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE 우편_수신_회원_정보
+( 
+	id                   Identifier ,
+	memberId             Identifier_Member_Id  NOT NULL ,
+	생성_일시            _Datetime ,
+	갱신_일시            _Datetime ,
+	CONSTRAINT 우편_수신_회원_정보_PK PRIMARY KEY  CLUSTERED (id ASC,memberId ASC)
+)
+go
+
+
+
+CREATE TABLE 회원_우편함
+( 
+	memberId             Identifier_Member_Id  NOT NULL ,
+	id                   Identifier ,
+	수령_여부            Value ,
+	수령_일시            _Datetime ,
+	생성_일시            _Datetime ,
+	갱신_일시            _Datetime ,
+	CONSTRAINT 회원_우편함_PK PRIMARY KEY  CLUSTERED (memberId ASC,id ASC)
 )
 go
 
@@ -2295,41 +2332,6 @@ go
 
 
 
-ALTER TABLE memberPostBox
-	ADD CONSTRAINT R_3471 FOREIGN KEY (memberId) REFERENCES member(memberId)
-go
-
-
-
-
-ALTER TABLE memberPostBox
-	ADD CONSTRAINT R_3472 FOREIGN KEY (postalType) REFERENCES postalType(type)
-go
-
-
-
-
-ALTER TABLE memberPostBox
-	ADD CONSTRAINT R_3475 FOREIGN KEY (postalState) REFERENCES postalState(type)
-go
-
-
-
-
-ALTER TABLE memberPostBoxAppend
-	ADD CONSTRAINT R_3473 FOREIGN KEY (postBoxId) REFERENCES memberPostBox(id)
-go
-
-
-
-
-ALTER TABLE memberPostBoxAppend
-	ADD CONSTRAINT R_3474 FOREIGN KEY (appendType) REFERENCES appendType(type)
-go
-
-
-
-
 ALTER TABLE memberReportInfo
 	ADD CONSTRAINT R_3319 FOREIGN KEY (reporterMemberId) REFERENCES member(memberId)
 go
@@ -2638,6 +2640,13 @@ go
 
 
 
+ALTER TABLE postalLog
+	ADD CONSTRAINT R_3486 FOREIGN KEY (postboxId) REFERENCES postbox(id)
+go
+
+
+
+
 ALTER TABLE postalMoneyProperty
 	ADD CONSTRAINT R_3483 FOREIGN KEY (moneyType) REFERENCES moneyType(type)
 go
@@ -2647,6 +2656,41 @@ go
 
 ALTER TABLE postalTypeProperty
 	ADD CONSTRAINT R_3470 FOREIGN KEY (postalType) REFERENCES postalType(type)
+go
+
+
+
+
+ALTER TABLE postbox
+	ADD CONSTRAINT R_3472 FOREIGN KEY (postalType) REFERENCES postalType(type)
+go
+
+
+
+
+ALTER TABLE postbox
+	ADD CONSTRAINT R_3475 FOREIGN KEY (postalState) REFERENCES postalState(type)
+go
+
+
+
+
+ALTER TABLE postbox
+	ADD CONSTRAINT R_3491 FOREIGN KEY (postalSendType) REFERENCES postalSendType(type)
+go
+
+
+
+
+ALTER TABLE postboxAppend
+	ADD CONSTRAINT R_3473 FOREIGN KEY (postboxId) REFERENCES postbox(id)
+go
+
+
+
+
+ALTER TABLE postboxAppend
+	ADD CONSTRAINT R_3474 FOREIGN KEY (appendType) REFERENCES appendType(type)
 go
 
 
@@ -2780,6 +2824,34 @@ go
 
 ALTER TABLE worldAreaInfo
 	ADD CONSTRAINT R_3324 FOREIGN KEY (areaType) REFERENCES areaType(type)
+go
+
+
+
+
+ALTER TABLE 우편_수신_회원_정보
+	ADD CONSTRAINT R_3487 FOREIGN KEY (id) REFERENCES postbox(id)
+go
+
+
+
+
+ALTER TABLE 우편_수신_회원_정보
+	ADD CONSTRAINT R_3488 FOREIGN KEY (memberId) REFERENCES member(memberId)
+go
+
+
+
+
+ALTER TABLE 회원_우편함
+	ADD CONSTRAINT R_3489 FOREIGN KEY (memberId) REFERENCES member(memberId)
+go
+
+
+
+
+ALTER TABLE 회원_우편함
+	ADD CONSTRAINT R_3490 FOREIGN KEY (id) REFERENCES postbox(id)
 go
 
 
