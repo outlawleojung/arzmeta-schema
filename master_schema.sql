@@ -1543,7 +1543,7 @@ go
 CREATE TABLE quizQuestionAnswer
 ( 
 	id                   Identifier ,
-	questionId           Identifier ,
+	questionId           Nickname ,
 	answerType           Identifier ,
 	CONSTRAINT quizQuestionAnswer_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
@@ -2698,6 +2698,13 @@ go
 
 ALTER TABLE quizQuestionAnswer
 	ADD CONSTRAINT R_3269 FOREIGN KEY (answerType) REFERENCES quizAnswerType(type)
+go
+
+
+
+
+ALTER TABLE quizQuestionAnswer
+	ADD CONSTRAINT R_3493 FOREIGN KEY (questionId) REFERENCES localization(id)
 go
 
 
