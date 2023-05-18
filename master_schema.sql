@@ -435,6 +435,16 @@ go
 
 
 
+CREATE TABLE frameImageAppendType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT frameImageAppendType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE functionTable
 ( 
 	id                   Identifier ,
@@ -451,6 +461,16 @@ CREATE TABLE gradeType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT gradeType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE imageSaveType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT imageSaveType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -710,14 +730,14 @@ go
 CREATE TABLE meberMyRoomItemInfo
 ( 
 	memberId             Identifier_Member_Id  NOT NULL ,
-	id                   Identifier ,
+	itemId               Identifier ,
 	layerType            Identifier ,
 	x                    Identifier ,
 	y                    Identifier ,
 	rotation             Identifier ,
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
-	CONSTRAINT meberMyRoomItemInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,id ASC)
+	CONSTRAINT meberMyRoomItemInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,itemId ASC)
 )
 go
 
@@ -845,12 +865,12 @@ go
 CREATE TABLE memberFurnitureItemInven
 ( 
 	memberId             Identifier_Member_Id  NOT NULL ,
-	id                   Identifier ,
+	itemId               Identifier ,
 	count                Value ,
 	useCount             Value ,
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
-	CONSTRAINT memberFurnitureItemInven_PK PRIMARY KEY  CLUSTERED (memberId ASC,id ASC)
+	CONSTRAINT memberFurnitureItemInven_PK PRIMARY KEY  CLUSTERED (memberId ASC,itemId ASC)
 )
 go
 
@@ -865,6 +885,20 @@ CREATE TABLE memberItemInven
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
 	CONSTRAINT memberItemInven_PK PRIMARY KEY  CLUSTERED (memberId ASC,itemId ASC,num ASC)
+)
+go
+
+
+
+CREATE TABLE memberMyRoomPhotoFrameInfo
+( 
+	memberId             Identifier_Member_Id  NOT NULL ,
+	itemId               Identifier ,
+	imageSaveType        Identifier ,
+	imageName            Name ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT memberMyRoomPhotoFrameInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,itemId ASC)
 )
 go
 
@@ -937,6 +971,19 @@ CREATE TABLE memberOfficeReservationWaitingInfo
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
 	CONSTRAINT memberOfficeReservationWaitingInfo_PK PRIMARY KEY  CLUSTERED (reservationId ASC,memberId ASC)
+)
+go
+
+
+
+CREATE TABLE memberPurchaseItem
+( 
+	id                   Identifier ,
+	productId            Identifier ,
+	memberId             Identifier_Member_Id  NOT NULL ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT memberPurchaseItem_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
 
@@ -1230,12 +1277,11 @@ go
 
 CREATE TABLE officeProductItem
 ( 
-	id                   Identifier ,
+	productId            Identifier ,
+	name                 Nickname ,
 	officeGradeType      Identifier ,
-	paymentType          Identifier ,
-	purchaseType         Identifier ,
-	price                Value ,
-	CONSTRAINT officeProductItem_PK PRIMARY KEY  CLUSTERED (id ASC)
+	period               Value ,
+	CONSTRAINT officeProductItem_PK PRIMARY KEY  CLUSTERED (productId ASC)
 )
 go
 
@@ -1325,11 +1371,23 @@ go
 
 
 
-CREATE TABLE paymentType
+CREATE TABLE paymentProductManager
+( 
+	id                   Identifier ,
+	moneyType            Identifier ,
+	price                Value ,
+	purchaseLimit        Value ,
+	CONSTRAINT paymentProductManager_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE paymentStateType
 ( 
 	type                 Identifier ,
 	name                 Name ,
-	CONSTRAINT paymentType_PK PRIMARY KEY  CLUSTERED (type ASC)
+	CONSTRAINT paymentStateType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -1509,16 +1567,6 @@ go
 
 
 
-CREATE TABLE purchaseType
-( 
-	type                 Identifier ,
-	name                 Name ,
-	CONSTRAINT purchaseType_PK PRIMARY KEY  CLUSTERED (type ASC)
-)
-go
-
-
-
 CREATE TABLE quizAnswerType
 ( 
 	type                 Identifier ,
@@ -1631,16 +1679,6 @@ go
 
 
 
-CREATE TABLE saleType
-( 
-	type                 Identifier ,
-	name                 Name ,
-	CONSTRAINT saleType_PK PRIMARY KEY  CLUSTERED (type ASC)
-)
-go
-
-
-
 CREATE TABLE sceneType
 ( 
 	type                 Identifier ,
@@ -1670,6 +1708,16 @@ CREATE TABLE startMyRoom
 	y                    Identifier ,
 	rotation             Identifier ,
 	CONSTRAINT startMyRoom_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE storeType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT storeType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -1892,7 +1940,7 @@ go
 
 
 ALTER TABLE businessCardTemplate
-	ADD CONSTRAINT R_3424 FOREIGN KEY (purchaseType) REFERENCES purchaseType(type)
+	ADD CONSTRAINT R_3509 FOREIGN KEY (purchaseType) REFERENCES moneyType(type)
 go
 
 
@@ -2011,20 +2059,6 @@ go
 
 
 ALTER TABLE item
-	ADD CONSTRAINT R_3328 FOREIGN KEY (purchaseType) REFERENCES purchaseType(type)
-go
-
-
-
-
-ALTER TABLE item
-	ADD CONSTRAINT R_3329 FOREIGN KEY (saleType) REFERENCES saleType(type)
-go
-
-
-
-
-ALTER TABLE item
 	ADD CONSTRAINT R_3330 FOREIGN KEY (gradeType) REFERENCES gradeType(type)
 go
 
@@ -2040,6 +2074,20 @@ go
 
 ALTER TABLE item
 	ADD CONSTRAINT R_3341 FOREIGN KEY (description) REFERENCES localization(id)
+go
+
+
+
+
+ALTER TABLE item
+	ADD CONSTRAINT R_3508 FOREIGN KEY (purchaseType) REFERENCES moneyType(type)
+go
+
+
+
+
+ALTER TABLE item
+	ADD CONSTRAINT R_3510 FOREIGN KEY (saleType) REFERENCES moneyType(type)
 go
 
 
@@ -2144,7 +2192,7 @@ go
 
 
 ALTER TABLE meberMyRoomItemInfo
-	ADD CONSTRAINT R_3346 FOREIGN KEY (memberId,id) REFERENCES memberFurnitureItemInven(memberId,id)
+	ADD CONSTRAINT R_3346 FOREIGN KEY (memberId,itemId) REFERENCES memberFurnitureItemInven(memberId,itemId)
 go
 
 
@@ -2242,7 +2290,7 @@ go
 
 
 ALTER TABLE memberFurnitureItemInven
-	ADD CONSTRAINT R_3345 FOREIGN KEY (id) REFERENCES item(id)
+	ADD CONSTRAINT R_3345 FOREIGN KEY (itemId) REFERENCES item(id)
 go
 
 
@@ -2257,6 +2305,20 @@ go
 
 ALTER TABLE memberItemInven
 	ADD CONSTRAINT R_3336 FOREIGN KEY (itemId) REFERENCES item(id)
+go
+
+
+
+
+ALTER TABLE memberMyRoomPhotoFrameInfo
+	ADD CONSTRAINT R_3495 FOREIGN KEY (memberId,itemId) REFERENCES memberFurnitureItemInven(memberId,itemId)
+go
+
+
+
+
+ALTER TABLE memberMyRoomPhotoFrameInfo
+	ADD CONSTRAINT R_3496 FOREIGN KEY (imageSaveType) REFERENCES imageSaveType(type)
 go
 
 
@@ -2327,6 +2389,34 @@ go
 
 ALTER TABLE memberOfficeReservationWaitingInfo
 	ADD CONSTRAINT R_3379 FOREIGN KEY (memberId) REFERENCES member(memberId)
+go
+
+
+
+
+ALTER TABLE memberPurchaseItem
+	ADD CONSTRAINT R_3501 FOREIGN KEY (memberId) REFERENCES member(memberId)
+go
+
+
+
+
+ALTER TABLE memberPurchaseItem
+	ADD CONSTRAINT R_3502 FOREIGN KEY (productId) REFERENCES paymentProductManager(id)
+go
+
+
+
+
+ALTER TABLE memberPurchaseItem
+	ADD CONSTRAINT R_3506 FOREIGN KEY (productId) REFERENCES paymentProductManager(id)
+go
+
+
+
+
+ALTER TABLE memberPurchaseItem
+	ADD CONSTRAINT R_3507 FOREIGN KEY (memberId) REFERENCES member(memberId)
 go
 
 
@@ -2529,21 +2619,21 @@ go
 
 
 ALTER TABLE officeProductItem
-	ADD CONSTRAINT R_3416 FOREIGN KEY (officeGradeType) REFERENCES officeGradeType(type)
+	ADD CONSTRAINT R_3500 FOREIGN KEY (productId) REFERENCES paymentProductManager(id)
 go
 
 
 
 
 ALTER TABLE officeProductItem
-	ADD CONSTRAINT R_3418 FOREIGN KEY (paymentType) REFERENCES paymentType(type)
+	ADD CONSTRAINT R_3504 FOREIGN KEY (officeGradeType) REFERENCES officeGradeType(type)
 go
 
 
 
 
 ALTER TABLE officeProductItem
-	ADD CONSTRAINT R_3419 FOREIGN KEY (purchaseType) REFERENCES purchaseType(type)
+	ADD CONSTRAINT R_3505 FOREIGN KEY (name) REFERENCES localization(id)
 go
 
 
@@ -2579,6 +2669,13 @@ go
 
 ALTER TABLE officeSpaceInfo
 	ADD CONSTRAINT R_3399 FOREIGN KEY (spaceName) REFERENCES localization(id)
+go
+
+
+
+
+ALTER TABLE paymentProductManager
+	ADD CONSTRAINT R_3503 FOREIGN KEY (moneyType) REFERENCES moneyType(type)
 go
 
 
