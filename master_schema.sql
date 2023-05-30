@@ -414,6 +414,16 @@ go
 
 
 
+CREATE TABLE dynamicLinkType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT dynamicLinkType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE faq
 ( 
 	id                   Identifier ,
@@ -1282,6 +1292,17 @@ CREATE TABLE officeProductItem
 	officeGradeType      Identifier ,
 	period               Value ,
 	CONSTRAINT officeProductItem_PK PRIMARY KEY  CLUSTERED (productId ASC)
+)
+go
+
+
+
+CREATE TABLE officeSeatInfo
+( 
+	spaceId              Identifier ,
+	num                  Value ,
+	seatName             Name ,
+	CONSTRAINT officeSeatInfo_PK PRIMARY KEY  CLUSTERED (spaceId ASC,num ASC)
 )
 go
 
@@ -2634,6 +2655,13 @@ go
 
 ALTER TABLE officeProductItem
 	ADD CONSTRAINT R_3505 FOREIGN KEY (name) REFERENCES localization(id)
+go
+
+
+
+
+ALTER TABLE officeSeatInfo
+	ADD CONSTRAINT R_3511 FOREIGN KEY (spaceId) REFERENCES officeSpaceInfo(id)
 go
 
 
