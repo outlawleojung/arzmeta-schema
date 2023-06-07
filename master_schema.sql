@@ -1180,6 +1180,7 @@ CREATE TABLE officeDefaultOption
 	videoPlayer          Value ,
 	videoPlayerShare     Value ,
 	spawnType            Identifier ,
+	movable              Identifier ,
 	selectSeat           Value ,
 	CONSTRAINT officeDefaultOption_PK PRIMARY KEY  CLUSTERED (permissionType ASC)
 )

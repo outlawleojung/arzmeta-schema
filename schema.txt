@@ -8038,6 +8038,26 @@
 
 <ArrayOfString>
 
+    <string>movable</string>
+
+    <string>이동 가능 여부</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
     <string>selectSeat</string>
 
     <string>자리 이동</string>
