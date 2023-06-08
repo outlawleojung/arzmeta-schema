@@ -594,26 +594,6 @@
 
 <ArrayOfString>
 
-    <string>description</string>
-
-    <string>설명</string>
-
-    <string>nvarchar(32)</string>
-
-    <string>Nickname</string>
-
-    <string>nvarchar</string>
-
-    <string>32</string>
-
-    <string></string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
     <string>purchaseType</string>
 
     <string>구매 타입</string>
