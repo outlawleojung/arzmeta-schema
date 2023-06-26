@@ -305,6 +305,21 @@ go
 
 
 
+CREATE TABLE bannerInfo
+( 
+	id                   Identifier ,
+	spaceType            Identifier ,
+	spaceDetailType      Identifier ,
+	description          Content ,
+	positionImage        Content ,
+	width                Identifier ,
+	height               Identifier ,
+	CONSTRAINT bannerInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
 CREATE TABLE businessCardTemplate
 ( 
 	id                   Identifier ,
@@ -1710,6 +1725,51 @@ go
 
 
 
+CREATE TABLE screenContentType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT screenContentType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE screenInfo
+( 
+	id                   Identifier ,
+	spaceType            Identifier ,
+	spaceDetailtype      Identifier ,
+	description          Content ,
+	positionImage        Content ,
+	width                Identifier ,
+	height               Identifier ,
+	CONSTRAINT screenInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE spaceDetailType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT spaceDetailType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE spaceType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT spaceType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE startInventory
 ( 
 	itemId               Identifier ,
@@ -1739,6 +1799,16 @@ CREATE TABLE storeType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT storeType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE uploadType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT uploadType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -1948,6 +2018,20 @@ go
 
 ALTER TABLE avatarResetInfo
 	ADD CONSTRAINT R_3415 FOREIGN KEY (itemId) REFERENCES item(id)
+go
+
+
+
+
+ALTER TABLE bannerInfo
+	ADD CONSTRAINT R_3514 FOREIGN KEY (spaceDetailType) REFERENCES spaceDetailType(type)
+go
+
+
+
+
+ALTER TABLE bannerInfo
+	ADD CONSTRAINT R_3515 FOREIGN KEY (spaceType) REFERENCES spaceType(type)
 go
 
 
@@ -2844,6 +2928,20 @@ go
 
 ALTER TABLE reportCategory
 	ADD CONSTRAINT R_3421 FOREIGN KEY (reportType) REFERENCES reportType(type)
+go
+
+
+
+
+ALTER TABLE screenInfo
+	ADD CONSTRAINT R_3512 FOREIGN KEY (spaceType) REFERENCES spaceType(type)
+go
+
+
+
+
+ALTER TABLE screenInfo
+	ADD CONSTRAINT R_3513 FOREIGN KEY (spaceDetailtype) REFERENCES spaceDetailType(type)
 go
 
 
