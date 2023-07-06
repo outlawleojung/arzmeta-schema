@@ -1760,6 +1760,16 @@ go
 
 
 
+CREATE TABLE spaceInfo
+( 
+	spaceType            Identifier ,
+	spaceDetailType      Identifier ,
+	CONSTRAINT spaceInfo_PK PRIMARY KEY  CLUSTERED (spaceType ASC,spaceDetailType ASC)
+)
+go
+
+
+
 CREATE TABLE spaceType
 ( 
 	type                 Identifier ,
@@ -1916,6 +1926,16 @@ CREATE TABLE voteResType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT voteResType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE voteResultExposureType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT voteResultExposureType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -2947,6 +2967,20 @@ go
 
 
 
+ALTER TABLE spaceInfo
+	ADD CONSTRAINT R_3517 FOREIGN KEY (spaceDetailType) REFERENCES spaceDetailType(type)
+go
+
+
+
+
+ALTER TABLE spaceInfo
+	ADD CONSTRAINT R_3518 FOREIGN KEY (spaceType) REFERENCES spaceType(type)
+go
+
+
+
+
 ALTER TABLE startInventory
 	ADD CONSTRAINT R_3347 FOREIGN KEY (itemId) REFERENCES item(id)
 go
@@ -3025,7 +3059,7 @@ go
 
 
 ALTER TABLE voteInfo
-	ADD CONSTRAINT R_3310 FOREIGN KEY (resultType) REFERENCES voteResultType(type)
+	ADD CONSTRAINT R_3310 FOREIGN KEY (resultType) REFERENCES voteResultExposureType(type)
 go
 
 
