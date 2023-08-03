@@ -204,6 +204,16 @@ go
 
 
 
+CREATE TABLE adContents
+( 
+	id                   Identifier ,
+	reward               Name ,
+	CONSTRAINT adContents_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
 CREATE TABLE appendType
 ( 
 	type                 Identifier ,
@@ -433,6 +443,16 @@ CREATE TABLE dynamicLinkType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT dynamicLinkType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE eventSpaceType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT eventSpaceType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -1033,6 +1053,19 @@ go
 
 
 
+CREATE TABLE memberSelectVoteInfo
+( 
+	memberId             Identifier_Member_Id  NOT NULL ,
+	voteId               Identifier ,
+	votenum              Identifier ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT memberSelectVoteInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,voteId ASC,votenum ASC)
+)
+go
+
+
+
 CREATE TABLE memberVoteInfo
 ( 
 	memberId             Identifier_Member_Id  NOT NULL ,
@@ -1130,6 +1163,16 @@ CREATE TABLE npcType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT npcType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE objectInteractionType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT objectInteractionType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -1745,6 +1788,52 @@ CREATE TABLE screenInfo
 	width                Identifier ,
 	height               Identifier ,
 	CONSTRAINT screenInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE selectVoteInfo
+( 
+	id                   Identifier ,
+	name                 Name ,
+	voteCount            Value ,
+	itemCount            Value ,
+	resultType           Identifier ,
+	resultExposureType   Identifier ,
+	startedAt            _Datetime ,
+	endedAt              _Datetime ,
+	resultStartedAt      _Datetime ,
+	resultEndedAt        _Datetime ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT selectVoteInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE selectVoteItem
+( 
+	voteId               Identifier ,
+	votenum              Identifier ,
+	name                 Name ,
+	description          Content ,
+	videoUrl             Content ,
+	imageName            Content ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT selectVoteItem_PK PRIMARY KEY  CLUSTERED (voteId ASC,votenum ASC)
+)
+go
+
+
+
+CREATE TABLE selectVoteStateType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT selectVoteStateType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -2561,6 +2650,20 @@ go
 
 
 
+ALTER TABLE memberSelectVoteInfo
+	ADD CONSTRAINT R_3522 FOREIGN KEY (memberId) REFERENCES member(memberId)
+go
+
+
+
+
+ALTER TABLE memberSelectVoteInfo
+	ADD CONSTRAINT R_3523 FOREIGN KEY (voteId,votenum) REFERENCES selectVoteItem(voteId,votenum)
+go
+
+
+
+
 ALTER TABLE memberVoteInfo
 	ADD CONSTRAINT R_3313 FOREIGN KEY (memberId) REFERENCES member(memberId)
 go
@@ -2962,6 +3065,27 @@ go
 
 ALTER TABLE screenInfo
 	ADD CONSTRAINT R_3513 FOREIGN KEY (spaceDetailtype) REFERENCES spaceDetailType(type)
+go
+
+
+
+
+ALTER TABLE selectVoteInfo
+	ADD CONSTRAINT R_3519 FOREIGN KEY (resultType) REFERENCES voteResultType(type)
+go
+
+
+
+
+ALTER TABLE selectVoteInfo
+	ADD CONSTRAINT R_3520 FOREIGN KEY (resultExposureType) REFERENCES voteResultExposureType(type)
+go
+
+
+
+
+ALTER TABLE selectVoteItem
+	ADD CONSTRAINT R_3521 FOREIGN KEY (voteId) REFERENCES selectVoteInfo(id)
 go
 
 
