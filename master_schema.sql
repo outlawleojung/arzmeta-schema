@@ -207,6 +207,7 @@ go
 CREATE TABLE adContents
 ( 
 	id                   Identifier ,
+	moneyType            Identifier ,
 	reward               Name ,
 	CONSTRAINT adContents_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
@@ -2092,6 +2093,13 @@ CREATE TABLE 회원_우편함
 	갱신_일시            _Datetime ,
 	CONSTRAINT 회원_우편함_PK PRIMARY KEY  CLUSTERED (memberId ASC,id ASC)
 )
+go
+
+
+
+
+ALTER TABLE adContents
+	ADD CONSTRAINT R_3524 FOREIGN KEY (moneyType) REFERENCES moneyType(type)
 go
 
 

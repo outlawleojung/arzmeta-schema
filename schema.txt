@@ -34,6 +34,26 @@
 
 <ArrayOfString>
 
+    <string>moneyType</string>
+
+    <string>재화 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
     <string>reward</string>
 
     <string>보상</string>
