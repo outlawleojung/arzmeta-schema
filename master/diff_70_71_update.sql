@@ -4,57 +4,19 @@ START TRANSACTION;
 
 
 -- tablename : localization
-delete from localization where id = '80000';
-delete from localization where id = '80001';
-delete from localization where id = '80002';
-delete from localization where id = '80003';
-delete from localization where id = '80004';
-delete from localization where id = '90000';
-delete from localization where id = '90001';
-delete from localization where id = '90002';
-delete from localization where id = '90003';
-delete from localization where id = '90004';
-delete from localization where id = '90005';
-delete from localization where id = '90006';
-delete from localization where id = '90007';
-delete from localization where id = '90008';
-delete from localization where id = '90009';
-delete from localization where id = '90010';
-delete from localization where id = '90011';
-delete from localization where id = '90012';
-delete from localization where id = '90013';
-delete from localization where id = '90014';
-delete from localization where id = '90015';
-delete from localization where id = '90016';
-delete from localization where id = '90017';
-delete from localization where id = '90018';
-delete from localization where id = '90019';
-delete from localization where id = '90020';
-delete from localization where id = '90021';
-delete from localization where id = '90022';
-delete from localization where id = '90023';
-delete from localization where id = '90024';
-delete from localization where id = '90025';
-delete from localization where id = '90026';
-delete from localization where id = '90027';
-delete from localization where id = '90028';
-delete from localization where id = '90029';
-delete from localization where id = '90030';
-delete from localization where id = '90031';
-delete from localization where id = '90032';
-delete from localization where id = '90033';
-delete from localization where id = '90034';
-delete from localization where id = '90035';
-delete from localization where id = '90036';
-delete from localization where id = '90037';
-delete from localization where id = '90038';
-delete from localization where id = '90039';
-delete from localization where id = '90040';
-delete from localization where id = '90041';
-delete from localization where id = '90042';
-delete from localization where id = '90043';
-delete from localization where id = 'vote_info_duedate';
-delete from localization where id = 'vote_info_votingperiod';
+insert into localization(id,kor,eng) values (N'common_notice_move_festivalzone',N'페스티벌존으로 이동하시겠습니까?',N'Do you want to move to the Festival Zone?');
+update localization set id = N'vote_state_duedate',kor = N'<size=25>투표 종료까지<color=#F7EBC7> D- {0}</color></size>',eng = N'<size=25>Due Date<color=#F7EBC7> D- {0}</color></size>' where id = 'vote_state_duedate';
+update localization set id = N'vote_state_votingperiod',kor = N'<size=25>투표 종료<color=#F7EBC7> {0} ~ {1}</color></size>',eng = N'<size=25>Voting Period<color=#F7EBC7> {0} ~ {1}</color></size>' where id = 'vote_state_votingperiod';
+insert into localization(id,kor,eng) values (N'chat_notice_office',N'채팅 권한이 없습니다. 방 관리자에게 권한을 요청하세요.',N'You don''t have permission to chat. Ask the room manager for permission.');
+insert into localization(id,kor,eng) values (N'myroom_notice_possess',N'이미 보유한 아이템입니다.',N'This item is already in possession.');
+insert into localization(id,kor,eng) values (N'myroom_notice_nonpossession_01',N'마이룸에 없는 아이템입니다.',N'This item is not in MyRoom.');
+insert into localization(id,kor,eng) values (N'myroom_nonpossession_02',N'가구 인벤토리에 없는 아이템입니다.',N'This item is not in the inventory.');
+insert into localization(id,kor,eng) values (N'myroom_notice_deletion',N'삭제가 불가능한 아이템입니다.',N'This item cannot be deleted.');
+insert into localization(id,kor,eng) values (N'post_notice_received',N'우편을 수령할 수 없습니다.',N'Mail cannot be received.');
+insert into localization(id,kor,eng) values (N'post_notice_existent',N'존재하지 않는 우편입니다.',N'Mail does not exist.');
+insert into localization(id,kor,eng) values (N'img_notice_url',N'이미지 URL 이 없습니다.',N'Image URL does not exist.');
+insert into localization(id,kor,eng) values (N'img_notice_file',N'이미지 파일이 없습니다.',N'Image file does not exist.');
+insert into localization(id,kor,eng) values (N'img_notice_inappropriate',N'부적절한 이미지 입니다.',N'Invalid image.');
 
 -- tablename : avatarPartsColorType
 
@@ -176,6 +138,14 @@ delete from localization where id = 'vote_info_votingperiod';
 
 -- tablename : dynamicLinkType
 
+-- tablename : eventSpaceType
+
+-- tablename : objectInteractionType
+
+-- tablename : selectVoteStateType
+
+-- tablename : adContents
+
 -- tablename : functionTable
 
 -- tablename : screenInfo
@@ -187,6 +157,10 @@ delete from localization where id = 'vote_info_votingperiod';
 -- tablename : faq
 
 -- tablename : forbiddenWords
+update forbiddenWords set id = 4623,text = N'시1발' where id = 4623;
+update forbiddenWords set id = 4624,text = N'느1금' where id = 4624;
+update forbiddenWords set id = 11204,text = N'병1신' where id = 11204;
+update forbiddenWords set id = 11205,text = N'병2신' where id = 11205;
 
 -- tablename : item
 
