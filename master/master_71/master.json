@@ -64932,7 +64932,7 @@
     },
     {
       "id": "vote_state_duedate",
-      "kor": "vote_state_duedate',kor = N'<size=25>투표 종료까지<color=#F7EBC7> D- {0}</color></size>",
+      "kor": "<size=25>투표 종료까지<color=#F7EBC7> D- {0}</color></size>",
       "eng": "<size=25>Due Date<color=#F7EBC7> D- {0}</color></size>"
     },
     {
@@ -64957,7 +64957,7 @@
     },
     {
       "id": "vote_state_votingperiod",
-      "kor": "vote_state_votingperiod',kor = N'<size=25>투표 종료<color=#F7EBC7> {0} ~ {1}</color></size>",
+      "kor": "<size=25>투표 종료<color=#F7EBC7> {0} ~ {1}</color></size>",
       "eng": "<size=25>Voting Period<color=#F7EBC7> {0} ~ {1}</color></size>"
     },
     {
