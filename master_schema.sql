@@ -325,6 +325,7 @@ CREATE TABLE bannerInfo
 	positionImage        Content ,
 	width                Identifier ,
 	height               Identifier ,
+	mediaRollingType     Identifier ,
 	CONSTRAINT bannerInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
@@ -788,6 +789,16 @@ go
 
 
 
+CREATE TABLE mediaRollingType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT mediaRollingType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE member
 ( 
 	memberId             Identifier_Member_Id  NOT NULL ,
@@ -1080,6 +1091,18 @@ go
 
 
 
+CREATE TABLE memberWalletInfo
+( 
+	memberId             Identifier_Member_Id  NOT NULL ,
+	walletAddr           Content ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT memberWalletInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,walletAddr ASC)
+)
+go
+
+
+
 CREATE TABLE moneyType
 ( 
 	type                 Identifier ,
@@ -1105,6 +1128,33 @@ CREATE TABLE newsType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT newsType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE NFTRewardInfo
+( 
+	id                   Identifier ,
+	walletAddr           Content ,
+	moneyType            Identifier ,
+	rewardCount          Value ,
+	isReceive            Value ,
+	receivedAt           _Datetime ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT NFTRewardInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE NFTWalletInfo
+( 
+	walletAddr           Content ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT NFTWalletInfo_PK PRIMARY KEY  CLUSTERED (walletAddr ASC)
 )
 go
 
@@ -1788,6 +1838,7 @@ CREATE TABLE screenInfo
 	positionImage        Content ,
 	width                Identifier ,
 	height               Identifier ,
+	mediaRollingType     Identifier ,
 	CONSTRAINT screenInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
@@ -2149,6 +2200,13 @@ go
 
 ALTER TABLE bannerInfo
 	ADD CONSTRAINT R_3515 FOREIGN KEY (spaceType) REFERENCES spaceType(type)
+go
+
+
+
+
+ALTER TABLE bannerInfo
+	ADD CONSTRAINT R_3530 FOREIGN KEY (mediaRollingType) REFERENCES mediaRollingType(type)
 go
 
 
@@ -2686,6 +2744,34 @@ go
 
 
 
+ALTER TABLE memberWalletInfo
+	ADD CONSTRAINT R_3525 FOREIGN KEY (memberId) REFERENCES member(memberId)
+go
+
+
+
+
+ALTER TABLE memberWalletInfo
+	ADD CONSTRAINT R_3526 FOREIGN KEY (walletAddr) REFERENCES NFTWalletInfo(walletAddr)
+go
+
+
+
+
+ALTER TABLE NFTRewardInfo
+	ADD CONSTRAINT R_3527 FOREIGN KEY (walletAddr) REFERENCES NFTWalletInfo(walletAddr)
+go
+
+
+
+
+ALTER TABLE NFTRewardInfo
+	ADD CONSTRAINT R_3528 FOREIGN KEY (moneyType) REFERENCES moneyType(type)
+go
+
+
+
+
 ALTER TABLE npcArrange
 	ADD CONSTRAINT R_3460 FOREIGN KEY (npcId) REFERENCES npcList(id)
 go
@@ -3073,6 +3159,13 @@ go
 
 ALTER TABLE screenInfo
 	ADD CONSTRAINT R_3513 FOREIGN KEY (spaceDetailtype) REFERENCES spaceDetailType(type)
+go
+
+
+
+
+ALTER TABLE screenInfo
+	ADD CONSTRAINT R_3529 FOREIGN KEY (mediaRollingType) REFERENCES mediaRollingType(type)
 go
 
 

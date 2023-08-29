@@ -786,6 +786,26 @@
 
   </ArrayOfString>
 
+<ArrayOfString>
+
+    <string>mediaRollingType</string>
+
+    <string>미디어롤링타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
 
 
   
@@ -4238,6 +4258,60 @@
 
 <ArrayOfString>
 
+    <string>mediaRollingType</string>
+
+    <string>미디어 롤링 타입</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>type</string>
+
+    <string>타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
     <string>member</string>
 
     <string>회원</string>
@@ -4842,180 +4916,6 @@
 
     <string>memberBusinessCardInfo</string>
 
-    <string>회원 비즈니스 명함</string>
-
-  </ArrayOfString>
-
-  
-
-<ArrayOfString>
-
-    <string>memberId</string>
-
-    <string>회원 아이디</string>
-
-    <string>varchar(100)</string>
-
-    <string>Identifier_Member_Id</string>
-
-    <string>varchar</string>
-
-    <string>100</string>
-
-    <string>1</string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>num</string>
-
-    <string>번호</string>
-
-    <string>integer</string>
-
-    <string>Value</string>
-
-    <string>integer</string>
-
-    <string></string>
-
-    <string>1</string>
-
-    <string>1</string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>name</string>
-
-    <string>이름</string>
-
-    <string>nvarchar(64)</string>
-
-    <string>Name</string>
-
-    <string>nvarchar</string>
-
-    <string>64</string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>job</string>
-
-    <string>직업</string>
-
-    <string>nvarchar(32)</string>
-
-    <string>Nickname</string>
-
-    <string>nvarchar</string>
-
-    <string>32</string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>email</string>
-
-    <string>이메일</string>
-
-    <string>nvarchar(64)</string>
-
-    <string>Name</string>
-
-    <string>nvarchar</string>
-
-    <string>64</string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>phone</string>
-
-    <string>전화번호</string>
-
-    <string>varchar(32)</string>
-
-    <string>Phone</string>
-
-    <string>varchar</string>
-
-    <string>32</string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>createdAt</string>
-
-    <string>생성 일시</string>
-
-    <string>datetime</string>
-
-    <string>_Datetime</string>
-
-    <string>datetime</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-<ArrayOfString>
-
-    <string>updatedAt</string>
-
-    <string>갱신 일시</string>
-
-    <string>datetime</string>
-
-    <string>_Datetime</string>
-
-    <string>datetime</string>
-
-    <string></string>
-
-    <string></string>
-
-    <string></string>
-
-  </ArrayOfString>
-
-
-
-  
-
-<ArrayOfString>
-
-    <string>memberBusinessCardInfo</string>
-
     <string>회원 명함 정보</string>
 
   </ArrayOfString>
@@ -5235,6 +5135,180 @@
     <string>nvarchar</string>
 
     <string>2048</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>createdAt</string>
+
+    <string>생성 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>updatedAt</string>
+
+    <string>갱신 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>memberBusinessCardInfo</string>
+
+    <string>회원 비즈니스 명함</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>memberId</string>
+
+    <string>회원 아이디</string>
+
+    <string>varchar(100)</string>
+
+    <string>Identifier_Member_Id</string>
+
+    <string>varchar</string>
+
+    <string>100</string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>num</string>
+
+    <string>번호</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>name</string>
+
+    <string>이름</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>job</string>
+
+    <string>직업</string>
+
+    <string>nvarchar(32)</string>
+
+    <string>Nickname</string>
+
+    <string>nvarchar</string>
+
+    <string>32</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>email</string>
+
+    <string>이메일</string>
+
+    <string>nvarchar(64)</string>
+
+    <string>Name</string>
+
+    <string>nvarchar</string>
+
+    <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>phone</string>
+
+    <string>전화번호</string>
+
+    <string>varchar(32)</string>
+
+    <string>Phone</string>
+
+    <string>varchar</string>
+
+    <string>32</string>
 
     <string></string>
 
@@ -7090,6 +7164,100 @@
 
 <ArrayOfString>
 
+    <string>memberWalletInfo</string>
+
+    <string>회원 지갑 정보</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>memberId</string>
+
+    <string>회원 아이디</string>
+
+    <string>varchar(100)</string>
+
+    <string>Identifier_Member_Id</string>
+
+    <string>varchar</string>
+
+    <string>100</string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>walletAddr</string>
+
+    <string>지갑 주소</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string>1</string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>createdAt</string>
+
+    <string>생성 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>updatedAt</string>
+
+    <string>갱싱 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
     <string>moneyType</string>
 
     <string>재화 타입</string>
@@ -7239,6 +7407,254 @@
     <string>nvarchar</string>
 
     <string>64</string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>NFTRewardInfo</string>
+
+    <string>NFT 보상 정보</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>id</string>
+
+    <string>아이디</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>walletAddr</string>
+
+    <string>지갑 주소</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>moneyType</string>
+
+    <string>재화 타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>rewardCount</string>
+
+    <string>보상 갯수</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>isReceive</string>
+
+    <string>isReceive</string>
+
+    <string>integer</string>
+
+    <string>Value</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>receivedAt</string>
+
+    <string>receivedAt</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>createdAt</string>
+
+    <string>생성 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>updatedAt</string>
+
+    <string>갱신 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+
+
+  
+
+<ArrayOfString>
+
+    <string>NFTWalletInfo</string>
+
+    <string>NFT 지갑 정보</string>
+
+  </ArrayOfString>
+
+  
+
+<ArrayOfString>
+
+    <string>walletAddr</string>
+
+    <string>지갑 주소</string>
+
+    <string>nvarchar(2048)</string>
+
+    <string>Content</string>
+
+    <string>nvarchar</string>
+
+    <string>2048</string>
+
+    <string>1</string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>createdAt</string>
+
+    <string>생성 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>updatedAt</string>
+
+    <string>갱신 일시</string>
+
+    <string>datetime</string>
+
+    <string>_Datetime</string>
+
+    <string>datetime</string>
+
+    <string></string>
 
     <string></string>
 
@@ -12601,6 +13017,26 @@
     <string></string>
 
     <string></string>
+
+  </ArrayOfString>
+
+<ArrayOfString>
+
+    <string>mediaRollingType</string>
+
+    <string>미디어롤링타입</string>
+
+    <string>integer</string>
+
+    <string>Identifier</string>
+
+    <string>integer</string>
+
+    <string></string>
+
+    <string></string>
+
+    <string>1</string>
 
   </ArrayOfString>
 
