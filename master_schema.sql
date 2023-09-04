@@ -326,7 +326,18 @@ CREATE TABLE bannerInfo
 	width                Identifier ,
 	height               Identifier ,
 	mediaRollingType     Identifier ,
+	bannerType           Identifier ,
 	CONSTRAINT bannerInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE bannerType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT bannerType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -2207,6 +2218,13 @@ go
 
 ALTER TABLE bannerInfo
 	ADD CONSTRAINT R_3530 FOREIGN KEY (mediaRollingType) REFERENCES mediaRollingType(type)
+go
+
+
+
+
+ALTER TABLE bannerInfo
+	ADD CONSTRAINT R_3531 FOREIGN KEY (bannerType) REFERENCES bannerType(type)
 go
 
 
