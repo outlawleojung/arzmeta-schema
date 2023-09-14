@@ -118,6 +118,13 @@ create table if not exists businessCardTemplate
     primary key(id)
 )
 ;
+create table if not exists buySellType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
 create table if not exists categoryType
 (
     type                 int(11),
@@ -150,6 +157,19 @@ create table if not exists countryCode
     id                   int(11),
     nameId              varchar(64),
     code                 int(11),
+    primary key(id)
+)
+;
+create table if not exists CSFA_evenvt_info
+(
+    id                   int(11),
+    name                varchar(64),
+    eventSpaceType       int(11),
+    startedAt            datetime ,
+    endedAt              datetime ,
+    createdAt            datetime ,
+    updatedAt            datetime ,
+    adminId              int(11),
     primary key(id)
 )
 ;
@@ -284,6 +304,7 @@ create table if not exists item
     saleType             int(11),
     salePrice           int(11),
     gradeType            int(11),
+    buySellType          int(11),
     primary key(id)
 )
 ;
@@ -326,6 +347,20 @@ create table if not exists jumpingMatchingLevel
     primary key(id)
 )
 ;
+create table if not exists ktmfNftToken
+(
+    costumeId            int(11),
+    tokenId             varchar(64),
+    primary key(costumeId)
+)
+;
+create table if not exists ktmfSpecialItem
+(
+    costumeId            int(11),
+    partsId              int(11),
+    primary key(costumeId,partsId)
+)
+;
 create table if not exists landType
 (
     type                 int(11),
@@ -352,6 +387,34 @@ create table if not exists licenseFunction
     type                 int(11),
     name                varchar(64),
     primary key(type)
+)
+;
+create table if not exists licenseGroupInfo
+(
+    id                   int(11),
+    domainId             int(11),
+    csfaId               int(11),
+    name                varchar(64),
+    licenseType          int(11),
+    issuCount            int(11),
+    useCount             int(11),
+    startedAt            datetime ,
+    endedAt              datetime ,
+    expirationDay        int(11),
+    createdAt            datetime ,
+    updatedAt            datetime ,
+    adminId              int(11),
+    primary key(id)
+)
+;
+create table if not exists licenseInfo
+(
+    licenseSerial        int(11),
+    groupId              int(11),
+    isCompleted          int(11),
+    createdAt            datetime ,
+    updatedAt            datetime ,
+    primary key(licenseSerial)
 )
 ;
 create table if not exists licenseType
@@ -553,6 +616,16 @@ create table if not exists memberItemInven
     primary key(memberId,itemId,num)
 )
 ;
+create table if not exists memberLicenseInfo
+(
+    memberId             varchar(100)    ,
+    licenseSerial        int(11),
+    email                varchar(2048) ,
+    createdAt            datetime ,
+    updatedAt            datetime ,
+    primary key(memberId,licenseSerial)
+)
+;
 create table if not exists memberMyRoomPhotoFrameInfo
 (
     memberId             varchar(100)    ,
@@ -575,15 +648,6 @@ create table if not exists memberOfficeGradeType
 (
     memberId             varchar(100)    ,
     gradeType            int(11),
-    createdAt            datetime ,
-    updatedAt            datetime ,
-    primary key(memberId)
-)
-;
-create table if not exists memberOfficeLicenseInfo
-(
-    memberId             varchar(100)    ,
-    email                varchar(2048) ,
     createdAt            datetime ,
     updatedAt            datetime ,
     primary key(memberId)
@@ -860,6 +924,21 @@ create table if not exists officeGradeType
     type                 int(11),
     name                varchar(64),
     primary key(type)
+)
+;
+create table if not exists officeLicenseDomainInfo
+(
+    id                   int(11),
+    affiliation         varchar(64),
+    domainName          varchar(64),
+    chargeName          varchar(64),
+    chargePosition      varchar(64),
+    chargeEmail         varchar(64),
+    chargevarchar(64)         varchar(64),
+    createdAt            datetime ,
+    updatedAt            datetime ,
+    adminId              int(11),
+    primary key(id)
 )
 ;
 create table if not exists officeMode
@@ -1448,6 +1527,13 @@ create table if not exists 우편_수신_회원_정보
     생성_일시            datetime ,
     갱신_일시            datetime ,
     primary key(id,memberId)
+)
+;
+create table if not exists 파일함_아이콘_타입
+(
+    타입                 int(11),
+    이름                varchar(64),
+    primary key(타입)
 )
 ;
 create table if not exists 회원_우편함

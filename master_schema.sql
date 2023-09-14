@@ -363,6 +363,16 @@ go
 
 
 
+CREATE TABLE buySellType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT buySellType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE categoryType
 ( 
 	type                 Identifier ,
@@ -405,6 +415,22 @@ CREATE TABLE countryCode
 	nameId               Name ,
 	code                 Identifier ,
 	CONSTRAINT countryCode_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE CSFA_evenvt_info
+( 
+	id                   Identifier ,
+	name                 Name ,
+	eventSpaceType       Identifier ,
+	startedAt            _Datetime ,
+	endedAt              _Datetime ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	adminId              Identifier ,
+	CONSTRAINT CSFA_evenvt_info_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
 
@@ -586,6 +612,7 @@ CREATE TABLE item
 	saleType             Identifier ,
 	salePrice            Value ,
 	gradeType            Identifier ,
+	buySellType          Identifier ,
 	CONSTRAINT item_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
@@ -643,6 +670,26 @@ go
 
 
 
+CREATE TABLE ktmfNftToken
+( 
+	costumeId            Identifier ,
+	tokenId              Name ,
+	CONSTRAINT ktmfNftToken_PK PRIMARY KEY  CLUSTERED (costumeId ASC)
+)
+go
+
+
+
+CREATE TABLE ktmfSpecialItem
+( 
+	costumeId            Identifier ,
+	partsId              Identifier ,
+	CONSTRAINT ktmfSpecialItem_PK PRIMARY KEY  CLUSTERED (costumeId ASC,partsId ASC)
+)
+go
+
+
+
 CREATE TABLE landType
 ( 
 	type                 Identifier ,
@@ -678,6 +725,40 @@ CREATE TABLE licenseFunction
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT licenseFunction_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE licenseGroupInfo
+( 
+	id                   Identifier ,
+	domainId             Identifier ,
+	csfaId               Identifier ,
+	name                 Name ,
+	licenseType          Identifier ,
+	issuCount            Identifier ,
+	useCount             Identifier ,
+	startedAt            _Datetime ,
+	endedAt              _Datetime ,
+	expirationDay        Identifier ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	adminId              Identifier ,
+	CONSTRAINT licenseGroupInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE licenseInfo
+( 
+	licenseSerial        Identifier ,
+	groupId              Identifier ,
+	isCompleted          Identifier ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT licenseInfo_PK PRIMARY KEY  CLUSTERED (licenseSerial ASC)
 )
 go
 
@@ -957,6 +1038,19 @@ go
 
 
 
+CREATE TABLE memberLicenseInfo
+( 
+	memberId             Identifier_Member_Id  NOT NULL ,
+	licenseSerial        Identifier ,
+	email                Content ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT memberLicenseInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,licenseSerial ASC)
+)
+go
+
+
+
 CREATE TABLE memberMyRoomPhotoFrameInfo
 ( 
 	memberId             Identifier_Member_Id  NOT NULL ,
@@ -988,18 +1082,6 @@ CREATE TABLE memberOfficeGradeType
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
 	CONSTRAINT memberOfficeGradeType_PK PRIMARY KEY  CLUSTERED (memberId ASC)
-)
-go
-
-
-
-CREATE TABLE memberOfficeLicenseInfo
-( 
-	memberId             Identifier_Member_Id  NOT NULL ,
-	email                Content ,
-	createdAt            _Datetime ,
-	updatedAt            _Datetime ,
-	CONSTRAINT memberOfficeLicenseInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC)
 )
 go
 
@@ -1351,6 +1433,24 @@ CREATE TABLE officeGradeType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT officeGradeType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE officeLicenseDomainInfo
+( 
+	id                   Identifier ,
+	affiliation          Name ,
+	domainName           Name ,
+	chargeName           Name ,
+	chargePosition       Name ,
+	chargeEmail          Name ,
+	chargePhone          Name ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	adminId              Identifier ,
+	CONSTRAINT officeLicenseDomainInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
 
@@ -2145,6 +2245,16 @@ go
 
 
 
+CREATE TABLE 파일함_아이콘_타입
+( 
+	타입                 Identifier ,
+	이름                 Name ,
+	CONSTRAINT 파일함_아이콘_타입_PK PRIMARY KEY  CLUSTERED (타입 ASC)
+)
+go
+
+
+
 CREATE TABLE 회원_우편함
 ( 
 	memberId             Identifier_Member_Id  NOT NULL ,
@@ -2286,6 +2396,13 @@ go
 
 
 
+ALTER TABLE CSFA_evenvt_info
+	ADD CONSTRAINT R_3539 FOREIGN KEY (eventSpaceType) REFERENCES eventSpaceType(type)
+go
+
+
+
+
 ALTER TABLE disciplineReview
 	ADD CONSTRAINT R_3440 FOREIGN KEY (restrictionType) REFERENCES restrictionType(type)
 go
@@ -2384,6 +2501,13 @@ go
 
 
 
+ALTER TABLE item
+	ADD CONSTRAINT R_3553 FOREIGN KEY (buySellType) REFERENCES buySellType(type)
+go
+
+
+
+
 ALTER TABLE itemUseEffect
 	ADD CONSTRAINT R_3381 FOREIGN KEY (itemId) REFERENCES item(id)
 go
@@ -2407,6 +2531,55 @@ go
 
 ALTER TABLE jumpingMatchingLevel
 	ADD CONSTRAINT R_3266 FOREIGN KEY (gameType) REFERENCES jumpingMatchingGameType(type)
+go
+
+
+
+
+ALTER TABLE ktmfNftToken
+	ADD CONSTRAINT R_3554 FOREIGN KEY (costumeId) REFERENCES item(id)
+go
+
+
+
+
+ALTER TABLE ktmfSpecialItem
+	ADD CONSTRAINT R_3552 FOREIGN KEY (partsId) REFERENCES item(id)
+go
+
+
+
+
+ALTER TABLE ktmfSpecialItem
+	ADD CONSTRAINT R_3555 FOREIGN KEY (costumeId) REFERENCES ktmfNftToken(costumeId)
+go
+
+
+
+
+ALTER TABLE licenseGroupInfo
+	ADD CONSTRAINT R_3533 FOREIGN KEY (domainId) REFERENCES officeLicenseDomainInfo(id)
+go
+
+
+
+
+ALTER TABLE licenseGroupInfo
+	ADD CONSTRAINT R_3538 FOREIGN KEY (csfaId) REFERENCES CSFA_evenvt_info(id)
+go
+
+
+
+
+ALTER TABLE licenseGroupInfo
+	ADD CONSTRAINT R_3534 FOREIGN KEY (licenseType) REFERENCES licenseType(type)
+go
+
+
+
+
+ALTER TABLE licenseInfo
+	ADD CONSTRAINT R_3535 FOREIGN KEY (groupId) REFERENCES licenseGroupInfo(id)
 go
 
 
@@ -2601,6 +2774,20 @@ go
 
 
 
+ALTER TABLE memberLicenseInfo
+	ADD CONSTRAINT R_3430 FOREIGN KEY (memberId) REFERENCES member(memberId)
+go
+
+
+
+
+ALTER TABLE memberLicenseInfo
+	ADD CONSTRAINT R_3536 FOREIGN KEY (licenseSerial) REFERENCES licenseInfo(licenseSerial)
+go
+
+
+
+
 ALTER TABLE memberMyRoomPhotoFrameInfo
 	ADD CONSTRAINT R_3495 FOREIGN KEY (memberId,itemId) REFERENCES memberFurnitureItemInven(memberId,itemId)
 go
@@ -2624,13 +2811,6 @@ go
 
 ALTER TABLE memberOfficeGradeType
 	ADD CONSTRAINT R_3371 FOREIGN KEY (gradeType) REFERENCES officeGradeType(type)
-go
-
-
-
-
-ALTER TABLE memberOfficeLicenseInfo
-	ADD CONSTRAINT R_3430 FOREIGN KEY (memberId) REFERENCES member(memberId)
 go
 
 
