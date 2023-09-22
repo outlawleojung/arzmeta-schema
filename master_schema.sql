@@ -674,7 +674,18 @@ CREATE TABLE ktmfNftToken
 ( 
 	costumeId            Identifier ,
 	tokenId              Name ,
+	ratingType           Identifier ,
 	CONSTRAINT ktmfNftToken_PK PRIMARY KEY  CLUSTERED (costumeId ASC)
+)
+go
+
+
+
+CREATE TABLE ktmfPassTierRatingType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT ktmfPassTierRatingType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -682,9 +693,20 @@ go
 
 CREATE TABLE ktmfSpecialItem
 ( 
-	costumeId            Identifier ,
 	partsId              Identifier ,
-	CONSTRAINT ktmfSpecialItem_PK PRIMARY KEY  CLUSTERED (costumeId ASC,partsId ASC)
+	costumeId            Identifier ,
+	CONSTRAINT ktmfSpecialItem_PK PRIMARY KEY  CLUSTERED (partsId ASC,costumeId ASC)
+)
+go
+
+
+
+CREATE TABLE ktmfSpecialMoney
+( 
+	ratingType           Identifier ,
+	moneyType            Identifier ,
+	rewardCount          Identifier ,
+	CONSTRAINT ktmfSpecialMoney_PK PRIMARY KEY  CLUSTERED (ratingType ASC)
 )
 go
 
@@ -1229,25 +1251,12 @@ go
 CREATE TABLE NFTRewardInfo
 ( 
 	id                   Identifier ,
-	walletAddr           Content ,
+	memberId             Identifier_Member_Id  NOT NULL ,
 	moneyType            Identifier ,
 	rewardCount          Value ,
-	isReceive            Value ,
-	receivedAt           _Datetime ,
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
 	CONSTRAINT NFTRewardInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
-)
-go
-
-
-
-CREATE TABLE NFTWalletInfo
-( 
-	walletAddr           Content ,
-	createdAt            _Datetime ,
-	updatedAt            _Datetime ,
-	CONSTRAINT NFTWalletInfo_PK PRIMARY KEY  CLUSTERED (walletAddr ASC)
 )
 go
 
@@ -2543,6 +2552,13 @@ go
 
 
 
+ALTER TABLE ktmfNftToken
+	ADD CONSTRAINT R_3556 FOREIGN KEY (ratingType) REFERENCES ktmfPassTierRatingType(type)
+go
+
+
+
+
 ALTER TABLE ktmfSpecialItem
 	ADD CONSTRAINT R_3552 FOREIGN KEY (partsId) REFERENCES item(id)
 go
@@ -2552,6 +2568,20 @@ go
 
 ALTER TABLE ktmfSpecialItem
 	ADD CONSTRAINT R_3555 FOREIGN KEY (costumeId) REFERENCES ktmfNftToken(costumeId)
+go
+
+
+
+
+ALTER TABLE ktmfSpecialMoney
+	ADD CONSTRAINT R_3557 FOREIGN KEY (ratingType) REFERENCES ktmfPassTierRatingType(type)
+go
+
+
+
+
+ALTER TABLE ktmfSpecialMoney
+	ADD CONSTRAINT R_3559 FOREIGN KEY (moneyType) REFERENCES moneyType(type)
 go
 
 
@@ -2949,22 +2979,15 @@ go
 
 
 
-ALTER TABLE memberWalletInfo
-	ADD CONSTRAINT R_3526 FOREIGN KEY (walletAddr) REFERENCES NFTWalletInfo(walletAddr)
-go
-
-
-
-
-ALTER TABLE NFTRewardInfo
-	ADD CONSTRAINT R_3527 FOREIGN KEY (walletAddr) REFERENCES NFTWalletInfo(walletAddr)
-go
-
-
-
-
 ALTER TABLE NFTRewardInfo
 	ADD CONSTRAINT R_3528 FOREIGN KEY (moneyType) REFERENCES moneyType(type)
+go
+
+
+
+
+ALTER TABLE NFTRewardInfo
+	ADD CONSTRAINT R_3560 FOREIGN KEY (memberId) REFERENCES member(memberId)
 go
 
 

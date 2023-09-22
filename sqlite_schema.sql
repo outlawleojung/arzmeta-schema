@@ -351,14 +351,30 @@ create table if not exists ktmfNftToken
 (
     costumeId            int(11),
     tokenId             varchar(64),
+    ratingType           int(11),
     primary key(costumeId)
+)
+;
+create table if not exists ktmfPassTierRatingType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
 )
 ;
 create table if not exists ktmfSpecialItem
 (
-    costumeId            int(11),
     partsId              int(11),
-    primary key(costumeId,partsId)
+    costumeId            int(11),
+    primary key(partsId,costumeId)
+)
+;
+create table if not exists ktmfSpecialMoney
+(
+    ratingType           int(11),
+    moneyType            int(11),
+    rewardCount          int(11),
+    primary key(ratingType)
 )
 ;
 create table if not exists landType
@@ -765,22 +781,12 @@ create table if not exists newsType
 create table if not exists NFTRewardInfo
 (
     id                   int(11),
-    walletAddr           varchar(2048) ,
+    memberId             varchar(100)    ,
     moneyType            int(11),
     rewardCount         int(11),
-    isReceive           int(11),
-    receivedAt           datetime ,
     createdAt            datetime ,
     updatedAt            datetime ,
     primary key(id)
-)
-;
-create table if not exists NFTWalletInfo
-(
-    walletAddr           varchar(2048) ,
-    createdAt            datetime ,
-    updatedAt            datetime ,
-    primary key(walletAddr)
 )
 ;
 create table if not exists npcArrange
