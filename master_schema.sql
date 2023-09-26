@@ -508,6 +508,16 @@ go
 
 
 
+CREATE TABLE fileBoxType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT fileBoxType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE forbiddenWords
 ( 
 	id                   Identifier ,
@@ -603,7 +613,6 @@ CREATE TABLE item
 	name                 Nickname ,
 	description          Nickname ,
 	prefab               Nickname ,
-	material             Nickname ,
 	thumbnail            Nickname ,
 	capacity             Identifier ,
 	isNesting            Value ,
@@ -614,6 +623,17 @@ CREATE TABLE item
 	gradeType            Identifier ,
 	buySellType          Identifier ,
 	CONSTRAINT item_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE itemMaterial
+( 
+	itemId               Identifier ,
+	num                  Identifier ,
+	material             Nickname ,
+	CONSTRAINT itemMaterial_PK PRIMARY KEY  CLUSTERED (itemId ASC,num ASC)
 )
 go
 
@@ -693,9 +713,9 @@ go
 
 CREATE TABLE ktmfSpecialItem
 ( 
-	partsId              Identifier ,
 	costumeId            Identifier ,
-	CONSTRAINT ktmfSpecialItem_PK PRIMARY KEY  CLUSTERED (partsId ASC,costumeId ASC)
+	partsId              Identifier ,
+	CONSTRAINT ktmfSpecialItem_PK PRIMARY KEY  CLUSTERED (costumeId ASC,partsId ASC)
 )
 go
 
@@ -2254,16 +2274,6 @@ go
 
 
 
-CREATE TABLE 파일함_아이콘_타입
-( 
-	타입                 Identifier ,
-	이름                 Name ,
-	CONSTRAINT 파일함_아이콘_타입_PK PRIMARY KEY  CLUSTERED (타입 ASC)
-)
-go
-
-
-
 CREATE TABLE 회원_우편함
 ( 
 	memberId             Identifier_Member_Id  NOT NULL ,
@@ -2512,6 +2522,13 @@ go
 
 ALTER TABLE item
 	ADD CONSTRAINT R_3553 FOREIGN KEY (buySellType) REFERENCES buySellType(type)
+go
+
+
+
+
+ALTER TABLE itemMaterial
+	ADD CONSTRAINT R_3561 FOREIGN KEY (itemId) REFERENCES item(id)
 go
 
 

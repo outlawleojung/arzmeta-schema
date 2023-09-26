@@ -224,6 +224,13 @@ create table if not exists faq
     primary key(id)
 )
 ;
+create table if not exists fileBoxType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
 create table if not exists forbiddenWords
 (
     id                   int(11),
@@ -295,7 +302,6 @@ create table if not exists item
     name                varchar(64),
     description         varchar(64),
     prefab              varchar(64),
-    material            varchar(64),
     thumbnail           varchar(64),
     capacity             int(11),
     isNesting           int(11),
@@ -306,6 +312,14 @@ create table if not exists item
     gradeType            int(11),
     buySellType          int(11),
     primary key(id)
+)
+;
+create table if not exists itemMaterial
+(
+    itemId               int(11),
+    num                  int(11),
+    material            varchar(64),
+    primary key(itemId,num)
 )
 ;
 create table if not exists itemType
@@ -364,9 +378,9 @@ create table if not exists ktmfPassTierRatingType
 ;
 create table if not exists ktmfSpecialItem
 (
-    partsId              int(11),
     costumeId            int(11),
-    primary key(partsId,costumeId)
+    partsId              int(11),
+    primary key(costumeId,partsId)
 )
 ;
 create table if not exists ktmfSpecialMoney
@@ -1533,13 +1547,6 @@ create table if not exists 우편_수신_회원_정보
     생성_일시            datetime ,
     갱신_일시            datetime ,
     primary key(id,memberId)
-)
-;
-create table if not exists 파일함_아이콘_타입
-(
-    타입                 int(11),
-    이름                varchar(64),
-    primary key(타입)
 )
 ;
 create table if not exists 회원_우편함
