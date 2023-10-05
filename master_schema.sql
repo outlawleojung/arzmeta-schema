@@ -321,7 +321,6 @@ CREATE TABLE bannerInfo
 	id                   Identifier ,
 	spaceType            Identifier ,
 	spaceDetailType      Identifier ,
-	description          Content ,
 	positionImage        Content ,
 	width                Identifier ,
 	height               Identifier ,
@@ -338,6 +337,36 @@ CREATE TABLE bannerType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT bannerType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE boothBannerInfo
+( 
+	id                   Identifier ,
+	spaceType            Identifier ,
+	spaceDetailType      Identifier ,
+	width                Identifier ,
+	height               Identifier ,
+	mediaRollingType     Identifier ,
+	bannerType           Identifier ,
+	CONSTRAINT boothBannerInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE boothScreenInfo
+( 
+	id                   Identifier ,
+	spaceType            Identifier ,
+	spaceDetailType      Identifier ,
+	description          Content ,
+	width                Identifier ,
+	height               Identifier ,
+	mediaRollingType     Identifier ,
+	CONSTRAINT boothScreenInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
 
@@ -2354,6 +2383,55 @@ go
 
 ALTER TABLE bannerInfo
 	ADD CONSTRAINT R_3531 FOREIGN KEY (bannerType) REFERENCES bannerType(type)
+go
+
+
+
+
+ALTER TABLE boothBannerInfo
+	ADD CONSTRAINT R_3565 FOREIGN KEY (spaceType) REFERENCES spaceType(type)
+go
+
+
+
+
+ALTER TABLE boothBannerInfo
+	ADD CONSTRAINT R_3566 FOREIGN KEY (spaceDetailType) REFERENCES spaceDetailType(type)
+go
+
+
+
+
+ALTER TABLE boothBannerInfo
+	ADD CONSTRAINT R_3570 FOREIGN KEY (mediaRollingType) REFERENCES mediaRollingType(type)
+go
+
+
+
+
+ALTER TABLE boothBannerInfo
+	ADD CONSTRAINT R_3571 FOREIGN KEY (bannerType) REFERENCES bannerType(type)
+go
+
+
+
+
+ALTER TABLE boothScreenInfo
+	ADD CONSTRAINT R_3562 FOREIGN KEY (spaceType) REFERENCES spaceType(type)
+go
+
+
+
+
+ALTER TABLE boothScreenInfo
+	ADD CONSTRAINT R_3564 FOREIGN KEY (mediaRollingType) REFERENCES mediaRollingType(type)
+go
+
+
+
+
+ALTER TABLE boothScreenInfo
+	ADD CONSTRAINT R_3569 FOREIGN KEY (spaceDetailType) REFERENCES spaceDetailType(type)
 go
 
 

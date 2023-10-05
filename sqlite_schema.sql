@@ -85,7 +85,6 @@ create table if not exists bannerInfo
     id                   int(11),
     spaceType            int(11),
     spaceDetailType      int(11),
-    description          varchar(2048) ,
     positionImage        varchar(2048) ,
     width                int(11),
     height               int(11),
@@ -99,6 +98,30 @@ create table if not exists bannerType
     type                 int(11),
     name                varchar(64),
     primary key(type)
+)
+;
+create table if not exists boothBannerInfo
+(
+    id                   int(11),
+    spaceType            int(11),
+    spaceDetailType      int(11),
+    width                int(11),
+    height               int(11),
+    mediaRollingType     int(11),
+    bannerType           int(11),
+    primary key(id)
+)
+;
+create table if not exists boothScreenInfo
+(
+    id                   int(11),
+    spaceType            int(11),
+    spaceDetailType      int(11),
+    description          varchar(2048) ,
+    width                int(11),
+    height               int(11),
+    mediaRollingType     int(11),
+    primary key(id)
 )
 ;
 create table if not exists businessCardTemplate
