@@ -326,6 +326,7 @@ CREATE TABLE bannerInfo
 	height               Identifier ,
 	mediaRollingType     Identifier ,
 	bannerType           Identifier ,
+	mediaExposureType    Identifier ,
 	CONSTRAINT bannerInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
@@ -352,6 +353,21 @@ CREATE TABLE boothBannerInfo
 	mediaRollingType     Identifier ,
 	bannerType           Identifier ,
 	CONSTRAINT boothBannerInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE boothFileBoxInfo
+( 
+	id                   Identifier ,
+	boothId              Identifier ,
+	fileBoxType          Identifier ,
+	fileName             Content ,
+	link                 Content ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT boothFileBoxInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
 
@@ -449,6 +465,18 @@ go
 
 
 
+CREATE TABLE CsafEventBoothInfo
+( 
+	eventId              Identifier ,
+	boothId              Identifier ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT CsafEventBoothInfo_PK PRIMARY KEY  CLUSTERED (eventId ASC,boothId ASC)
+)
+go
+
+
+
 CREATE TABLE CSFA_evenvt_info
 ( 
 	id                   Identifier ,
@@ -511,6 +539,38 @@ CREATE TABLE dynamicLinkType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT dynamicLinkType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE eachBoothBannerInfo
+( 
+	boothId              Identifier ,
+	bannerId             Identifier ,
+	appendType           Identifier ,
+	name                 Content ,
+	interactionType      Identifier ,
+	interactionValue     Content ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT eachBoothBannerInfo_PK PRIMARY KEY  CLUSTERED (boothId ASC,bannerId ASC)
+)
+go
+
+
+
+CREATE TABLE eachBoothScreenInfo
+( 
+	boothId              Identifier ,
+	screenId             Identifier ,
+	appendType           Identifier ,
+	name                 Content ,
+	interactionType      Identifier ,
+	interactionValue     Content ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	CONSTRAINT eachBoothScreenInfo_PK PRIMARY KEY  CLUSTERED (boothId ASC,screenId ASC)
 )
 go
 
@@ -603,6 +663,16 @@ CREATE TABLE inquiryType
 	type                 Identifier ,
 	name                 Name ,
 	CONSTRAINT inquiryType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE interactionType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT interactionType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -947,6 +1017,16 @@ CREATE TABLE meberMyRoomItemInfo
 	createdAt            _Datetime ,
 	updatedAt            _Datetime ,
 	CONSTRAINT meberMyRoomItemInfo_PK PRIMARY KEY  CLUSTERED (memberId ASC,itemId ASC)
+)
+go
+
+
+
+CREATE TABLE mediaExposureType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT mediaExposureType_PK PRIMARY KEY  CLUSTERED (type ASC)
 )
 go
 
@@ -2008,6 +2088,7 @@ CREATE TABLE screenInfo
 	width                Identifier ,
 	height               Identifier ,
 	mediaRollingType     Identifier ,
+	mediaExposureType    Identifier ,
 	CONSTRAINT screenInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
 )
 go
@@ -2388,6 +2469,13 @@ go
 
 
 
+ALTER TABLE bannerInfo
+	ADD CONSTRAINT R_3583 FOREIGN KEY (mediaExposureType) REFERENCES mediaExposureType(type)
+go
+
+
+
+
 ALTER TABLE boothBannerInfo
 	ADD CONSTRAINT R_3565 FOREIGN KEY (spaceType) REFERENCES spaceType(type)
 go
@@ -2411,6 +2499,20 @@ go
 
 ALTER TABLE boothBannerInfo
 	ADD CONSTRAINT R_3571 FOREIGN KEY (bannerType) REFERENCES bannerType(type)
+go
+
+
+
+
+ALTER TABLE boothFileBoxInfo
+	ADD CONSTRAINT R_3579 FOREIGN KEY (boothId) REFERENCES memberOfficeReservationInfo(id)
+go
+
+
+
+
+ALTER TABLE boothFileBoxInfo
+	ADD CONSTRAINT R_3580 FOREIGN KEY (fileBoxType) REFERENCES fileBoxType(type)
 go
 
 
@@ -2493,6 +2595,20 @@ go
 
 
 
+ALTER TABLE CsafEventBoothInfo
+	ADD CONSTRAINT R_3577 FOREIGN KEY (eventId) REFERENCES CSFA_evenvt_info(id)
+go
+
+
+
+
+ALTER TABLE CsafEventBoothInfo
+	ADD CONSTRAINT R_3578 FOREIGN KEY (boothId) REFERENCES memberOfficeReservationInfo(id)
+go
+
+
+
+
 ALTER TABLE CSFA_evenvt_info
 	ADD CONSTRAINT R_3539 FOREIGN KEY (eventSpaceType) REFERENCES eventSpaceType(type)
 go
@@ -2516,6 +2632,41 @@ go
 
 ALTER TABLE disciplineReview
 	ADD CONSTRAINT R_3443 FOREIGN KEY (disciplineDetail) REFERENCES disciplineDetail(type)
+go
+
+
+
+
+ALTER TABLE eachBoothBannerInfo
+	ADD CONSTRAINT R_3581 FOREIGN KEY (bannerId) REFERENCES boothBannerInfo(id)
+go
+
+
+
+
+ALTER TABLE eachBoothScreenInfo
+	ADD CONSTRAINT R_3572 FOREIGN KEY (boothId) REFERENCES memberOfficeReservationInfo(id)
+go
+
+
+
+
+ALTER TABLE eachBoothScreenInfo
+	ADD CONSTRAINT R_3574 FOREIGN KEY (screenId) REFERENCES boothScreenInfo(id)
+go
+
+
+
+
+ALTER TABLE eachBoothScreenInfo
+	ADD CONSTRAINT R_3575 FOREIGN KEY (appendType) REFERENCES appendType(type)
+go
+
+
+
+
+ALTER TABLE eachBoothScreenInfo
+	ADD CONSTRAINT R_3576 FOREIGN KEY (interactionType) REFERENCES interactionType(type)
 go
 
 
@@ -3482,6 +3633,13 @@ go
 
 ALTER TABLE screenInfo
 	ADD CONSTRAINT R_3529 FOREIGN KEY (mediaRollingType) REFERENCES mediaRollingType(type)
+go
+
+
+
+
+ALTER TABLE screenInfo
+	ADD CONSTRAINT R_3582 FOREIGN KEY (mediaExposureType) REFERENCES mediaExposureType(type)
 go
 
 

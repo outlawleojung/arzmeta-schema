@@ -90,6 +90,7 @@ create table if not exists bannerInfo
     height               int(11),
     mediaRollingType     int(11),
     bannerType           int(11),
+    mediaExposureType    int(11),
     primary key(id)
 )
 ;
@@ -109,6 +110,18 @@ create table if not exists boothBannerInfo
     height               int(11),
     mediaRollingType     int(11),
     bannerType           int(11),
+    primary key(id)
+)
+;
+create table if not exists boothFileBoxInfo
+(
+    id                   int(11),
+    boothId              int(11),
+    fileBoxType          int(11),
+    fileName             varchar(2048) ,
+    link                 varchar(2048) ,
+    createdAt            datetime ,
+    updatedAt            datetime ,
     primary key(id)
 )
 ;
@@ -183,6 +196,15 @@ create table if not exists countryCode
     primary key(id)
 )
 ;
+create table if not exists CsafEventBoothInfo
+(
+    eventId              int(11),
+    boothId              int(11),
+    createdAt            datetime ,
+    updatedAt            datetime ,
+    primary key(eventId,boothId)
+)
+;
 create table if not exists CSFA_evenvt_info
 (
     id                   int(11),
@@ -230,6 +252,32 @@ create table if not exists dynamicLinkType
     type                 int(11),
     name                varchar(64),
     primary key(type)
+)
+;
+create table if not exists eachBoothBannerInfo
+(
+    boothId              int(11),
+    bannerId             int(11),
+    appendType           int(11),
+    name                 varchar(2048) ,
+    interactionType      int(11),
+    interactionValue     varchar(2048) ,
+    createdAt            datetime ,
+    updatedAt            datetime ,
+    primary key(boothId,bannerId)
+)
+;
+create table if not exists eachBoothScreenInfo
+(
+    boothId              int(11),
+    screenId             int(11),
+    appendType           int(11),
+    name                 varchar(2048) ,
+    interactionType      int(11),
+    interactionValue     varchar(2048) ,
+    createdAt            datetime ,
+    updatedAt            datetime ,
+    primary key(boothId,screenId)
 )
 ;
 create table if not exists eventSpaceType
@@ -291,6 +339,13 @@ create table if not exists imageSaveType
 )
 ;
 create table if not exists inquiryType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
+create table if not exists interactionType
 (
     type                 int(11),
     name                varchar(64),
@@ -555,6 +610,13 @@ create table if not exists meberMyRoomItemInfo
     createdAt            datetime ,
     updatedAt            datetime ,
     primary key(memberId,itemId)
+)
+;
+create table if not exists mediaExposureType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
 )
 ;
 create table if not exists mediaRollingType
@@ -1352,6 +1414,7 @@ create table if not exists screenInfo
     width                int(11),
     height               int(11),
     mediaRollingType     int(11),
+    mediaExposureType    int(11),
     primary key(id)
 )
 ;
