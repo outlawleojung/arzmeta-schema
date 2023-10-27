@@ -888,6 +888,36 @@ create table if not exists NFTRewardInfo
     primary key(id)
 )
 ;
+create table if not exists noticeExposureType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
+create table if not exists noticeInfo
+(
+    id                   int(11),
+    noticeType           int(11),
+    noticeExposureType   int(11),
+    subject              varchar(256) ,
+    koLink               varchar(2048) ,
+    enLink               varchar(2048) ,
+    startedAt            datetime ,
+    endedAt              datetime ,
+    createdAt            datetime ,
+    updatedAt            datetime ,
+    adminId              int(11),
+    primary key(id)
+)
+;
+create table if not exists noticeType
+(
+    type                 int(11),
+    name                varchar(64),
+    primary key(type)
+)
+;
 create table if not exists npcArrange
 (
     npcId                int(11),

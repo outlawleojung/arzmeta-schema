@@ -1391,6 +1391,45 @@ go
 
 
 
+CREATE TABLE noticeExposureType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT noticeExposureType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
+CREATE TABLE noticeInfo
+( 
+	id                   Identifier ,
+	noticeType           Identifier ,
+	noticeExposureType   Identifier ,
+	subject              Subject ,
+	koLink               Content ,
+	enLink               Content ,
+	startedAt            _Datetime ,
+	endedAt              _Datetime ,
+	createdAt            _Datetime ,
+	updatedAt            _Datetime ,
+	adminId              Identifier ,
+	CONSTRAINT noticeInfo_PK PRIMARY KEY  CLUSTERED (id ASC)
+)
+go
+
+
+
+CREATE TABLE noticeType
+( 
+	type                 Identifier ,
+	name                 Name ,
+	CONSTRAINT noticeType_PK PRIMARY KEY  CLUSTERED (type ASC)
+)
+go
+
+
+
 CREATE TABLE npcArrange
 ( 
 	npcId                Identifier ,
@@ -3234,6 +3273,20 @@ go
 
 ALTER TABLE NFTRewardInfo
 	ADD CONSTRAINT R_3560 FOREIGN KEY (memberId) REFERENCES member(memberId)
+go
+
+
+
+
+ALTER TABLE noticeInfo
+	ADD CONSTRAINT R_3584 FOREIGN KEY (noticeType) REFERENCES noticeType(type)
+go
+
+
+
+
+ALTER TABLE noticeInfo
+	ADD CONSTRAINT R_3585 FOREIGN KEY (noticeExposureType) REFERENCES noticeExposureType(type)
 go
 
 
